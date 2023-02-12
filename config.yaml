@@ -1,0 +1,34 @@
+baseURL: https://michaelsrecipes.page/
+languageCode: en-us
+title: "Michael's Recipe Collection"
+theme: gochowdown
+defaultcontentlanguage: en
+paginate: 20
+params:
+  author: Michael Taylor
+  description: A collection of recipes I like to make
+  keywords: 'recipes'
+  favicon_32: /images/favicon-32x32.png
+  favicon_16: /images/favicon-16x16.png
+  footercontent: 
+  hidecredits: false
+  hidecopyright: false
+  showNavTitle: false
+menu:
+  main:
+    - name: Home
+      weight: 1
+      url: /
+    - name: Category
+      weight: 2
+      url: /category/
+    - name: Cuisine
+      weight: 3
+      url: /cuisine/
+    - name: Tags
+      weight: 4
+      url: /tags/
+taxonomies:
+  category: category
+  cusine: cuisine
+  tag: tags

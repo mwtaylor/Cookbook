@@ -16,8 +16,8 @@ tags:
   - stir fry
   - bachans japanese barbecue
 yield: 4 servings
-prepTime: 10
-cookTime: 20
+prepTime: 10 minutes
+cookTime: 20 minutes
 
 ingredients:
 - 6 tablespoons Bachan's Original Japanese Barbecue Sauce

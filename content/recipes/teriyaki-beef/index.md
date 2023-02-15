@@ -20,16 +20,41 @@ prepTime: 10 minutes
 cookTime: 20 minutes
 
 ingredients:
-- 6 tablespoons Bachan's Original Japanese Barbecue Sauce
-- 1 pound thinly sliced beef
-- 2 teaspoons cornstarch
-- 2 tablespoons water
-- 1 tablespoon vegetable oil
-- 1/2 onion
-- 1 green pepper
-- 4 green onions
-- toasted sesame seeds
-- cooked white rice
+- "**Meat**
+
+
+1 pound thinly sliced beef"
+- "**Produce**
+
+
+1/2 onion
+
+
+1 green pepper
+
+
+4 green onions"
+- "**Pantry**
+
+
+6 tablespoons Bachan's Original Japanese Barbecue Sauce
+
+
+cooked white rice"
+- "**Staples**
+
+
+2 teaspoons cornstarch
+
+
+1 tablespoon vegetable oil
+
+
+2 tablespoons water"
+- "**Spices and Seasonings**
+
+
+toasted sesame seeds"
 
 directions:
 - "**Prep**

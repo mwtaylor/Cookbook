@@ -3,6 +3,7 @@ layout: recipe
 date: 2023-02-12T11:09:31-08:00
 draft: false
 title: "Pumpkin Chili" # The title of your awesome recipe
+featured: true
 image: pumpkinchili.jpg # Name of image in recipe bundle
 authorName: Budget Bytes # Name of the recipe/article author
 authorURL: https://www.budgetbytes.com/ # URL of their home website

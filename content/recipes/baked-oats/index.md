@@ -1,9 +1,10 @@
 ---
 layout: recipe
 date: 2023-02-15T16:42:28-08:00
-draft: true
+draft: false
 title: "Baked Oats" # The title of your awesome recipe
-image: awesome-recipe-image.jpg # Name of image in recipe bundle
+image: bakedoats.jpg # Name of image in recipe bundle
+featured: true
 authorName: The Spruce Eats # Name of the recipe/article author
 authorURL: https://www.thespruceeats.com/ # URL of their home website
 sourceName: Blended Baked Oats # Name of the source website
@@ -42,10 +43,7 @@ ingredients:
 1/4 cup canned pumpkin (if not using banana)
 
 
-chia seeds
-
-
-shredded coconut
+1 tablespoon chia seeds (optional)
 
 
 2 tablespoons chocolate chips (if not using pecans)
@@ -74,9 +72,9 @@ Spray an 8 ounce ceramic ramekin with cooking spray."
 - "**Blend batter**
 
 
-Add the egg, milk, maple syrup, oats, baking powder, and salt into a small blender. Add either banana or pumpkin. Blend until smooth."
+Add the egg, milk, maple syrup, oats, baking powder, chia seeds, and salt into a small blender. Add either banana or pumpkin. Blend until smooth."
 - "**Fill ramekin** with batter and top with chocolate chips or pecans."
-- "**Bake** for 25 minutes."
+- "**Bake** for 26 minutes. Cool for 2 to 3 minutes."
 ---
 
 Choose between using banana or canned pumpkin, and use only one of chocolate chips or pecans

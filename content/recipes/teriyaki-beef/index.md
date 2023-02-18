@@ -52,7 +52,7 @@ cooked white rice"
 
 
 2 tablespoons water"
-- "**Spices and Seasonings**
+- "**Spices & Seasonings**
 
 
 toasted sesame seeds"

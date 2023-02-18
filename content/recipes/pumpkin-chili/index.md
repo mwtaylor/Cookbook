@@ -45,10 +45,7 @@ ingredients:
 15 ounce can of pumpkin purée
 
 
-3 ounces tomato paste
-
-
-1/4 cup dry white wine"
+3 ounces tomato paste"
 - "**Staples**
 
 
@@ -56,7 +53,7 @@ ingredients:
 
 
 2 cups of water"
-- "**Spices and Seasonings**
+- "**Spices & Seasonings**
 
 
 1 tablespoon chili powder
@@ -78,6 +75,10 @@ ingredients:
 
 
 1 teaspoon salt"
+- "**Alcohol**
+
+
+1/4 cup dry white wine"
 
 directions:
 - "**Prep**

@@ -1,10 +1,12 @@
 ---
 layout: recipe
 date: 2023-02-15T16:42:28-08:00
-draft: false
+draft: true
 title: "Baked Oats" # The title of your awesome recipe
-image: bakedoats.jpg # Name of image in recipe bundle
-featured: true
+weight: 1
+images: 
+  - 4x3/bakedoats.jpg
+googleReady: true
 authorName: The Spruce Eats # Name of the recipe/article author
 authorURL: https://www.thespruceeats.com/ # URL of their home website
 sourceName: Blended Baked Oats # Name of the source website

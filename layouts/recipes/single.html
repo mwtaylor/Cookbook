@@ -1,0 +1,65 @@
+{{ define "content" }}
+	<div class="container pt-4">
+		{{ if (and (isset .Params "images") (ge (len .Params.images) 1)) }}
+			{{ with .Resources.Get (index .Params.images 1) }}
+				<img src="{{ .RelPermalink }}" alt="Lead image for recipe" class="rounded mx-auto d-block img-fluid">
+			{{ end }}
+		{{ end }}
+		<h1 class="text-center pt-4">{{ .Title }}</h1>
+		<h3 class="text-center pt-2"></h3>
+	</div>
+	<div class="container">
+		<div class="row row-cols-1 pb-4">
+			<div class="col">
+				<div class="card border-success">
+					<h4 class="card-header text-bg-success">{{ .Summary }}</h4>
+					<div class="card-body">
+						{{ .Content }}
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2 pb-4">
+			<div class="col">
+				<div class="card text-bg-secondary">
+					<h4 class="card-header">Ingredients</h4>
+					<ul class="list-group list-group-flush">
+						{{ partial "ingredient-category.html" (dict "categoryName" "Meat" "ingredients" .Params.meatIngredients) }}
+						{{ partial "ingredient-category.html" (dict "categoryName" "Produce" "ingredients" .Params.produceIngredients) }}
+						{{ partial "ingredient-category.html" (dict "categoryName" "Eggs & Dairy" "ingredients" .Params.eggAndDairyIngredients) }}
+						{{ partial "ingredient-category.html" (dict "categoryName" "Pantry" "ingredients" .Params.pantryIngredients) }}
+						{{ partial "ingredient-category.html" (dict "categoryName" "Alcohol" "ingredients" .Params.alcoholIngredients) }}
+						{{ partial "ingredient-category.html" (dict "categoryName" "Spices & Seasonings" "ingredients" .Params.spiceAndSeasoningIngredients) }}
+						{{ partial "ingredient-category.html" (dict "categoryName" "Staples" "ingredients" .Params.stapleIngredients) }}
+					</ul>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card text-bg-primary">
+					<h4 class="card-header">Instructions</h4>
+					<ul class="list-group list-group-flush">
+						{{ range .Params.instructions }}
+							<li class="list-group-item">
+								<h5 class="text-primary">{{ .sectionName }}</h5>
+								<ul class="list-group list-group-flush">
+									{{ range .steps }}
+										<li class="list-group-item">
+											{{ $.Page.RenderString .text }}
+											{{ with .image }}
+												{{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
+												{{ $image = $image.Fill "1120x630" }}
+												<div class="mt-2 mx-5">
+													<img src="{{ $image.RelPermalink }}" alt="Completed recipe step" class="img-fluid rounded">
+												</div>
+											{{ end }}
+										</li>
+									{{ end }}
+								</ul>
+							</li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+{{ end }}

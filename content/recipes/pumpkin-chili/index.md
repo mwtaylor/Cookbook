@@ -1,7 +1,7 @@
 ---
 layout: recipe
 date: 2023-02-12T11:09:31-08:00
-draft: false
+draft: true
 title: "Pumpkin Chili" # The title of your awesome recipe
 featured: true
 image: pumpkinchili.jpg # Name of image in recipe bundle

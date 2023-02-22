@@ -46,6 +46,7 @@ stapleIngredients:
 instructions:
   - sectionName: Make Something
     steps:
-      - Do the thing
+      - text: Do the thing
+        image: image.jpg
 ---
 

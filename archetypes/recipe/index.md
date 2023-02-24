@@ -33,6 +33,8 @@ eggAndDairyIngredients:
   - butter
 pantryIngredients:
   - pantry
+freezerIngredients:
+  - frozen
 alcoholIngredients:
   - alcohol
 spiceAndSeasoningIngredients:

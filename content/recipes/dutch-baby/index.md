@@ -33,7 +33,7 @@ eggAndDairyIngredients:
 pantryIngredients:
   - Maple syrup for topping
 spiceAndSeasoningIngredients:
-  - 1/4 teaspoon vanilla extract
+  - 1/2 teaspoon vanilla extract
 stapleIngredients:
   - 40 grams all purpose flour
   - Powdered sugar for topping
@@ -42,7 +42,7 @@ stapleIngredients:
 instructions:
   - sectionName: Prepare
     steps:
-      - text: Preheat oven to 450 degrees F and place the cast iron skillet in the oven on a middle rack.
+      - text: Place the cast iron skillet in the oven on a middle rack and preheat oven to 450 degrees F. Let the refrigerated ingredients start to come to room temperature.
   - sectionName: Make Batter
     steps:
       - text: Add the eggs, milk, vanilla, salt, and flour in a food processor or blender.
@@ -63,3 +63,6 @@ instructions:
 This recipe works great to make one individual pancake using a 5 inch cast iron skillet. To make a larger pancake quadruple the recipe and use a 12 inch cast iron skillet. 
 
 If a cast iron skillet is not available another similarly sized oven safe pan can be used.
+
+Inspiration for this recipe comes from Dutch Baby pancake recipes from [The Spruce Eats](https://www.thespruceeats.com/single-serve-dutch-baby-pancake-3058776) 
+and [Once Upon a Chef](https://www.onceuponachef.com/recipes/dutch-baby.html)

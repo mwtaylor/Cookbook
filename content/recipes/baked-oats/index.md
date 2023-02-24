@@ -1,10 +1,10 @@
 ---
 layout: recipe
 date: 2023-02-15T16:42:28-08:00
-draft: true
+draft: false
 title: "Baked Oats"
 summary: "A breakfast made from oats with the consistency of a cake"
-weight: 1
+weight: 100
 images: 
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg
@@ -19,11 +19,11 @@ cuisines:
 tags:
   - Oats
   - Banana
-  - Individual Serving
+  - Individual
 
 yield: 1
 prepTime: PT5M
-cookTime: PT25M
+cookTime: PT30M
 
 produceIngredients:
   - 1/3 of a banana (if not using pumpkin)
@@ -36,12 +36,12 @@ pantryIngredients:
   - 1/4 cup canned pumpkin (if not using banana)
   - 2 tablespoons chocolate chips (if not using pecans)
   - Pecans (if not using chocolate chips)
-  - 1 teaspoon chia seeds (optional)
+  - 2 teaspoons chia seeds (optional)
   - 2 teaspoons sweetened coconut flakes (optional)
 stapleIngredients:
-  - cooking spray
+  - Cooking spray
   - 1/4 teaspoon baking powder
-  - pinch of salt
+  - Pinch of salt
 
 instructions:
   - sectionName: Preparation
@@ -51,7 +51,7 @@ instructions:
       - text: Add the egg, milk, maple syrup, oats, baking powder, and salt into a small blender. Add either banana or pumpkin. Optionally add chia seeds and/or coconut. Blend until smooth.
   - sectionName: Bake
     steps:
-      - text: Fill ramekin with batter and top with chocolate chips or pecans.
+      - text: Fill ramekin with batter but don't overfill, leave a little room to expand. Top with chocolate chips or pecans.
       - text: Bake for 26 minutes. Cool for 2 to 3 minutes.
 ---
 

@@ -17,11 +17,14 @@ categories:
 cuisines:
   - American
 tags:
+  - Milkshake
+ingredients:
   - Kahlúa
   - Giffard Banane du Brésil
-  - Rum
-  - Milkshake
+  - Dark Rum
   - Banana
+  - Strawberry Ice Cream
+  - Luxardo Maraschino Cherry
 
 yield: 1
 prepTime: PT0M

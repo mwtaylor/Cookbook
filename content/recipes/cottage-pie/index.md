@@ -18,7 +18,25 @@ cuisines:
   - British
 tags:
   - Beef
+ingredients:
+  - Ground Beef
   - Bachan's Japanese Barbecue Sauce
+  - Onion
+  - Celery
+  - Carrot
+  - Garlic
+  - Green Onion
+  - Russet Potatoes
+  - Sour Cream
+  - Unsalted Butter
+  - Beef Broth
+  - Tomato Paste
+  - Fried Onions
+  - Frozen Corn
+  - Frozen Peas
+  - Red Wine
+  - Dried Thyme
+  - Dried Rosemary
 
 yield: 6
 prepTime: 15

@@ -17,9 +17,18 @@ categories:
 cuisines:
   - American
 tags:
-  - Oats
-  - Banana
   - Individual
+ingredients:
+  - Rolled Oats
+  - Banana
+  - Egg
+  - Almond Milk
+  - Maple Syrup
+  - Canned Pumpkin
+  - Chocolate Chips
+  - Pecans
+  - Chia Seeds
+  - Sweetened Coconut Flakes
 
 yield: 1
 prepTime: PT5M

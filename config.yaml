@@ -17,7 +17,11 @@ menu:
     - name: Tags
       weight: 4
       url: /tags/
+    - name: Ingredients
+      weight: 5
+      url: /ingredients/
 taxonomies:
   category: categories
   cuisine: cuisines
   tag: tags
+  ingredient: ingredients

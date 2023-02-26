@@ -19,6 +19,15 @@ cuisines:
 tags:
   - Individual
   - Pancake
+ingredients:
+  - Egg
+  - Almond Milk
+  - Unsalted Butter
+  - Maple Syrup
+  - Raspberry
+  - Blueberry
+  - Strawberry
+  - Vanilla Extract
   
 yield: 1 individual pancake or quadruple the recipe for a larger pancake that serves 4
 prepTime: PT5M

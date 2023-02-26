@@ -3,7 +3,7 @@ layout: recipe
 date: 2023-02-15T16:42:28-08:00
 draft: false
 title: "Baked Oats"
-summary: "A breakfast made from oats with the consistency of a cake"
+summary: "Breakfast made from oats with the consistency of a cake"
 weight: 100
 images: 
   - 4x3/recipe.jpg

@@ -10,7 +10,7 @@ images:
   - 16x9/recipe.jpg
   - 1x1/recipe.jpg
   
-googleReady: false
+googleReady: true
 
 categories:
   - Breakfast

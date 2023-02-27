@@ -10,7 +10,7 @@ images:
   - 1x1/recipe.jpg
 weight: 1 # Use weight of 1 for featured recipes
 
-googleReady: false
+googleReady: true
 
 categories:
   - Breakfast

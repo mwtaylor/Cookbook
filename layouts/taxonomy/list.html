@@ -7,25 +7,25 @@
         </div>
     </div>
     <div class="row pb-4">
-        <div class="accordion" id="{{ .Data.Singular }}-accordion">
-            {{ range .Pages }}
+        <div class="accordion" id="accordion">
+            {{ range .Data.Terms.Alphabetical }}
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button
                             class="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
-                            data-bs-target="#{{ $.Data.Singular }}-{{ anchorize .Title }}-accordion"
-                            aria-controls="{{ $.Data.Singular }}-{{ anchorize .Title }}-accordion"
+                            data-bs-target="#{{ .Term }}-accordion"
+                            aria-controls="{{ .Term }}-accordion"
                     >
-                        {{ .Title }}
+                        {{ .Page.Title }}
                     </button>
                 </h2>
                 <div
-                        id="{{ $.Data.Singular }}-{{ anchorize .Title }}-accordion"
+                        id="{{ .Term }}-accordion"
                         class="accordion-collapse collapse"
-                        aria-labelledby="{{ $.Data.Singular }}-{{ anchorize .Title }}-accordion"
-                        data-bs-parent="#{{ $.Data.Singular }}-accordion"
+                        aria-labelledby="{{ .Term }}-accordion"
+                        data-bs-parent="#accordion"
                 >
                     <div class="accordion-body">
                         <div class="container">
@@ -45,7 +45,7 @@
                                         {{ end }}
                                         <div class="card-body">
                                             <div class="d-grid gap-2">
-                                                <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline-primary stretched-link">See more</a>
+                                                <a href="{{ .Page.RelPermalink }}" class="btn btn-lg btn-outline-primary stretched-link">See more</a>
                                             </div>
                                         </div>
                                     </div>

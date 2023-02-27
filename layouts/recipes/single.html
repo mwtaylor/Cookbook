@@ -1,114 +1,102 @@
 {{ define "content" }}
-<div class="container pt-4">
-    {{ with .Resources.GetMatch "16x9/recipe.jpg" }}
-    <img src="{{ .RelPermalink }}" alt="Lead image for recipe" class="rounded mx-auto d-block img-fluid">
-    {{ end }}
-    <h1 class="text-center pt-4">{{ .Title }}</h1>
-    <h3 class="text-center pt-2"></h3>
-</div>
-<div class="container">
-    <div class="row row-cols-1 pb-4">
-        <div class="col">
-            <div class="card border-success">
-                <h4 class="card-header text-bg-success">{{ .Summary }}</h4>
-                {{ with .Content }}
-                <div class="card-body">
-                    {{ . }}
+    <div class="container pt-4">
+        {{ with .Resources.GetMatch "16x9/recipe.jpg" }}
+            <img src="{{ .RelPermalink }}" alt="Lead image for recipe" class="rounded mx-auto d-block img-fluid">
+        {{ end }}
+        <h1 class="text-center pt-4">{{ .Title }}</h1>
+        <h3 class="text-center pt-2"></h3>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 pb-4">
+            <div class="col">
+                <div class="card border-success">
+                    <h4 class="card-header text-bg-success">{{ .Summary }}</h4>
+                    {{ with .Content }}
+                        <div class="card-body">
+                            {{ . }}
+                        </div>
+                    {{ end }}
                 </div>
-                {{ end }}
             </div>
         </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 pb-4">
-        <div class="col">
-            <div class="card text-bg-secondary">
-                <h4 class="card-header">Ingredients</h4>
-                <ul class="list-group list-group-flush">
-                    {{ range $.Site.Params.ingredientCategories }}
-                    {{ range $key, $label := . }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" (index $.Page.Params $key)) }}
-                    {{ end }}
-                    {{ end }}
-                </ul>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card text-bg-primary">
-                <h4 class="card-header">Instructions</h4>
-                <ul class="list-group list-group-flush">
-                    {{ range .Params.instructions }}
-                    <li class="list-group-item">
-                        <h5 class="text-primary">{{ .sectionName }}</h5>
-                        <ul class="list-group list-group-flush">
-                            {{ range .steps }}
-                            <li class="list-group-item">
-                                {{ $.Page.RenderString .text }}
-                                {{ with .image }}
-                                {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
-                                {{ $image = $image.Fill "1120x630" }}
-                                <div class="mt-2 mx-5">
-                                    <img src="{{ $image.RelPermalink }}" alt="Completed recipe step" class="img-fluid rounded">
-                                </div>
-                                {{ end }}
-                            </li>
+        <div class="row row-cols-1 row-cols-md-2 pb-4">
+            <div class="col">
+                <div class="card text-bg-secondary">
+                    <h4 class="card-header">Ingredients</h4>
+                    <ul class="list-group list-group-flush">
+                        {{ range $.Site.Params.ingredientCategories }}
+                            {{ range $key, $label := . }}
+                                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" (index $.Page.Params $key)) }}
                             {{ end }}
-                        </ul>
-                    </li>
-                    {{ end }}
-                </ul>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-bg-primary">
+                    <h4 class="card-header">Instructions</h4>
+                    <ul class="list-group list-group-flush">
+                        {{ range .Params.instructions }}
+                            <li class="list-group-item">
+                                <h5 class="text-primary">{{ .sectionName }}</h5>
+                                <ul class="list-group list-group-flush">
+                                    {{ range .steps }}
+                                        <li class="list-group-item">
+                                            {{ $.Page.RenderString .text }}
+                                            {{ with .image }}
+                                                {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
+                                                {{ $image = $image.Fill "1120x630" }}
+                                                <div class="mt-2 mx-5">
+                                                    <img src="{{ $image.RelPermalink }}" alt="Completed recipe step" class="img-fluid rounded">
+                                                </div>
+                                            {{ end }}
+                                        </li>
+                                    {{ end }}
+                                </ul>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-</div>
 {{ end }}
 {{ define "structuredData" }}
-{{ if .Params.googleReady }}
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Recipe",
-        "name": "{{ .Title }}",
-        "image": [
-            {{ with .Resources.GetMatch "1x1/recipe.jpg" }}{{ .Permalink }}{{ end }},
-            {{ with .Resources.GetMatch "4x3/recipe.jpg" }}{{ .Permalink }}{{ end }},
-            {{ with .Resources.GetMatch "16x9/recipe.jpg" }}{{ .Permalink }}{{ end }}
-        ],
-        "author": {
-            "@type": "Person",
-            "name": "Michael Taylor"
-        },
-        "datePublished": {{ .Date }},
-        "description": {{ .Summary }},
-        "recipeIngredient": [
+    {{ if .Params.googleReady }}
+        <script type="application/ld+json">
+            {{ $images := slice }}
+            {{ with .Resources.GetMatch "1x1/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
+            {{ with .Resources.GetMatch "4x3/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
+            {{ with .Resources.GetMatch "16x9/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
             {{ $ingredients := slice }}
             {{ range $.Site.Params.ingredientCategories }}
-            {{ range $key, $label := . }}
-            {{ if and (index $.Page.Params $key) (ge (len (index $.Page.Params $key)) 1) }}
-            {{ $ingredients = $ingredients | append (delimit (apply (index $.Page.Params $key) "printf" "\"%s\"" ".") ", ") }}
-            {{ end }}
-            {{ end }}
-            {{ end }}
-            {{ delimit $ingredients ", " | safeJS }}
-        ],
-        "recipeInstructions": [
-            {{ $sectionCount := len .Params.instructions }}
-            {{ range $sectionIndex, $section := .Params.instructions }}
-            {
-                "@type": "HowToSection",
-                "name": {{ .sectionName }},
-                "itemListElement": [
-                {{ $stepCount := len .steps }}
-                {{ range $stepIndex, $step := .steps }}
-                    {
-                        "@type": "HowToStep",
-                        "text": {{ .text }}
-                    }{{ if ne $stepIndex (sub $stepCount 1)}},{{ end }}
+                {{ range $key, $label := . }}
+                    {{ if and (index $.Page.Params $key) (ge (len (index $.Page.Params $key)) 1) }}
+                        {{ $ingredients = $ingredients | append (index $.Page.Params $key) }}
+                    {{ end }}
                 {{ end }}
-                ]
-            }{{ if ne $sectionIndex (sub $sectionCount 1)}},{{ end }}
             {{ end }}
-        ]
-    }
-</script>
-{{ end }}
+            {{ $instructions := slice }}
+            {{ range .Params.instructions }}
+                {{ $sectionSteps := slice }}
+                {{ range .steps }}
+                    {{ $sectionSteps = $sectionSteps | append (dict "@type" "HowToStep" "text" .text) }}
+                {{ end }}
+                {{ $instructions = $instructions | append (dict "@type" "HowToSection" "name" .sectionName "itemListElement" $sectionSteps) }}
+            {{ end }}
+            {{ $data := dict
+                    "@context" "https://schema.org"
+                    "@type" "Recipe"
+                    "name" .Title
+                    "image" $images
+                    "author" (dict "@type" "Person" "name" "Michael Taylor")
+                    "datePublished"  .Date
+                    "description" .Summary
+                    "recipeIngredient" $ingredients
+                    "recipeInstructions" $instructions
+                    }}
+            {{ jsonify $data | safeJS }}
+
+        </script>
+    {{ end }}
 {{ end }}

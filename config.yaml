@@ -1,7 +1,7 @@
 baseURL: https://michaelsrecipes.page/
 languageCode: en-us
 title: "Michael's Recipe Collection"
-defaultcontentlanguage: en
+defaultContentLanguage: en
 paginate: 20
 menu:
   main:

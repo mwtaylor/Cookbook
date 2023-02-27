@@ -1,10 +1,10 @@
 {{ if and .ingredients (ge (len .ingredients) 1) }}
 <li class="list-group-item">
-	<h5 class="text-secondary">{{ .categoryName }}</h5>
-	<ul class="list-group list-group-flush">
-		{{ range .ingredients }}
-			<li class="list-group-item">{{ . }}</li>
-		{{ end }}
-	</ul>
+    <h5 class="text-secondary">{{ .categoryName }}</h5>
+    <ul class="list-group list-group-flush">
+        {{ range .ingredients }}
+        <li class="list-group-item">{{ . }}</li>
+        {{ end }}
+    </ul>
 </li>
 {{ end }}

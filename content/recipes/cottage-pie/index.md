@@ -95,7 +95,7 @@ instructions:
       - text: Deglaze with wine.
       - text: Add in broth and cooked beef.
       - text: Lower heat to maintain a gentle simmer.
-      - text: Add flour a little bit at a time to thicken. Keep in mind it will continue to thicken as it simmers. Should be about 1/4 cup of flour added.
+      - text: Add flour a bit at a time to thicken. Keep in mind it will continue to thicken as it simmers. Should be about 1/4 cup of flour added.
       - text: Simmer until gravy is thick.
         image: thickened.jpg
       - text: Add in about 4 tablespoons of the Bachan's barbecue sauce until desired sweetness and taste is reached. Add extra salt if needed keeping in mind the Bachan's sauce is very salty.

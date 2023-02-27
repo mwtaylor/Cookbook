@@ -21,3 +21,22 @@
     </div>
 </div>
 {{ end }}
+{{ define "structuredData" }}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+        {{ $carouselItems := (first 6 (where (where .Site.RegularPages "Section" "recipes") "Params.googleReady" true)) }}
+        {{ range $index, $page := $carouselItems }}
+            {
+                {{ $position := add 1 $index }}
+                "@type": "ListItem",
+                "position": {{ $position }},
+                "url": {{ $page.Permalink }}
+            }{{ if ne $index (sub (len $carouselItems) 1)}},{{ end }}
+        {{ end }}
+        ]
+    }
+</script>
+{{ end }}

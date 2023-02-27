@@ -25,3 +25,13 @@ taxonomies:
   cuisine: cuisines
   tag: tags
   ingredient: ingredients
+params:
+  ingredientCategories: # This is a list of objects instead of one object like taxonomies to maintain the order
+    - meatIngredients: Meat
+    - produceIngredients: Produce
+    - eggAndDairyIngredients: Eggs & Dairy
+    - pantryIngredients: Pantry
+    - freezerIngredients: Freezer
+    - alcoholIngredients: Alcohol
+    - spiceAndSeasoningIngredients: Spices & Seasonings
+    - stapleIngredients: Staples

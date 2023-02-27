@@ -26,7 +26,7 @@ ingredients:
   - Strawberry Ice Cream
   - Luxardo Maraschino Cherry
 
-yield: 1
+yield: 1 drink
 prepTime: PT0M
 cookTime: PT5M
 
@@ -51,4 +51,4 @@ instructions:
       - text: Serve in a glass decorated with chocolate syrup and garnished with Luxardo cherries and a slice of banana.
 ---
 
-
+This recipe is similar to a Dirty Banana like this one from [Sugar and Soul](https://www.sugarandsoul.co/dirty-banana/)

@@ -18,10 +18,12 @@ cuisines:
   - cuisine
 tags:
   - tag
+ingredients:
+  - ingredient
 
-yield:
-prepTime:
-cookTime:
+yield: 2 servings
+prepTime: PT0M
+cookTime: PT0M
 
 meatIngredients:
   - meat

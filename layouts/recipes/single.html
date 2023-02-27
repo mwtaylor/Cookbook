@@ -1,9 +1,7 @@
 {{ define "content" }}
 <div class="container pt-4">
-    {{ if (and (isset .Params "images") (ge (len .Params.images) 1)) }}
-    {{ with .Resources.Get (index .Params.images 1) }}
+    {{ with .Resources.GetMatch "16x9/recipe.jpg" }}
     <img src="{{ .RelPermalink }}" alt="Lead image for recipe" class="rounded mx-auto d-block img-fluid">
-    {{ end }}
     {{ end }}
     <h1 class="text-center pt-4">{{ .Title }}</h1>
     <h3 class="text-center pt-2"></h3>
@@ -26,14 +24,11 @@
             <div class="card text-bg-secondary">
                 <h4 class="card-header">Ingredients</h4>
                 <ul class="list-group list-group-flush">
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Meat" "ingredients" .Params.meatIngredients) }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Produce" "ingredients" .Params.produceIngredients) }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Eggs & Dairy" "ingredients" .Params.eggAndDairyIngredients) }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Pantry" "ingredients" .Params.pantryIngredients) }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Freezer" "ingredients" .Params.freezerIngredients) }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Alcohol" "ingredients" .Params.alcoholIngredients) }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Spices & Seasonings" "ingredients" .Params.spiceAndSeasoningIngredients) }}
-                    {{ partial "ingredient-category.html" (dict "categoryName" "Staples" "ingredients" .Params.stapleIngredients) }}
+                    {{ range $.Site.Params.ingredientCategories }}
+                    {{ range $key, $label := . }}
+                    {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" (index $.Page.Params $key)) }}
+                    {{ end }}
+                    {{ end }}
                 </ul>
             </div>
         </div>
@@ -65,4 +60,55 @@
         </div>
     </div>
 </div>
+{{ end }}
+{{ define "structuredData" }}
+{{ if .Params.googleReady }}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "{{ .Title }}",
+        "image": [
+            {{ with .Resources.GetMatch "1x1/recipe.jpg" }}{{ .Permalink }}{{ end }},
+            {{ with .Resources.GetMatch "4x3/recipe.jpg" }}{{ .Permalink }}{{ end }},
+            {{ with .Resources.GetMatch "16x9/recipe.jpg" }}{{ .Permalink }}{{ end }}
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "Michael Taylor"
+        },
+        "datePublished": {{ .Date }},
+        "description": {{ .Summary }},
+        "recipeIngredient": [
+            {{ $ingredients := slice }}
+            {{ range $.Site.Params.ingredientCategories }}
+            {{ range $key, $label := . }}
+            {{ if and (index $.Page.Params $key) (ge (len (index $.Page.Params $key)) 1) }}
+            {{ $ingredients = $ingredients | append (delimit (apply (index $.Page.Params $key) "printf" "\"%s\"" ".") ", ") }}
+            {{ end }}
+            {{ end }}
+            {{ end }}
+            {{ delimit $ingredients ", " | safeJS }}
+        ],
+        "recipeInstructions": [
+            {{ $sectionCount := len .Params.instructions }}
+            {{ range $sectionIndex, $section := .Params.instructions }}
+            {
+                "@type": "HowToSection",
+                "name": {{ .sectionName }},
+                "itemListElement": [
+                {{ $stepCount := len .steps }}
+                {{ range $stepIndex, $step := .steps }}
+                    {
+                        "@type": "HowToStep",
+                        "text": {{ .text }}
+                    }{{ if ne $stepIndex (sub $stepCount 1)}},{{ end }}
+                {{ end }}
+                ]
+            }{{ if ne $sectionIndex (sub $sectionCount 1)}},{{ end }}
+            {{ end }}
+        ]
+    }
+</script>
+{{ end }}
 {{ end }}

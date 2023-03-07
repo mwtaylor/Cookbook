@@ -60,7 +60,7 @@ instructions:
     steps:
       - text: Add butter into skillet inside oven and allow to melt.
       - text: Remove the skillet from the oven and ensure the skillet is evenly coated in melted butter.
-      - text: Gently pour the batter into the skillet and put back into the oven.
+      - text: Gently pour the batter into the skillet and put back into the oven. Put a tray on a lower rack to catch any drips.
       - text: Bake for about 20 minutes until the top is golden and the pancake is puffed and fluffy.
         image: baked.jpg
   - sectionName: Serve

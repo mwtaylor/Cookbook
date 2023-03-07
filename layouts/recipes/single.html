@@ -16,6 +16,17 @@
                             {{ . }}
                         </div>
                     {{ end }}
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            Yield: {{ .Params.yield }}
+                        </li>
+                        <li class="list-group-item">
+                            Prep time: <span data-format-duration="true">{{ .Params.prepTime }}</span>
+                        </li>
+                        <li class="list-group-item">
+                            Cook time: <span data-format-duration="true">{{ .Params.cookTime }}</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

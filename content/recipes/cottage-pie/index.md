@@ -38,9 +38,9 @@ ingredients:
   - Dried Thyme
   - Dried Rosemary
 
-yield: 6
-prepTime: 15
-cookTime: 60
+yield: 6 servings
+prepTime: PT15M
+cookTime: PT1H
 
 meatIngredients:
   - 1 pound of high fat ground beef

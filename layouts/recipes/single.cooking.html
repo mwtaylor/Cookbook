@@ -1,0 +1,62 @@
+{{ define "content" }}
+    <div id="directionsCarousel" class="carousel text-bg-primary slide min-vh-100 w-100" data-bs-ride="false" data-bs-config='{"interval":31536000000}'>
+        <div class="carousel-indicators">
+            {{ $slideNumber := 0 }}
+            {{ range .Params.instructions }}
+                {{ range .steps }}
+                    <button
+                            type="button"
+                            data-bs-target="#directionsCarousel"
+                            data-bs-slide-to="{{ $slideNumber }}"
+                            {{ safeHTMLAttr (cond (eq $slideNumber 0) "class=\"active\"" "") }}
+                            {{ safeHTMLAttr (cond (eq $slideNumber 0) "aria-current=\"true\"" "") }}
+                            aria-label="Slide {{ add 1 $slideNumber }}">
+                    </button>
+                    {{ $slideNumber = add 1 $slideNumber}}
+                {{ end }}
+            {{ end }}
+        </div>
+        <div class="carousel-inner carousel-non-image-content">
+            {{ with  $.Page.OutputFormats.Get "html" }}
+                <a class="btn btn-success text-light btn-sm exit-button" href="{{ .RelPermalink }}" role="button">Exit Back to Recipe</a>
+            {{ end }}
+            {{ range $sectionIndex, $section := .Params.instructions }}
+                {{ range $stepIndex, $step := $section.steps }}
+                    <div class="carousel-item {{ cond (and (eq $sectionIndex 0) (eq $stepIndex 0)) "active" "" }}">
+                        <div class="d-flex flex-row">
+                            <div class="flex-fill">
+                                {{ with $section.sectionName }}<h2>{{ . }}</h2>{{ end }}
+                                {{ with $step.name }}<h1>{{ . }}</h1>{{ end }}
+                                {{ with $step.ingredients }}
+                                    <ul class="list-group list-group-horizontal">
+                                        {{ range . }}
+                                            <li class="list-group-item list-group-item-primary">{{ index $.Page.Params.ingredientLabels . }}</li>
+                                        {{ end }}
+                                    </ul>
+                                {{ end }}
+                            </div>
+                            <div class="step-image">
+                                {{ with $step.image }}
+                                    {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
+                                    <div><img src="{{ $image.RelPermalink }}" alt="Completed recipe step" class="img-fluid rounded"></div>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ range $step.background }}
+                            <p class="fs-6 text-secondary">{{ index $.Page.Params.backgroundTasks . }}</p>
+                        {{ end }}
+                        <p class="fs-4">{{ $step.text | markdownify }}</p>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#directionsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#directionsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+{{ end }}

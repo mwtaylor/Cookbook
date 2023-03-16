@@ -1,7 +1,7 @@
 ---
 layout: recipe
 date: 2023-02-15T16:42:28-08:00
-draft: false
+draft: true
 title: "Baked Oats"
 summary: "Breakfast made from oats with the consistency of a cake"
 weight: 100

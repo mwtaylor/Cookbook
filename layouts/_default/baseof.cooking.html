@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Michael's Recipes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/css/cooking.css" rel="stylesheet">
+    <script>
+        let domReady = (cb) => {
+            document.readyState === 'interactive' || document.readyState === 'complete'
+                ? cb()
+                : document.addEventListener('DOMContentLoaded', cb);
+        };
+
+        domReady(() => {
+            // Display body when DOM is loaded
+            document.body.style.visibility = 'visible';
+        });
+    </script>
+    <script
+            src="https://code.jquery.com/jquery-3.6.3.min.js"
+            integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+            crossorigin="anonymous"
+    >
+    </script>
+</head>
+<body style="visibility: hidden;">
+{{ block "content" . }}{{ end }}
+<script src="/js/main.js"></script>
+</body>
+</html>

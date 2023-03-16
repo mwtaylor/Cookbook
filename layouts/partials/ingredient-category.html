@@ -1,9 +1,10 @@
 {{ if and .ingredients (ge (len .ingredients) 1) }}
 <li class="list-group-item">
-    <h5 class="text-secondary">{{ .categoryName }}</h5>
+    <h5 class="text-primary">{{ .categoryName }}</h5>
     <ul class="list-group list-group-flush">
+        {{ $ingredientLabels := .ingredientLabels }}
         {{ range .ingredients }}
-        <li class="list-group-item">{{ . }}</li>
+            <li class="list-group-item">{{ index $ingredientLabels . }}</li>
         {{ end }}
     </ul>
 </li>

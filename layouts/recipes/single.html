@@ -3,14 +3,13 @@
         {{ with .Resources.GetMatch "16x9/recipe.jpg" }}
             <img src="{{ .RelPermalink }}" alt="Lead image for recipe" class="rounded mx-auto d-block img-fluid">
         {{ end }}
-        <h1 class="text-center pt-4">{{ .Title }}</h1>
-        <h3 class="text-center pt-2"></h3>
+        <h1 class="display-1 text-center py-4">{{ .Title }}</h1>
     </div>
     <div class="container">
         <div class="row row-cols-1 pb-4">
             <div class="col">
-                <div class="card border-success">
-                    <h4 class="card-header text-bg-success">{{ .Summary }}</h4>
+                <div class="card border-secondary">
+                    <h4 class="card-header text-bg-secondary">{{ .Summary }}</h4>
                     {{ with .Content }}
                         <div class="card-body">
                             {{ . }}
@@ -26,18 +25,23 @@
                         <li class="list-group-item">
                             Cook time: <span data-format-duration="true">{{ .Params.cookTime }}</span>
                         </li>
+                        <li class="list-group-item">
+                            {{ with  .OutputFormats.Get "cooking" }}
+                                <a class="btn btn-success text-light" href="{{ .RelPermalink }}" role="button">Cook Now</a>
+                            {{ end }}
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 pb-4">
             <div class="col">
-                <div class="card text-bg-secondary">
+                <div class="card text-bg-primary">
                     <h4 class="card-header">Ingredients</h4>
                     <ul class="list-group list-group-flush">
                         {{ range $.Site.Params.ingredientCategories }}
                             {{ range $key, $label := . }}
-                                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" (index $.Page.Params $key)) }}
+                                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" (index $.Page.Params $key) "ingredientLabels" $.Page.Params.ingredientLabels) }}
                             {{ end }}
                         {{ end }}
                     </ul>
@@ -53,6 +57,7 @@
                                 <ul class="list-group list-group-flush">
                                     {{ range .steps }}
                                         <li class="list-group-item">
+                                            {{ with .name }}<p class="lead">{{ . }}</p>{{ end }}
                                             {{ $.Page.RenderString .text }}
                                             {{ with .image }}
                                                 {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}

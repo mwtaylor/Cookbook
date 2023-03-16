@@ -1,0 +1,31 @@
+$primary: #25445c;
+$secondary: #fdcd90;
+$dark: #3d3741;
+$light: #f4edeb;
+$white: #f9f9ff;
+
+$carousel-control-width: 5%;
+
+$font-size-root: 3rem;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//
+// Custom styles
+//
+
+.carousel-non-image-content {
+  width: (100% - 2 * $carousel-control-width);
+  left: $carousel-control-width;
+}
+
+.step-image {
+  width: 32vw;
+}
+
+.exit-button {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: $zindex-fixed;
+}

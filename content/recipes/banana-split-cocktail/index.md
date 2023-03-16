@@ -3,7 +3,7 @@ layout: recipes
 title: "Banana Split Cocktail"
 summary: "A boozy milkshake with banana and Kahlúa"
 date: 2023-02-15T16:56:53-08:00
-draft: false
+draft: true
 images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg

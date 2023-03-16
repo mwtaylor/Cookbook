@@ -3,7 +3,7 @@ layout: recipes
 title: "Dutch Baby Pancakes"
 summary: "A fluffy pancake with Seattle origins"
 date: 2023-02-20T13:12:52-08:00
-draft: false
+draft: true
 images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg

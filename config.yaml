@@ -25,8 +25,15 @@ taxonomies:
   cuisine: cuisines
   tag: tags
   ingredient: ingredients
+outputFormats:
+  cooking:
+    name: cooking
+    path: cooking
+    isHTML: true
+    isPlainText: false
+    mediaType: text/html
 params:
-  ingredientCategories: # This is a list of objects instead of one object like taxonomies to maintain the order
+  ingredientCategories:
     - meatIngredients: Meat
     - produceIngredients: Produce
     - eggAndDairyIngredients: Eggs & Dairy

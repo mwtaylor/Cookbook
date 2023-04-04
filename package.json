@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "hugo-bin": "^0.99.2"
+    "hugo-bin": "^0.102.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

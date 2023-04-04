@@ -1,0 +1,26 @@
+{
+  "name": "recipes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run hugo:build",
+    "clean": "npm run hugo:clean",
+    "serve": "npm run hugo:serve",
+    "hugo:build": "hugo -d build",
+    "hugo:serve": "hugo server",
+    "hugo:clean": "rm -rf build resources public",
+    "css:compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 assets/styles -o static/css/",
+    "js:build": "browserify assets/scripts/main.js -o static/js/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hugo-bin": "^0.99.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "browserify": "^17.0.0",
+    "node-sass": "^8.0.0"
+  }
+}

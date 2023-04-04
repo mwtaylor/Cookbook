@@ -21,6 +21,9 @@ tags:
 ingredients:
   - ingredient
 
+ingredientLabels:
+  key: label
+
 yield: 2 servings
 prepTime: PT0M
 cookTime: PT0M
@@ -42,15 +45,22 @@ alcoholIngredients:
 spiceAndSeasoningIngredients:
   - spice
 stapleIngredients:
-  - olive oil
+  - oliveOil
   - flour
   - salt
   - pepper
 
+backgroundTasks:
+  name: instructions
+
 instructions:
   - sectionName: Make Something
     steps:
-      - text: Do the thing
+      - name: Step Name
+        text: Do the thing.
         image: image.jpg
+        ingredients:
+          - ingredientLabel
 ---
 
+Some helpful hints and other information. Include any inspirations.

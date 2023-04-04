@@ -3,14 +3,14 @@ layout: recipes
 title: "Dutch Baby Pancakes"
 summary: "A fluffy pancake with Seattle origins"
 date: 2023-02-20T13:12:52-08:00
-draft: true
+draft: false
 images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg
   - 1x1/recipe.jpg
 weight: 1 # Use weight of 1 for featured recipes
 
-googleReady: true
+googleReady: false
 
 categories:
   - Breakfast
@@ -24,29 +24,41 @@ ingredients:
   - Almond Milk
   - Unsalted Butter
   - Maple Syrup
+  - Vanilla Extract
   - Raspberry
   - Blueberry
+  - Blackberry
   - Strawberry
-  - Vanilla Extract
   
 yield: 1 individual pancake or quadruple the recipe for a larger pancake that serves 4
 prepTime: PT5M
 cookTime: PT20M
 
+ingredientLabels:
+  berries: Berries for topping
+  egg: 1 egg
+  almondMilk: 1/4 cup almond milk
+  butter: 2 teaspoons unsalted butter
+  syrup: Maple syrup for topping
+  vanilla: 1 teaspoon vanilla extract
+  flour: 40 grams all purpose flour
+  powderedSugar: Powdered sugar for topping
+  salt: Pinch of salt
+
 produceIngredients:
-  - Berries for topping
+  - berries
 eggAndDairyIngredients:
-  - 1 egg
-  - 1/4 cup almond milk
-  - 2 teaspoons unsalted butter
+  - egg
+  - almondMilk
+  - butter
 pantryIngredients:
-  - Maple syrup for topping
+  - syrup
 spiceAndSeasoningIngredients:
-  - 1/2 teaspoon vanilla extract
+  - vanilla
 stapleIngredients:
-  - 40 grams all purpose flour
-  - Powdered sugar for topping
-  - Pinch of salt
+  - flour
+  - powderedSugar
+  - salt
 
 instructions:
   - sectionName: Prepare
@@ -69,7 +81,8 @@ instructions:
       - text: Serve topped with berries and maple syrup.
 ---
 
-This recipe works great to make one individual pancake using a 5 inch cast iron skillet. To make a larger pancake quadruple the recipe and use a 12 inch cast iron skillet. 
+This recipe works great to make one individual pancake using a 5 inch cast iron skillet. 
+To make a larger pancake quadruple the recipe and use a 10 inch cast iron skillet. 
 
 If a cast iron skillet is not available another similarly sized oven safe pan can be used.
 

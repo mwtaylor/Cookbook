@@ -125,6 +125,8 @@ instructions:
           - saltForBeef
           - water
           - bakingSoda
+        background:
+          - watchPotatoes
       - name: Dice the Vegetables
         text: Dice the onion and celery. Peel and dice the carrots.
         ingredients:
@@ -146,7 +148,7 @@ instructions:
         background: 
           - watchPotatoes
       - name: Preheat the Oven
-        text: Preheat oven to {{< temp 350 >}}.
+        text: Set a rack near the top of the oven. Preheat to {{< temp 350 >}}.
         background: 
           - watchPotatoes
       - name: Drain Potatoes
@@ -222,7 +224,7 @@ or transfer from skillet to an oven safe dish before topping with potatoes.
 
 A lot of instructions in this recipe are not exact, so taste frequently.
 
-Pairs well with the rest of the red wine not used in the recipe.
+Pairs well with a hearty bread and the rest of the red wine not used in the recipe.
 
 The Bachan's sauce can be substituted for Worcestershire sauce if needed. The idea to use Bachan's Japanese barbecue sauce instead of the more traditional Worcestershire sauce comes from [Bachan's recipe](https://bachans.com/blogs/recipes/bachans-cottage-pie). 
 I also took inspiration from [Tastes Better From Scratch](https://tastesbetterfromscratch.com/cottage-pie/) for instructions on how to make a traditional cottage pie.

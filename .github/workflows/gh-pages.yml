@@ -20,6 +20,17 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Build Javascript
+        run: npm run js:build
+
+      - name: Build CSS
+        run: npm run css:compile
+
       - name: Build
         run: hugo --minify
 

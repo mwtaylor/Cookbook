@@ -39,9 +39,22 @@
                 <div class="card text-bg-primary">
                     <h4 class="card-header">Ingredients</h4>
                     <ul class="list-group list-group-flush">
+                        {{ $categorizedIngredients := slice }}
                         {{ range $.Site.Params.ingredientCategories }}
                             {{ range $key, $label := . }}
-                                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" (index $.Page.Params $key) "ingredientLabels" $.Page.Params.ingredientLabels) }}
+                                {{ $ingredients := (index $.Page.Params $key) }}
+                                {{ range $.Page.Params.autoIngredients }}
+                                    {{ if in (index $.Site.Params.autoCategorizedIngredients $key) . }}
+                                        {{ $ingredients = $ingredients | append . }}
+                                        {{ $categorizedIngredients = $categorizedIngredients | append . }}
+                                    {{ end }}
+                                {{ end }}
+                                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" $ingredients "ingredientLabels" $.Page.Params.ingredientLabels "pageTitle" $.Page.Title) }}
+                            {{ end }}
+                        {{ end }}
+                        {{ range $.Page.Params.autoIngredients }}
+                            {{ if not (in $categorizedIngredients .) }}
+                                {{ errorf "Auto categorization not found for ingredient %s in recipe %s" . $.Page.Title }}
                             {{ end }}
                         {{ end }}
                     </ul>

@@ -23,32 +23,32 @@ ingredients:
   - Pizza Sauce
 
 ingredientLabels:
-  breadFlour: 200 grams of bread flour
+  bread_flour: 200 grams of bread flour
   salt: 1 teaspoon salt
   yeast: 1 teaspoon rapid rise yeast (about half a packet)
   water: 140 grams of water
   cheese: Block of low moisture mozzarella
-  oliveOilForDough: 8 grams of olive oil
-  oliveOilForCoating: Olive oil
-  oliveOil: Olive oil, 8 grams for the dough, and more for coating the pan
-  pizzaSauce: Pizza sauce, canned or homemade
-  oilSpray: Vegetable oil spray
+  olive_oil_for_dough: 8 grams of olive oil
+  olive_oil_for_coating: Olive oil
+  olive_oil: Olive oil, 8 grams for the dough, and more for coating the pan
+  pizza_sauce: Pizza sauce, canned or homemade
+  oil_spray: Vegetable oil spray
 
 yield: 2 servings
 prepTime: PT15M
 cookTime: PT30M
 
-eggAndDairyIngredients:
-  - cheese
 pantryIngredients:
-  - pizzaSauce
-stapleIngredients:
-  - oliveOil
-  - breadFlour
+  - pizza_sauce
+autoIngredients:
+  - olive_oil
+  - bread_flour
   - salt
   - yeast
+  - oil_spray
+  - cheese
+stapleIngredients:
   - water
-  - oilSpray
 
 instructions:
   - sectionName: Start Dough One Day Early
@@ -56,18 +56,18 @@ instructions:
       - name: Mix Dry Ingredients
         text: In a large bowl mix together flour, salt, and yeast.
         ingredients:
-          - breadFlour
+          - bread_flour
           - salt
           - yeast
       - name: Mix Dough
         text: Warm water between {{< temp 105 >}} to {{< temp 110 >}} and mix into dough along with olive oil.
         ingredients:
           - water
-          - oliveOilForDough
+          - olive_oil_for_dough
       - name: Knead Dough
         text: Knead the dough for about a minute until it becomes sticky then form into a ball. Place into an oiled bowl.
         ingredients:
-          - oilSpray
+          - oil_spray
       - name: Rest Dough
         text: Cover with plastic wrap and let sit at room temperature for 30 minutes. Put in refrigerator for 12 to 24 hours.
   - sectionName: Prepare Dough in Pan
@@ -79,7 +79,7 @@ instructions:
       - name: Prepare Pan
         text: Coat pan with a lot of olive oil. Make sure the sides are coated and there is a thin pool of oil on the bottom.
         ingredients:
-          - oliveOilForCoating
+          - olive_oil_for_coating
       - name: Press Dough in Pan
         text: Place dough in the pan and spread towards edges with fingers as far as possible. Cover with plastic wrap and let sit 10 minutes.
       - name: Flatten Dough to Edges
@@ -93,7 +93,7 @@ instructions:
       - name: Add Toppings
         text: Add a thin layer of pizza sauce, being sure to go all the way to the edges. Add a thick layer of shredded cheese and press to edges. Add toppings but don't overload the pizza.
         ingredients:
-          - pizzaSauce
+          - pizza_sauce
           - cheese
   - sectionName: Cook Pizza
     steps:

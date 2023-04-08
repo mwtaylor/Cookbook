@@ -42,3 +42,63 @@ params:
     - alcoholIngredients: Alcohol
     - spiceAndSeasoningIngredients: Spices & Seasonings
     - stapleIngredients: Staples
+  autoCategorizedIngredients:
+    meatIngredients:
+      - beef
+      - chicken
+      - pork
+    produceIngredients:
+      - garlic
+      - onion
+      - green_onion
+      - green_pepper
+      - celery
+      - carrot
+      - potato
+    eggAndDairyIngredients:
+      - egg
+      - butter
+      - milk
+      - buttermilk
+      - almond_milk
+      - sour_cream
+      - cheese
+      - parmesan
+      - mozzarella
+      - cheddar
+    pantryIngredients:
+      - rice
+      - beef_broth
+      - tomato_paste
+    alcoholIngredients:
+      - wine
+      - beer
+      - rum
+      - whiskey
+      - vodka
+    spiceAndSeasoningIngredients:
+      - sesame_seeds
+      - vanilla
+      - cinnamon
+      - thyme
+      - rosemary
+      - garlic_powder
+      - onion_powder
+      - chili_powder
+      - paprika
+    stapleIngredients:
+      - cornstarch
+      - vegetable_oil
+      - olive_oil
+      - oil_spray
+      - salt
+      - pepper
+      - bread_flour
+      - ap_flour
+      - baking_powder
+      - baking_soda
+      - sugar
+      - powdered_sugar
+      - light_brown_sugar
+      - dark_brown_sugar
+      - yeast

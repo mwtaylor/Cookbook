@@ -30,6 +30,9 @@
                                 {{ with $step.ingredients }}
                                     <ul class="list-group list-group-horizontal">
                                         {{ range . }}
+                                            {{ if not (isset $.Page.Params.ingredientLabels .) }}
+                                                {{ errorf "No label found for ingredient %s in recipe %s" . $.Page.Title }}
+                                            {{ end }}
                                             <li class="list-group-item list-group-item-primary">{{ index $.Page.Params.ingredientLabels . }}</li>
                                         {{ end }}
                                     </ul>

@@ -26,29 +26,28 @@ ingredients:
   - Sugar
 
 ingredientLabels:
-  eggs: 2 eggs
+  egg: 2 eggs
   buttermilk: 2 cups of buttermilk
   butter: 2 tablespoons of unsalted butter
   sugar: 40 grams of white sugar
-  bakingPowder: 1 teaspoon of baking powder
-  bakingSoda: 1 teaspoon of baking soda
+  baking_powder: 1 teaspoon of baking powder
+  baking_soda: 1 teaspoon of baking soda
   salt: 1/2 teaspoon of salt
-  flour: 240 grams of unbleached all-purpose flour
+  ap_flour: 240 grams of unbleached all-purpose flour
 
 yield: 12 small pancakes using a 1/4 cup scoop or 8 larger pancakes using a 1/3 cup scoop
 prepTime: PT20M
 cookTime: PT20M
 
-eggAndDairyIngredients:
-  - eggs
+autoIngredients:
+  - egg
   - buttermilk
   - butter
-stapleIngredients:
   - sugar
-  - bakingPowder
-  - bakingSoda
+  - baking_powder
+  - baking_soda
   - salt
-  - flour
+  - ap_flour
 
 ---
 

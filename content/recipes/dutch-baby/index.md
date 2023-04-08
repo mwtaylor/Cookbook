@@ -37,28 +37,26 @@ cookTime: PT20M
 ingredientLabels:
   berries: Berries for topping
   egg: 1 egg
-  almondMilk: 1/4 cup almond milk
+  almond_milk: 1/4 cup almond milk
   butter: 2 teaspoons unsalted butter
   syrup: Maple syrup for topping
   vanilla: 1 teaspoon vanilla extract
-  flour: 40 grams all purpose flour
-  powderedSugar: Powdered sugar for topping
+  ap_flour: 40 grams all purpose flour
+  powdered_sugar: Powdered sugar for topping
   salt: Pinch of salt
 
 produceIngredients:
   - berries
-eggAndDairyIngredients:
-  - egg
-  - almondMilk
-  - butter
 pantryIngredients:
   - syrup
-spiceAndSeasoningIngredients:
-  - vanilla
-stapleIngredients:
-  - flour
-  - powderedSugar
+autoIngredients:
+  - ap_flour
+  - powdered_sugar
   - salt
+  - vanilla
+  - egg
+  - almond_milk
+  - butter
 
 instructions:
   - sectionName: Prepare

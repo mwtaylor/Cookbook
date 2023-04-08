@@ -52,56 +52,52 @@ ingredientLabels:
   carrot: 2 large carrots
   garlic: 4 cloves garlic
   potato: 2 & 1/2 pounds of russet potatoes (about 4 large potatoes)
-  greenOnion: Green onion for topping
-  sourCream: 1/2 cup sour cream
+  green_onion: Green onion for topping
+  sour_cream: 1/2 cup sour cream
   butter: 4 tablespoons unsalted butter at room temperature
-  beefBroth: 2 cups beef broth
-  tomatoPaste: 2 tablespoons tomato paste
+  beef_broth: 2 cups beef broth
+  tomato_paste: 2 tablespoons tomato paste
   bachan: Bachan's Japanese Barbecue Sauce
-  friedOnion: Can of fried onions for topping
+  fried_onion: Can of fried onions for topping
   corn: Frozen corn
   pea: Frozen peas
   wine: 1/4 cup of red wine
   thyme: Dried thyme
   rosemary: Dried rosemary
-  flour: Flour
+  ap_flour: All-purpose flour
   salt: Salt
-  saltForBeef: 1 teaspoon salt
+  salt_for_beef: 1 teaspoon salt
   pepper: Pepper
-  bakingSoda: 1/2 teaspoon baking soda
+  baking_soda: 1/2 teaspoon baking soda
   water: 2 tablespoons water
 
-meatIngredients:
-  - beef
-produceIngredients:
+pantryIngredients:
+  - bachan
+  - fried_onion
+freezerIngredients:
+  - corn
+  - pea
+autoIngredients:
+  - ap_flour
+  - baking_soda
+  - salt
+  - pepper
+  - thyme
+  - rosemary
+  - wine
+  - beef_broth
+  - tomato_paste
   - onion
   - celery
   - carrot
   - garlic
   - potato
-  - greenOnion
-eggAndDairyIngredients:
-  - sourCream
+  - green_onion
+  - sour_cream
   - butter
-pantryIngredients:
-  - beefBroth
-  - tomatoPaste
-  - bachan
-  - friedOnion
-freezerIngredients:
-  - corn
-  - pea
-alcoholIngredients:
-  - wine
-spiceAndSeasoningIngredients:
-  - thyme
-  - rosemary
+  - beef
 stapleIngredients:
-  - flour
-  - bakingSoda
   - water
-  - salt
-  - pepper
 
 backgroundTasks:
   watchPotatoes: Keep an eye on the potatoes to avoid overcooking. Remove from heat and drain if done early.
@@ -122,9 +118,9 @@ instructions:
         text: Mix baking soda and salt into water. Pour over ground beef and mix.
         ingredients:
           - beef
-          - saltForBeef
+          - salt_for_beef
           - water
-          - bakingSoda
+          - baking_soda
         background:
           - watchPotatoes
       - name: Dice the Vegetables
@@ -134,11 +130,11 @@ instructions:
           - celery
           - carrot
         background: 
-          - watchPotatoes
+          - watch_potatoes
       - name: Prepare Garnish
         text: Thinly slice the green onions.
         ingredients:
-          - greenOnion
+          - green_onion
         background: 
           - watchPotatoes
       - name: Mince the Garlic
@@ -165,7 +161,7 @@ instructions:
         text: Add tomato paste and cook until darkened.
         image: cookedpaste.jpg
         ingredients:
-          - tomatoPaste
+          - tomato_paste
       - name: Deglaze
         text: Deglaze with wine.
         ingredients:
@@ -173,12 +169,12 @@ instructions:
       - name: Simmer
         text: Add in broth and cooked beef. Lower heat to maintain a gentle simmer.
         ingredients:
-          - beefBroth
+          - beef_broth
       - name: Thicken Gravy
         text: Add flour a bit at a time to thicken. Keep in mind it will continue to thicken as it simmers. Should be about 1/4 cup of flour added. Simmer until gravy is thick.
         image: thickened.jpg
         ingredients:
-          - flour
+          - ap_flour
       - name: Add Sauce
         text: Add in about 4 tablespoons of the Bachan's barbecue sauce until desired sweetness and taste is reached.
         ingredients:
@@ -200,7 +196,7 @@ instructions:
       - name: Mash Potatoes
         text: Mash potatoes with sour cream and butter. Gently warm if needed to melt in butter. Add salt and pepper to taste.
         ingredients:
-          - sourCream
+          - sour_cream
           - butter
           - salt
           - pepper
@@ -215,8 +211,8 @@ instructions:
       - name: Garnish & Serve
         text: Let cool for a few minutes before serving. Top with green onions and fried onions.
         ingredients:
-          - greenOnion
-          - friedOnion
+          - green_onion
+          - fried_onion
 ---
 
 This recipe works best cooked in a 12 inch cast iron skillet. If that is not available another oven safe skillet can be used, 

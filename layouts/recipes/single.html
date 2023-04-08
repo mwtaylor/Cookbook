@@ -25,11 +25,11 @@
                         <li class="list-group-item">
                             Cook time: <span data-format-duration="true">{{ .Params.cookTime }}</span>
                         </li>
+                        {{ with  .OutputFormats.Get "cooking" }}
                         <li class="list-group-item">
-                            {{ with  .OutputFormats.Get "cooking" }}
-                                <a class="btn btn-success text-light" href="{{ .RelPermalink }}" role="button">Cook Now</a>
-                            {{ end }}
+                            <a class="btn btn-success text-light" href="{{ .RelPermalink }}" role="button">Cook Now</a>
                         </li>
+                        {{ end }}
                     </ul>
                 </div>
             </div>
@@ -47,11 +47,12 @@
                     </ul>
                 </div>
             </div>
+            {{ with .Params.instructions }}
             <div class="col">
                 <div class="card text-bg-primary">
                     <h4 class="card-header">Instructions</h4>
                     <ul class="list-group list-group-flush">
-                        {{ range .Params.instructions }}
+                        {{ range . }}
                             <li class="list-group-item">
                                 <h5 class="text-primary">{{ .sectionName }}</h5>
                                 <ul class="list-group list-group-flush">
@@ -74,6 +75,7 @@
                     </ul>
                 </div>
             </div>
+            {{ end }}
         </div>
     </div>
 {{ end }}

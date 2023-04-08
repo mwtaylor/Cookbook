@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="container">
-        {{ partial "paginatedrecipecards.html" (.Paginate (where .Site.RegularPages "Section" "recipes") 6) }}
+        {{ partial "paginated-recipe-cards.html" (.Paginate (where .Site.RegularPages "Section" "recipes") 6) }}
         <div class="row">
             <div class="col">
                 {{ template "_internal/pagination.html" . }}

@@ -34,7 +34,7 @@ yield: 1 individual pancake or quadruple the recipe for a larger pancake that se
 prepTime: PT5M
 cookTime: PT20M
 
-ingredientLabels:
+ingredient_labels:
   berries: Berries for topping
   egg: 1 egg
   almond_milk: 1/4 cup almond milk
@@ -45,11 +45,11 @@ ingredientLabels:
   powdered_sugar: Powdered sugar for topping
   salt: Pinch of salt
 
-produceIngredients:
+produce_ingredients:
   - berries
-pantryIngredients:
+pantry_ingredients:
   - syrup
-autoIngredients:
+auto_ingredients:
   - ap_flour
   - powdered_sugar
   - salt
@@ -59,21 +59,21 @@ autoIngredients:
   - butter
 
 instructions:
-  - sectionName: Prepare
+  - section_name: Prepare
     steps:
       - text: Place the cast iron skillet in the oven on a middle rack and preheat oven to 450 degrees F. Let the refrigerated ingredients start to come to room temperature.
-  - sectionName: Make Batter
+  - section_name: Make Batter
     steps:
       - text: Add the eggs, milk, vanilla, salt, and flour in a food processor or blender.
       - text: Blend until smooth.
-  - sectionName: Bake
+  - section_name: Bake
     steps:
       - text: Add butter into skillet inside oven and allow to melt.
       - text: Remove the skillet from the oven and ensure the skillet is evenly coated in melted butter.
       - text: Gently pour the batter into the skillet and put back into the oven. Put a tray on a lower rack to catch any drips.
       - text: Bake for about 20 minutes until the top is golden and the pancake is puffed and fluffy.
         image: baked.jpg
-  - sectionName: Serve
+  - section_name: Serve
     steps:
       - text: Dust the top with powdered sugar.
       - text: Serve topped with berries and maple syrup.

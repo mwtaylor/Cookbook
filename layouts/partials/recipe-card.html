@@ -1,0 +1,32 @@
+<div class="col mb-4">
+    <div class="card h-100">
+        {{ $isFeatured := eq .Weight 1 }}
+        {{ if $isFeatured }}
+        <h4 class="card-header text-bg-primary">
+            Featured Recipe
+        </h4>
+        {{ else }}
+        <h4 class="card-header text-bg-secondary">
+            Recipe
+        </h4>
+        {{ end }}
+        {{ $image := resources.GetMatch "images/noun-menu-4869805.png" }}
+        {{ $image := $image.Fit "800x600" }}
+        {{ with .Resources.GetMatch "4x3/recipe.jpg" }}
+        {{ $image = . }}
+        {{ $image = $image.Fill "800x600" }}
+        {{end}}
+        {{ with $image }}
+        <img src="{{ .RelPermalink }}" alt="Lead image for recipe">
+        {{ end }}
+        <div class="card-body">
+            <div class="d-grid gap-2">
+                <a href="{{ .RelPermalink }}" class="btn btn-lg btn-outline-primary stretched-link">{{ .Title }}</a>
+            </div>
+            <p class="card-text pt-3">{{ .Summary }}</p>
+        </div>
+        <div class="card-footer text-muted" data-format-distance-to-now="true">
+            {{ .Date.Format "2006-01-02 15:04:05" }}
+        </div>
+    </div>
+</div>

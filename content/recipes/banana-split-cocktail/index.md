@@ -30,22 +30,22 @@ yield: 1 drink
 prepTime: PT0M
 cookTime: PT5M
 
-produceIngredients:
+produce_ingredients:
   - 1/2 banana
-eggAndDairyIngredients:
+egg_and_dairy_ingredients:
   - 150 grams strawberry ice cream
-pantryIngredients:
+pantry_ingredients:
   - Luxardo Maraschino cherries for garnish
   - Chocolate syrup for garnish
-alcoholIngredients:
+alcohol_ingredients:
   - 1 & 1/2 ounce dark rum
   - 1 ounce Kahlúa coffee liqueur
   - 3/4 ounce Giffard Banane du Brésil or similar banana liqueur
-stapleIngredients:
+staple_ingredients:
   - 1/4 cup ice
 
 instructions:
-  - sectionName: Make the Drink
+  - section_name: Make the Drink
     steps:
       - text: Blend all ingredients except for the garnishes.
       - text: Serve in a glass decorated with chocolate syrup and garnished with Luxardo cherries and a slice of banana.

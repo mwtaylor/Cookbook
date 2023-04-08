@@ -29,7 +29,7 @@ tags:
 ingredients:
   - Bachan's Japanese Barbecue Sauce
 
-ingredientLabels:
+ingredient_labels:
   beef: 1 pound of thinly sliced beef
   onion: 1/2 white onion
   green_pepper: 1 green pepper
@@ -43,7 +43,7 @@ ingredientLabels:
   water: 2 teaspoons of water
   sesame_seeds: Sesame seeds
 
-autoIngredients:
+auto_ingredients:
   - beef
   - onion
   - green_pepper
@@ -52,12 +52,12 @@ autoIngredients:
   - cornstarch
   - vegetable_oil
   - sesame_seeds
-pantryIngredients:
+pantry_ingredients:
   - bachans
   - water
 
 instructions:
-  - sectionName: Preparation
+  - section_name: Preparation
     steps:
       - name: Marinate the Beef
         text: Marinate the beef in 2 tablespoons of Bachan's sauce for at least 15 minutes.
@@ -81,7 +81,7 @@ instructions:
           - bachans_for_sauce
           - water
           - cornstarch
-  - sectionName: Cook
+  - section_name: Cook
     steps:
       - name: Heat Pan
         text: Heat the oil in a pan over medium high heat.
@@ -97,7 +97,7 @@ instructions:
         text: Add sesame seeds to another pan and cook over medium heat until toasted.
         ingredients:
           - sesame_seeds
-  - sectionName: Serve
+  - section_name: Serve
     steps:
       - name: Serve
         text: Serve over rice and top with fresh green onion and toasted sesame seeds.

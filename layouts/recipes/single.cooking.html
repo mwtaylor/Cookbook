@@ -25,15 +25,15 @@
                     <div class="carousel-item {{ cond (and (eq $sectionIndex 0) (eq $stepIndex 0)) "active" "" }}">
                         <div class="d-flex flex-row">
                             <div class="flex-fill">
-                                {{ with $section.sectionName }}<h2>{{ . }}</h2>{{ end }}
+                                {{ with $section.section_name }}<h2>{{ . }}</h2>{{ end }}
                                 {{ with $step.name }}<h1>{{ . }}</h1>{{ end }}
                                 {{ with $step.ingredients }}
                                     <ul class="list-group list-group-horizontal">
                                         {{ range . }}
-                                            {{ if not (isset $.Page.Params.ingredientLabels .) }}
+                                            {{ if not (isset $.Page.Params.ingredient_labels .) }}
                                                 {{ errorf "No label found for ingredient %s in recipe %s" . $.Page.Title }}
                                             {{ end }}
-                                            <li class="list-group-item list-group-item-primary">{{ index $.Page.Params.ingredientLabels . }}</li>
+                                            <li class="list-group-item list-group-item-primary">{{ index $.Page.Params.ingredient_labels . }}</li>
                                         {{ end }}
                                     </ul>
                                 {{ end }}
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         {{ range $step.background }}
-                            <p class="fs-6 text-secondary">{{ index $.Page.Params.backgroundTasks . }}</p>
+                            <p class="fs-6 text-secondary">{{ index $.Page.Params.background_tasks . }}</p>
                         {{ end }}
                         <p class="fs-4">{{ $step.text | markdownify }}</p>
                     </div>

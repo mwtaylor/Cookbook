@@ -45,7 +45,7 @@ yield: 6 servings
 prepTime: PT15M
 cookTime: PT1H
 
-ingredientLabels:
+ingredient_labels:
   beef: 1 pound of high fat ground beef
   onion: 1 yellow onion
   celery: 3 ribs of celery
@@ -71,13 +71,13 @@ ingredientLabels:
   baking_soda: 1/2 teaspoon baking soda
   water: 2 tablespoons water
 
-pantryIngredients:
+pantry_ingredients:
   - bachan
   - fried_onion
-freezerIngredients:
+freezer_ingredients:
   - corn
   - pea
-autoIngredients:
+auto_ingredients:
   - ap_flour
   - baking_soda
   - salt
@@ -96,14 +96,14 @@ autoIngredients:
   - sour_cream
   - butter
   - beef
-stapleIngredients:
+staple_ingredients:
   - water
 
-backgroundTasks:
-  watchPotatoes: Keep an eye on the potatoes to avoid overcooking. Remove from heat and drain if done early.
+background_tasks:
+  watch_potatoes: Keep an eye on the potatoes to avoid overcooking. Remove from heat and drain if done early.
 
 instructions:
-  - sectionName: Prepare Mashed Potatoes
+  - section_name: Prepare Mashed Potatoes
     steps:
       - name: Boil Water
         text: Boil salted water in a large pot.
@@ -111,8 +111,8 @@ instructions:
         text: Peel and cut potatoes into small even pieces and add to boiling water.
         ingredients:
           - potato
-        continuing: watchPotatoes
-  - sectionName: Preparation
+        continuing: watch_potatoes
+  - section_name: Preparation
     steps:
       - name: Combine Baking Soda and Beef
         text: Mix baking soda and salt into water. Pour over ground beef and mix.
@@ -122,7 +122,7 @@ instructions:
           - water
           - baking_soda
         background:
-          - watchPotatoes
+          - watch_potatoes
       - name: Dice the Vegetables
         text: Dice the onion and celery. Peel and dice the carrots.
         ingredients:
@@ -136,26 +136,26 @@ instructions:
         ingredients:
           - green_onion
         background: 
-          - watchPotatoes
+          - watch_potatoes
       - name: Mince the Garlic
         text: Mince or press the garlic.
         ingredients:
           - garlic
         background: 
-          - watchPotatoes
+          - watch_potatoes
       - name: Preheat the Oven
         text: Set a rack near the top of the oven. Preheat to {{< temp 350 >}}.
         background: 
-          - watchPotatoes
+          - watch_potatoes
       - name: Drain Potatoes
         text: Drain potatoes when soft and ready to mash. Set aside in pot.
-  - sectionName: Cook Beef & Vegetables
+  - section_name: Cook Beef & Vegetables
     steps:
       - name: Brown Beef
         text: Brown beef in an oven safe skillet. Remove from pan when done and set aside keeping fat in pan.
       - name: Cook Vegetables
         text: Add onions, carrots, and celery and cook until softened. Add garlic and cook 1 to 2 minutes until fragrant.
-  - sectionName: Make Gravy
+  - section_name: Make Gravy
     steps:
       - name: Cook Tomato Paste
         text: Add tomato paste and cook until darkened.
@@ -185,7 +185,7 @@ instructions:
           - thyme
           - rosemary
           - salt
-  - sectionName: Make the Pie
+  - section_name: Make the Pie
     steps:
       - name: Add Frozen Vegetables
         text: Add in frozen peas and corn until desired ratio.
@@ -206,7 +206,7 @@ instructions:
       - name: Bake
         text: Bake for 30 minutes. Turn on broiler if potatoes need more browning.
         image: browned.jpg
-  - sectionName: Serve
+  - section_name: Serve
     steps:
       - name: Garnish & Serve
         text: Let cool for a few minutes before serving. Top with green onions and fried onions.

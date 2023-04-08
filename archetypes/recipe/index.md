@@ -21,40 +21,37 @@ tags:
 ingredients:
   - ingredient
 
-ingredientLabels:
+ingredient_labels:
   key: label
 
 yield: 2 servings
 prepTime: PT0M
 cookTime: PT0M
 
-meatIngredients:
+meat_ingredients:
   - meat
-produceIngredients:
+produce_ingredients:
   - produce
-eggAndDairyIngredients:
+egg_and_dairy_ingredients:
   - eggs
-  - milk
-  - butter
-pantryIngredients:
+pantry_ingredients:
   - pantry
-freezerIngredients:
+freezer_ingredients:
   - frozen
-alcoholIngredients:
+alcohol_ingredients:
   - alcohol
-spiceAndSeasoningIngredients:
+spice_and_seasoning_ingredients:
   - spice
-stapleIngredients:
-  - oliveOil
-  - flour
+staple_ingredients:
+  - staple
+auto_ingredients:
   - salt
-  - pepper
 
-backgroundTasks:
+background_tasks:
   name: instructions
 
 instructions:
-  - sectionName: Make Something
+  - section_name: Make Something
     steps:
       - name: Step Name
         text: Do the thing.

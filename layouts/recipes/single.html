@@ -40,19 +40,19 @@
                     <h4 class="card-header">Ingredients</h4>
                     <ul class="list-group list-group-flush">
                         {{ $categorizedIngredients := slice }}
-                        {{ range $.Site.Params.ingredientCategories }}
+                        {{ range $.Site.Params.ingredient_categories }}
                             {{ range $key, $label := . }}
                                 {{ $ingredients := (index $.Page.Params $key) }}
-                                {{ range $.Page.Params.autoIngredients }}
-                                    {{ if in (index $.Site.Params.autoCategorizedIngredients $key) . }}
+                                {{ range $.Page.Params.auto_ingredients }}
+                                    {{ if in (index $.Site.Params.auto_categorized_ingredients $key) . }}
                                         {{ $ingredients = $ingredients | append . }}
                                         {{ $categorizedIngredients = $categorizedIngredients | append . }}
                                     {{ end }}
                                 {{ end }}
-                                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" $ingredients "ingredientLabels" $.Page.Params.ingredientLabels "pageTitle" $.Page.Title) }}
+                                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" $ingredients "ingredientLabels" $.Page.Params.ingredient_labels "pageTitle" $.Page.Title) }}
                             {{ end }}
                         {{ end }}
-                        {{ range $.Page.Params.autoIngredients }}
+                        {{ range $.Page.Params.auto_ingredients }}
                             {{ if not (in $categorizedIngredients .) }}
                                 {{ errorf "Auto categorization not found for ingredient %s in recipe %s" . $.Page.Title }}
                             {{ end }}
@@ -67,7 +67,7 @@
                     <ul class="list-group list-group-flush">
                         {{ range . }}
                             <li class="list-group-item">
-                                <h5 class="text-primary">{{ .sectionName }}</h5>
+                                <h5 class="text-primary">{{ .section_name }}</h5>
                                 <ul class="list-group list-group-flush">
                                     {{ range .steps }}
                                         <li class="list-group-item">
@@ -100,7 +100,7 @@
             {{ with .Resources.GetMatch "4x3/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
             {{ with .Resources.GetMatch "16x9/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
             {{ $ingredients := slice }}
-            {{ range $.Site.Params.ingredientCategories }}
+            {{ range $.Site.Params.ingredient_categories }}
                 {{ range $key, $label := . }}
                     {{ if and (index $.Page.Params $key) (ge (len (index $.Page.Params $key)) 1) }}
                         {{ $ingredients = $ingredients | append (index $.Page.Params $key) }}
@@ -113,7 +113,7 @@
                 {{ range .steps }}
                     {{ $sectionSteps = $sectionSteps | append (dict "@type" "HowToStep" "text" .text) }}
                 {{ end }}
-                {{ $instructions = $instructions | append (dict "@type" "HowToSection" "name" .sectionName "itemListElement" $sectionSteps) }}
+                {{ $instructions = $instructions | append (dict "@type" "HowToSection" "name" .section_name "itemListElement" $sectionSteps) }}
             {{ end }}
             {{ $data := dict
                     "@context" "https://schema.org"

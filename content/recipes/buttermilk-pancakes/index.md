@@ -25,7 +25,7 @@ ingredients:
   - Unsalted Butter
   - Sugar
 
-ingredientLabels:
+ingredient_labels:
   egg: 2 eggs
   buttermilk: 2 cups of buttermilk
   butter: 2 tablespoons of unsalted butter
@@ -39,7 +39,7 @@ yield: 12 small pancakes using a 1/4 cup scoop or 8 larger pancakes using a 1/3 
 prepTime: PT20M
 cookTime: PT20M
 
-autoIngredients:
+auto_ingredients:
   - egg
   - buttermilk
   - butter

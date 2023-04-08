@@ -33,21 +33,21 @@ outputFormats:
     isPlainText: false
     mediaType: text/html
 params:
-  ingredientCategories:
-    - meatIngredients: Meat
-    - produceIngredients: Produce
-    - eggAndDairyIngredients: Eggs & Dairy
-    - pantryIngredients: Pantry
-    - freezerIngredients: Freezer
-    - alcoholIngredients: Alcohol
-    - spiceAndSeasoningIngredients: Spices & Seasonings
-    - stapleIngredients: Staples
-  autoCategorizedIngredients:
-    meatIngredients:
+  ingredient_categories:
+    - meat_ingredients: Meat
+    - produce_ingredients: Produce
+    - egg_and_dairy_ingredients: Eggs & Dairy
+    - pantry_ingredients: Pantry
+    - freezer_ingredients: Freezer
+    - alcohol_ingredients: Alcohol
+    - spice_and_seasoning_ingredients: Spices & Seasonings
+    - staple_ingredients: Staples
+  auto_categorized_ingredients:
+    meat_ingredients:
       - beef
       - chicken
       - pork
-    produceIngredients:
+    produce_ingredients:
       - garlic
       - onion
       - green_onion
@@ -55,7 +55,7 @@ params:
       - celery
       - carrot
       - potato
-    eggAndDairyIngredients:
+    egg_and_dairy_ingredients:
       - egg
       - butter
       - milk
@@ -66,17 +66,17 @@ params:
       - parmesan
       - mozzarella
       - cheddar
-    pantryIngredients:
+    pantry_ingredients:
       - rice
       - beef_broth
       - tomato_paste
-    alcoholIngredients:
+    alcohol_ingredients:
       - wine
       - beer
       - rum
       - whiskey
       - vodka
-    spiceAndSeasoningIngredients:
+    spice_and_seasoning_ingredients:
       - sesame_seeds
       - vanilla
       - cinnamon
@@ -86,7 +86,7 @@ params:
       - onion_powder
       - chili_powder
       - paprika
-    stapleIngredients:
+    staple_ingredients:
       - cornstarch
       - vegetable_oil
       - olive_oil

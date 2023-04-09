@@ -27,7 +27,7 @@ tags:
   - Teriyaki
   - Stir Fry
 equipment:
-  - Range
+  - Stovetop
   - Rice Cooker
 ingredients:
   - Bachan's Japanese Barbecue Sauce

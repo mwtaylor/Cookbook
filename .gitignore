@@ -2,3 +2,6 @@
 resources/_gen/
 public/
 .idea/
+node_modules/
+static/js/
+static/css/

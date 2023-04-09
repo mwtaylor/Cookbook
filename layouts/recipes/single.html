@@ -73,10 +73,10 @@
                     <div class="btn-group" role="group" aria-label="Equipment">
                         {{ range . }}
                             {{ $image := resources.GetMatch (printf "images/%s" .Params.icon) }}
-                            {{ $image = $image.Fit "80x80" }}
                             <a role="button" href="{{ .RelPermalink }}" class="btn btn-light">
                                 {{ with $image }}
-                                    <img src="{{ .RelPermalink }}">
+                                    {{ $image = .Fit "80x80" }}
+                                    <img src="{{ $image.RelPermalink }}">
                                 {{ end }}
                                 {{ .LinkTitle }}
                             </a>

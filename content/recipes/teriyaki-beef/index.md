@@ -26,6 +26,9 @@ cuisines:
 tags:
   - Teriyaki
   - Stir Fry
+equipment:
+  - Range
+  - Rice Cooker
 ingredients:
   - Bachan's Japanese Barbecue Sauce
 
@@ -65,7 +68,7 @@ instructions:
           - beef
           - bachans_for_marinade
       - name: Cook Rice
-        text: Cook rice in an instant pot or rice cooker and keep warm until ready to serve.
+        text: Cook rice in an rice cooker or Instant Pot and keep warm until ready to serve.
         ingredients:
           - rice
       - name: Prepare Vegetables

@@ -39,7 +39,7 @@
                                             &nbsp;
                                         </h4>
                                         {{ $image := resources.GetMatch "images/noun-book-5062702.png" }}
-                                        {{ $image := $image.Fit "800x600" }}
+                                        {{ $image = $image.Fit "800x600" }}
                                         {{ with $image }}
                                         <img src="{{ .RelPermalink }}" alt="More recipes">
                                         {{ end }}
@@ -62,10 +62,14 @@
     <div class="row">
         <div class="col">
             <h4 class="pb-2">
+                {{ $title := .Data.Term }}
+                {{ if isset .Page.Params "title" }}
+                    {{ $title = .Page.Params.title }}
+                {{ end }}
                 {{ if eq .Data.Singular "tag" }}
-                Recipes Tagged {{ .Data.Term }}
+                    Recipes Tagged {{ $title }}
                 {{ else }}
-                {{ .Data.Term }} Recipes
+                    {{ $title }} Recipes
                 {{ end }}
             </h4>
         </div>

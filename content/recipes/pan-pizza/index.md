@@ -21,6 +21,8 @@ ingredients:
   - Rapid Rise Yeast
   - Low Moisture Mozzarella
   - Pizza Sauce
+equipment:
+  - Oven
 
 ingredient_labels:
   bread_flour: 200 grams of bread flour

@@ -20,11 +20,15 @@ menu:
     - name: Ingredients
       weight: 5
       url: /ingredients/
+    - name: Equipment
+      weight: 6
+      url: /equipment/
 taxonomies:
   category: categories
   cuisine: cuisines
   tag: tags
   ingredient: ingredients
+  equipment: equipment
 outputFormats:
   cooking:
     name: cooking

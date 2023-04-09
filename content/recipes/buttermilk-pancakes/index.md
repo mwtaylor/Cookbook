@@ -55,7 +55,7 @@ I use this recipe from [King Arthur](https://www.kingarthurbaking.com/recipes/bu
 I also use techniques from their blog post to 
 [make fluffy pancakes](https://www.kingarthurbaking.com/blog/2019/01/21/how-to-make-fluffy-pancakes).
 
-It works well to make a half batch by dividing all ingredients in half (except eggs, see below).
+It works well to make a half batch by dividing all ingredients in half.
 
 Use two eggs for one full batch or 1 egg for a half batch. Divide the egg and whip the whites and gently fold them in after resting 
 the batter.

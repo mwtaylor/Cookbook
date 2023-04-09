@@ -3,7 +3,40 @@
         {{ with .Resources.GetMatch "16x9/recipe.jpg" }}
             <img src="{{ .RelPermalink }}" alt="Lead image for recipe" class="rounded mx-auto d-block img-fluid">
         {{ end }}
-        <h1 class="display-1 text-center py-4">{{ .Title }}</h1>
+        <div class="row pt-4 pb-2">
+            <div class="col text-center">
+                <h1 class="display-1">{{ .Title }}</h1>
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col text-center">
+                {{ with .GetTerms "categories" }}
+                    <div class="btn-group btn-group-lg" role="group" aria-label="Categories">
+                        {{ range . }}
+                            <a role="button" href="{{ .RelPermalink }}" class="btn btn-dark">{{ .LinkTitle }}</a>
+                        {{ end }}
+                    </div>
+                {{ end }}
+                {{ with .GetTerms "cuisines" }}
+                    <div class="btn-group btn-group-lg" role="group" aria-label="Cuisines">
+                        {{ range . }}
+                            <a role="button" href="{{ .RelPermalink }}" class="btn btn-dark">{{ .LinkTitle }}</a>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+        <div class="row pb-4">
+            <div class="col text-center">
+                {{ with .GetTerms "tags" }}
+                    <div class="btn-group" role="group" aria-label="Tags">
+                        {{ range . }}
+                            <a role="button" href="{{ .RelPermalink }}" class="btn btn-light">{{ .LinkTitle }}</a>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row row-cols-1 pb-4">
@@ -11,7 +44,7 @@
                 <div class="card border-secondary">
                     <h4 class="card-header text-bg-secondary">{{ .Summary }}</h4>
                     {{ with .Content }}
-                        <div class="card-body">
+                        <div class="card-body card-content">
                             {{ . }}
                         </div>
                     {{ end }}
@@ -32,6 +65,24 @@
                         {{ end }}
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 pb-4">
+            <div class="col text-center">
+                {{ with .GetTerms "equipment" }}
+                    <div class="btn-group" role="group" aria-label="Equipment">
+                        {{ range . }}
+                            {{ $image := resources.GetMatch (printf "images/%s" .Params.icon) }}
+                            {{ $image = $image.Fit "80x80" }}
+                            <a role="button" href="{{ .RelPermalink }}" class="btn btn-light">
+                                {{ with $image }}
+                                    <img src="{{ .RelPermalink }}">
+                                {{ end }}
+                                {{ .LinkTitle }}
+                            </a>
+                        {{ end }}
+                    </div>
+                {{ end }}
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 pb-4">

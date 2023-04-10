@@ -41,9 +41,9 @@ ingredient_labels:
   bachans_for_marinade: 2 tablespoons of Bachan's Sauce
   bachans_for_sauce: 4 tablespoons of Bachan's Sauce
   rice: White rice
-  cornstarch: 2 teaspoons of cornstarch
+  cornstarch: 1 tablespoon of cornstarch
   vegetable_oil: 1 tablespoon of vegetable oil
-  water: 2 teaspoons of water
+  water: 2 tablespoons of water
   sesame_seeds: Sesame seeds
 
 auto_ingredients:
@@ -87,15 +87,18 @@ instructions:
   - section_name: Cook
     steps:
       - name: Heat Pan
-        text: Heat the oil in a pan over medium high heat.
+        text: Heat the oil in a pan over medium high heat. Be sure to use a large enough pan
+              that will allow the water from the meat to quickly boil off.
         ingredients:
           - vegetable_oil
       - name: Sear the Beef
-        text: Add marinated beef and cook until seared.
+        text: Add marinated beef and cook until seared. Remove from pan and set aside keeping
+              oil and drippings in pan.
       - name: Cook Vegetables
-        text: Add green peppers and sliced onion and cook for two to three minutes.
+        text: Add green peppers and sliced onion. Stir fry until vegetables are charred and cooked.
       - name: Simmer Sauce
-        text: Add sauce and about half of the green onions. Lower heat and simmer until thickened.
+        text: Add sauce and about half of the green onions. Add meat back into the pan. 
+              Lower heat and simmer until thickened.
       - name: Toast Sesame Seeds
         text: Add sesame seeds to another pan and cook over medium heat until toasted.
         ingredients:

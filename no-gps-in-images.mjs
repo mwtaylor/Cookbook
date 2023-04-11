@@ -68,4 +68,3 @@ if (!passed_test) {
 }
 
 console.log("No GPS information found")
-process.exit(1);

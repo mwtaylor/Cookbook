@@ -11,12 +11,15 @@
     "hugo:serve": "hugo server",
     "hugo:clean": "rm -rf build resources public",
     "css:compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 assets/styles -o static/css/",
-    "js:build": "browserify assets/scripts/main.js -o static/js/main.js"
+    "js:build": "browserify assets/scripts/main.js -o static/js/main.js",
+    "no-gps-in-images": "node no-gps-in-images.mjs"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "hugo-bin": "^0.102.0"
+    "hugo-bin": "^0.102.0",
+    "exif": "^0.6.0",
+    "glob": "^10.0.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

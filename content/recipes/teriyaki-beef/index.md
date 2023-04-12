@@ -33,7 +33,7 @@ ingredients:
   - Bachan's Japanese Barbecue Sauce
   - Onion
   - Green Pepper
-  - Green Onions
+  - Green Onion
 
 ingredient_labels:
   beef: 1 pound of thinly sliced beef

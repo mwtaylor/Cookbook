@@ -113,16 +113,15 @@
             </div>
             {{ with .Params.instructions }}
             <div class="col">
-                <div class="card text-bg-primary">
-                    <h4 class="card-header">Instructions</h4>
-                    <ul class="list-group list-group-flush">
-                        {{ range . }}
+                {{ range . }}
+                    <div class="card text-bg-primary mb-4">
+                        <h4 class="card-header">{{ .section_name }}</h4>
+                        <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <h5 class="text-primary">{{ .section_name }}</h5>
                                 <ul class="list-group list-group-flush">
                                     {{ range .steps }}
                                         <li class="list-group-item">
-                                            {{ with .name }}<p class="lead">{{ . }}</p>{{ end }}
+                                            {{ with .name }}<h5 class="text-primary">{{ . }}</h5>{{ end }}
                                             {{ $.Page.RenderString .text }}
                                             {{ with .image }}
                                                 {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
@@ -135,9 +134,9 @@
                                     {{ end }}
                                 </ul>
                             </li>
-                        {{ end }}
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
+                {{ end }}
             </div>
             {{ end }}
         </div>

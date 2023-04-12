@@ -13,11 +13,11 @@ outputs:
   - html
   - cooking
 
-googleReady: false
+googleReady: true
 
 yield: 4 servings
-prepTime: 10 minutes
-cookTime: 30 minutes
+prepTime: PT10M
+cookTime: PT30M
 
 categories:
   - Dinner

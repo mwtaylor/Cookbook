@@ -17,7 +17,7 @@ googleReady: false
 
 yield: 4 servings
 prepTime: 10 minutes
-cookTime: 20 minutes
+cookTime: 30 minutes
 
 categories:
   - Dinner
@@ -31,18 +31,21 @@ equipment:
   - Rice Cooker
 ingredients:
   - Bachan's Japanese Barbecue Sauce
+  - Onion
+  - Green Pepper
+  - Green Onions
 
 ingredient_labels:
   beef: 1 pound of thinly sliced beef
   onion: 1/2 white onion
   green_pepper: 1 green pepper
   green_onion: Bunch of green onions
-  bachans: 6 tablespoons of Bachan's Original Japanese Barbecue Sauce
-  bachans_for_marinade: 2 tablespoons of Bachan's Sauce
+  bachans: Bachan's Original Japanese Barbecue Sauce
+  bachans_for_marinade: 2 to 4 tablespoons of Bachan's Sauce
   bachans_for_sauce: 4 tablespoons of Bachan's Sauce
   rice: White rice
   cornstarch: 1 tablespoon of cornstarch
-  vegetable_oil: 1 tablespoon of vegetable oil
+  vegetable_oil: Vegetable oil
   water: 2 tablespoons of water
   sesame_seeds: Sesame seeds
 
@@ -63,7 +66,8 @@ instructions:
   - section_name: Preparation
     steps:
       - name: Marinate the Beef
-        text: Marinate the beef in 2 tablespoons of Bachan's sauce for at least 15 minutes.
+        text: Marinate the beef in enough Bachan's sauce to cover the meat (2 to 4 tablespoons).
+              Marinate for at least 15 minutes, up to an hour or two.
         ingredients:
           - beef
           - bachans_for_marinade
@@ -87,18 +91,22 @@ instructions:
   - section_name: Cook
     steps:
       - name: Heat Pan
-        text: Heat the oil in a pan over medium high heat. Be sure to use a large enough pan
-              that will allow the water from the meat to quickly boil off.
+        text: Heat a small amount of oil in a pan over medium high heat. Be sure to use a large enough pan
+              that will allow the water from the meat to quickly boil off. Cook meat in multiple
+              batches if needed.
         ingredients:
           - vegetable_oil
       - name: Sear the Beef
         text: Add marinated beef and cook until seared. Remove from pan and set aside keeping
               oil and drippings in pan.
+        image: seared-beef.jpg
       - name: Cook Vegetables
         text: Add green peppers and sliced onion. Stir fry until vegetables are charred and cooked.
+        image: cooked-veggies.jpg
       - name: Simmer Sauce
         text: Add sauce and about half of the green onions. Add meat back into the pan. 
               Lower heat and simmer until thickened.
+        image: finished.jpg
       - name: Toast Sesame Seeds
         text: Add sesame seeds to another pan and cook over medium heat until toasted.
         ingredients:

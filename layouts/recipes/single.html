@@ -126,7 +126,7 @@
                                             {{ $.Page.RenderString .text }}
                                             {{ with .image }}
                                                 {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
-                                                {{ $image = $image.Fill "1120x630" }}
+                                                {{ $image = $image.Fill "1600x900" }}
                                                 <div class="mt-2 mx-5">
                                                     <img src="{{ $image.RelPermalink }}" alt="Completed recipe step" class="img-fluid rounded">
                                                 </div>

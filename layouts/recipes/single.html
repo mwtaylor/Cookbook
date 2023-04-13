@@ -131,13 +131,18 @@
             {{ with .Resources.GetMatch "1x1/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
             {{ with .Resources.GetMatch "4x3/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
             {{ with .Resources.GetMatch "16x9/recipe.jpg" }}{{ $images = $images | append .Permalink }}{{ end }}
-            {{ $ingredients := slice }}
+            {{ $ingredientLabels := slice }}
             {{ range $.Site.Params.ingredient_categories }}
                 {{ range $key, $label := . }}
                     {{ if and (index $.Page.Params $key) (ge (len (index $.Page.Params $key)) 1) }}
-                        {{ $ingredients = $ingredients | append (index $.Page.Params $key) }}
+                        {{ $ingredientLabels = $ingredientLabels | append (index $.Page.Params $key) }}
                     {{ end }}
                 {{ end }}
+            {{ end }}
+            {{ $ingredientLabels = $ingredientLabels | append $.Page.Params.auto_ingredients }}
+            {{ $ingredients := slice }}
+            {{ range $ingredientLabels}}
+                {{ $ingredients = $ingredients | append (index $.Page.Params.ingredient_labels .) }}
             {{ end }}
             {{ $instructions := slice }}
             {{ range .Params.instructions }}
@@ -157,7 +162,12 @@
                     "description" .Summary
                     "recipeIngredient" $ingredients
                     "recipeInstructions" $instructions
-                    }}
+                    "prepTime" .Params.prepTime
+                    "cookTime" .Params.cookTime
+                    "recipeCategory" (index .Params.categories 0)
+                    "recipeCuisine" (index .Params.cuisines 0)
+                    "keywords" (delimit .Params.tags ", ")
+            }}
             {{ jsonify $data | safeJS }}
 
         </script>

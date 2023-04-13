@@ -55,6 +55,10 @@
 <div class="flex-fill"></div>
 <nav class="navbar bg-light">
     <div class="container-fluid">
+        <a href="https://github.com/mwtaylor/recipes">
+            {{ $image := resources.GetMatch "images/github-mark.png" }}
+            <img src="{{ $image.RelPermalink}}" alt="GitHub logo" width="30" height="30">
+        </a>
         <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#creditsModal">
             Credits
         </button>

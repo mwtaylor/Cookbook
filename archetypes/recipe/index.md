@@ -18,15 +18,13 @@ cuisines:
   - cuisine
 tags:
   - tag
+equipment:
+  - equipment
 ingredients:
   - ingredient
 
 ingredient_labels:
   key: label
-
-yield: 2 servings
-prepTime: PT0M
-cookTime: PT0M
 
 meat_ingredients:
   - meat
@@ -58,6 +56,11 @@ instructions:
         image: image.jpg
         ingredients:
           - ingredientLabel
+
+yield: 2 servings
+prepTime: PT0M
+cookTime: PT0M
+
 ---
 
 Some helpful hints and other information. Include any inspirations.

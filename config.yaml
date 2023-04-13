@@ -74,6 +74,7 @@ params:
       - rice
       - beef_broth
       - tomato_paste
+      - pumpkin
     alcohol_ingredients:
       - wine
       - beer
@@ -84,6 +85,7 @@ params:
       - sesame_seeds
       - vanilla
       - cinnamon
+      - pumpkin_pie_spice
       - thyme
       - rosemary
       - garlic_powder

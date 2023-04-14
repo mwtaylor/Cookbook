@@ -59,6 +59,12 @@ params:
       - celery
       - carrot
       - potato
+      - banana
+      - apple
+      - raspberry
+      - blackberry
+      - blueberry
+      - strawberry
     egg_and_dairy_ingredients:
       - egg
       - butter
@@ -75,6 +81,12 @@ params:
       - beef_broth
       - tomato_paste
       - pumpkin
+      - oat
+      - syrup
+      - coconut_flake
+      - chia_seed
+      - chocolate_chip
+      - pecan
     alcohol_ingredients:
       - wine
       - beer

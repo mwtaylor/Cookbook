@@ -20,6 +20,7 @@ tags:
   - Cookies
 equipment:
   - Oven
+  - Stand Mixer
 ingredients:
   - Pumpkin Purée
   - Pumpkin Pie Spice

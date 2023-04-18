@@ -92,7 +92,7 @@ instructions:
   - section_name: Bake
     steps:
       - text: Fill ramekin with batter but don't overfill, leave a little room to expand. Add topping.
-      - text: Bake for 26 to 30 minutes. Internal temperature should reach {{< temp 200 >}}. Cool for 2 to 3 minutes.
+      - text: Bake for 28 to 32 minutes. Internal temperature should reach {{< temp 200 >}}. Cool for 2 to 3 minutes.
 ---
 
 Always use all the base ingredients. Then pick one flavor and include those ingredients. Also choose one

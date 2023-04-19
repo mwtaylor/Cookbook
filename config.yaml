@@ -80,6 +80,7 @@ params:
       - rice
       - beef_broth
       - tomato_paste
+      - canned_whole_tomatoes
       - pumpkin
       - oat
       - syrup
@@ -100,6 +101,8 @@ params:
       - pumpkin_pie_spice
       - thyme
       - rosemary
+      - basil
+      - oregano
       - garlic_powder
       - onion_powder
       - chili_powder

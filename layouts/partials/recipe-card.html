@@ -1,6 +1,6 @@
 <div class="col mb-4">
     <div class="card h-100">
-        {{ $isFeatured := eq .Weight 1 }}
+        {{ $isFeatured := lt .Weight 4 }}
         {{ if $isFeatured }}
         <h4 class="card-header text-bg-primary">
             Featured Recipe
@@ -14,7 +14,7 @@
         {{ $image := $image.Fit "800x600" }}
         {{ with .Resources.GetMatch "4x3/recipe.jpg" }}
         {{ $image = . }}
-        {{ $image = $image.Fill "800x600" }}
+        {{ $image = $image.Resize "800x600" }}
         {{end}}
         {{ with $image }}
         <img src="{{ .RelPermalink }}" alt="Lead image for recipe">

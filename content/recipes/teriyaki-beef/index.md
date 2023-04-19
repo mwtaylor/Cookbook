@@ -8,7 +8,7 @@ images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg
   - 1x1/recipe.jpg
-weight: 1 # Use weight of 1 for featured recipes
+weight: 2
 outputs:
   - html
   - cooking

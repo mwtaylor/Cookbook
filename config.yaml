@@ -65,9 +65,11 @@ params:
       - blackberry
       - blueberry
       - strawberry
+      - cherry
     egg_and_dairy_ingredients:
       - egg
       - butter
+      - unsalted_butter
       - milk
       - buttermilk
       - almond_milk

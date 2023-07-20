@@ -50,13 +50,34 @@
                     {{ end }}
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            Yield: {{ .Params.yield }}
+                            <dl class="row mb-0">
+                                <dt class="col-sm-2">Yield</dt>
+                                <dd class="col-sm-10 mb-0">
+                                    {{ if .Params.yields }}
+                                    {{ range $index, $yield := .Params.yields }}
+                                        <p class="mb-0 {{ if gt $index 0 }}mt-1 {{ end }}">{{ $yield }}</p>
+                                    {{ end }}
+                                    {{ else }}
+                                        {{ .Params.yield }}
+                                    {{ end }}
+                                </dd>
+                            </dl>
                         </li>
                         <li class="list-group-item">
-                            Prep time: <span data-format-duration="true">{{ .Params.prepTime }}</span>
+                            <dl class="row mb-0">
+                                <dt class="col-sm-2">Prep Time</dt>
+                                <dd class="col-sm-10 mb-0">
+                                    <span data-format-duration="true">{{ .Params.prepTime }}</span>
+                                </dd>
+                            </dl>
                         </li>
                         <li class="list-group-item">
-                            Cook time: <span data-format-duration="true">{{ .Params.cookTime }}</span>
+                            <dl class="row mb-0">
+                                <dt class="col-sm-2">Cook Time</dt>
+                                <dd class="col-sm-10 mb-0">
+                                    <span data-format-duration="true">{{ .Params.cookTime }}</span>
+                                </dd>
+                            </dl>
                         </li>
                         {{ with  .OutputFormats.Get "cooking" }}
                         <li class="list-group-item">

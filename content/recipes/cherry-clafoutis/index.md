@@ -35,11 +35,11 @@ ingredients:
 ingredient_sections:
   - section_title: Ingredients
     section_alternatives:
-      - 12 inch
-      - 10 inch
-      - 5 inch
+      - 12-inch
+      - 10-inch
+      - 5-inch
 
-"12 inch":
+"12-inch":
   ingredient_labels:
     egg: 6 eggs
     unsalted_butter: 3 tablespoons of unsalted butter
@@ -64,7 +64,7 @@ ingredient_sections:
     - cherry
     - powdered_sugar
 
-"10 inch":
+"10-inch":
   ingredient_labels:
     egg: 4 eggs
     unsalted_butter: 2 tablespoons of unsalted butter
@@ -89,7 +89,7 @@ ingredient_sections:
     - cherry
     - powdered_sugar
 
-"5 inch":
+"5-inch":
   ingredient_labels:
     egg: 1 eggs
     unsalted_butter: 1/2 tablespoons of unsalted butter
@@ -114,7 +114,13 @@ ingredient_sections:
     - cherry
     - powdered_sugar
 
-yield: 6 servings when cooked in a 12" skillet, 4 in a 10" skillet, and 1 in a 5" skillet
+yields: 
+  - 6 servings when cooked in a 12-inch skillet
+  - 4 servings when cooked in a 10-inch skillet
+  - 1 serving when cooked in a 5-inch skillet
+  
+prepTime: PT15M
+cookTime: PT30M
 
 instructions:
   - section_name: Preparation
@@ -151,8 +157,8 @@ instructions:
         text: Allow to cool slightly before serving. Slice into wedges. Top with powdered sugar or with a crunchy finishing sugar.
 
 ---
-This should be cooked in a preheated cast iron skillet. It can be made in a 10" or 12" skillet. An individual portion can be 
-made in a mini 5" skillet. It doesn't keep well for leftovers so only make what will be eaten right away.
+This should be cooked in a preheated cast iron skillet. It can be made in a 10-inch or a 12-inch skillet. An individual portion can be 
+made in a mini 5-inch skillet. It doesn't keep well for leftovers so only make what will be eaten right away.
 
 References and inspiration from:
 * https://www.lodgecastiron.com/recipe/cherry-clafoutis

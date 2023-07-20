@@ -1,0 +1,27 @@
+{{ if .alternatives }}
+    <div class="card-header">
+        <h4>{{ .title }}</h4>
+        <nav>
+            {{ $nav_id := printf "nav-%s" (anchorize .title) }}
+            <div class="nav nav-tabs card-header-tabs" id="{{ $nav_id }}" role="tablist">
+                {{ range $index, $alternative_section_name := .alternatives }}
+                    {{ $nav_tab_id := printf "%s-tab-%s" $nav_id (anchorize $alternative_section_name) }}
+                    {{ $nav_content_id := printf "%s-content-%s" $nav_id (anchorize $alternative_section_name) }}
+                    <button
+                            class="nav-link {{ if eq $index 0 }}active{{ end }}"
+                            id="{{ $nav_tab_id }}"
+                            data-bs-toggle="tab"
+                            data-bs-target="#{{ $nav_content_id }}"
+                            type="button"
+                            role="tab"
+                            aria-controls="{{ $nav_content_id }}"
+                            aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}">
+                        {{ $alternative_section_name }}
+                    </button>
+                {{ end }}
+            </div>
+        </nav>
+    </div>
+{{ else }}
+    <h4 class="card-header">{{ .title }}</h4>
+{{ end }}

@@ -1,0 +1,23 @@
+{{ $recipe := .recipe }}
+{{ $siteParams := .site_params }}
+<ul class="list-group list-group-flush rounded-bottom">
+    {{ $ingredientInformation := .ingredient_information }}
+    {{ $categorizedIngredients := slice }}
+    {{ range $siteParams.ingredient_categories }}
+        {{ range $key, $label := . }}
+            {{ $ingredients := (index $ingredientInformation $key) }}
+            {{ range $ingredientInformation.auto_ingredients }}
+                {{ if in (index $siteParams.auto_categorized_ingredients $key) . }}
+                    {{ $ingredients = $ingredients | append . }}
+                    {{ $categorizedIngredients = $categorizedIngredients | append . }}
+                {{ end }}
+            {{ end }}
+            {{ partial "ingredient-list-category.html" (dict "categoryName" $label "ingredients" $ingredients "ingredientLabels" $ingredientInformation.ingredient_labels "pageTitle" $recipe) }}
+        {{ end }}
+    {{ end }}
+    {{ range $ingredientInformation.auto_ingredients }}
+        {{ if not (in $categorizedIngredients .) }}
+            {{ errorf "Auto categorization not found for ingredient %s in recipe %s" . $recipe }}
+        {{ end }}
+    {{ end }}
+</ul>

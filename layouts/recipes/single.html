@@ -88,9 +88,13 @@
         <div class="row row-cols-1 row-cols-md-2 pb-4">
             <div class="col">
                 {{ range .Params.ingredient_sections }}
-                    {{ partial "ingredient-list.html" (dict "site_params" $.Site.Params "recipe" $.Page.Title "title" . "ingredient_information" (index $.Page.Params .)) }}
+                    {{ if isset . "section_title" | and (isset . "section_alternatives") }}
+                        {{ partial "ingredient-list.html" (dict "site_params" $.Site.Params "page_params" $.Page.Params "recipe" $.Page.Title "title" .section_title "alternatives" .section_alternatives) }}
+                    {{ else }}
+                        {{ partial "ingredient-list.html" (dict "site_params" $.Site.Params "page_params" $.Page.Params "recipe" $.Page.Title "title" . "ingredient_information" (index $.Page.Params .)) }}
+                    {{ end }}
                 {{ else }}
-                    {{ partial "ingredient-list.html" (dict "site_params" $.Site.Params "recipe" $.Page.Title "title" "Ingredients" "ingredient_information" $.Page.Params) }}
+                    {{ partial "ingredient-list.html" (dict "site_params" $.Site.Params "page_params" $.Page.Params "recipe" $.Page.Title "title" "Ingredients" "ingredient_information" $.Page.Params) }}
                 {{ end }}
             </div>
             {{ with .Params.instructions }}

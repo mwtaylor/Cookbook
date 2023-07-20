@@ -1,0 +1,15 @@
+{{ if and .ingredients (ge (len .ingredients) 1) }}
+<li class="list-group-item">
+    <h5 class="text-primary">{{ .categoryName }}</h5>
+    <ul class="list-group list-group-flush">
+        {{ $ingredientLabels := .ingredientLabels }}
+        {{ $pageTitle := .pageTitle }}
+        {{ range .ingredients }}
+            {{ if not (isset $ingredientLabels .) }}
+                {{ errorf "No label found for ingredient %s in recipe %s" . $pageTitle }}
+            {{ end }}
+            <li class="list-group-item">{{ index $ingredientLabels . }}</li>
+        {{ end }}
+    </ul>
+</li>
+{{ end }}

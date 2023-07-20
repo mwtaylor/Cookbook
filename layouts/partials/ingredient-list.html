@@ -1,26 +1,24 @@
-{{ $recipe := .recipe }}
-{{ $siteParams := .site_params }}
+{{ $params := . }}
 <div class="card mb-4 text-bg-primary">
-    <h4 class="card-header">{{ .title }}</h4>
-    <ul class="list-group list-group-flush">
-        {{ $ingredientInformation := .ingredient_information }}
-        {{ $categorizedIngredients := slice }}
-        {{ range $siteParams.ingredient_categories }}
-            {{ range $key, $label := . }}
-                {{ $ingredients := (index $ingredientInformation $key) }}
-                {{ range $ingredientInformation.auto_ingredients }}
-                    {{ if in (index $siteParams.auto_categorized_ingredients $key) . }}
-                        {{ $ingredients = $ingredients | append . }}
-                        {{ $categorizedIngredients = $categorizedIngredients | append . }}
-                    {{ end }}
-                {{ end }}
-                {{ partial "ingredient-category.html" (dict "categoryName" $label "ingredients" $ingredients "ingredientLabels" $ingredientInformation.ingredient_labels "pageTitle" $recipe) }}
+    {{ partial "ingredient-list-header.html" (dict "title" .title "alternatives" .alternatives) }}
+    {{ if .alternatives }}
+        {{ $nav_id := printf "nav-%s" (anchorize .title) }}
+        {{ $nav_content_id := printf "nav-%s-content" (anchorize .title) }}
+        <div class="tab-content" id="{{ $nav_content_id }}">
+            {{ range $index, $alternative_section_name := .alternatives }}
+                {{ $nav_tab_id := printf "%s-tab-%s" $nav_id (anchorize $alternative_section_name) }}
+                {{ $nav_content_id := printf "%s-content-%s" $nav_id (anchorize $alternative_section_name) }}
+                <div
+                        class="tab-pane {{ if eq $index 0 }}show active{{ end }}"
+                        id="{{ $nav_content_id }}"
+                        role="tabpanel"
+                        aria-labelledby="{{ $nav_tab_id }}"
+                        tabindex="{{ $index }}">
+                    {{ partial "ingredient-list-all-categories.html" (merge $params (dict "ingredient_information" (index $params.page_params $alternative_section_name))) }}
+                </div>
             {{ end }}
-        {{ end }}
-        {{ range $ingredientInformation.auto_ingredients }}
-            {{ if not (in $categorizedIngredients .) }}
-                {{ errorf "Auto categorization not found for ingredient %s in recipe %s" . $recipe }}
-            {{ end }}
-        {{ end }}
-    </ul>
+        </div>
+    {{ else }}
+        {{ partial "ingredient-list-all-categories.html" $params }}
+    {{ end }}
 </div>

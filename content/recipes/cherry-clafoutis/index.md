@@ -32,30 +32,87 @@ ingredients:
   - Dark Cherries
   - Powdered Sugar
 
-ingredient_labels:
-  egg: 6 eggs
-  unsalted_butter: 3 tablespoons of unsalted butter
-  sugar: 150 grams of sugar and more for topping while baking
-  half_and_half_or_milk: 240 grams of half-and-half or whole milk
-  ap_flour: 90 grams of all-purpose flour
-  salt: 3 grams of salt
-  flavoring: 1.5 teaspoons of almond extract
-  cherry: About 3 cups of dark cherries
-  pitted_cherries: Pitted cherries
-  powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+ingredient_sections:
+  - section_title: Ingredients
+    section_alternatives:
+      - 12 inch
+      - 10 inch
+      - 5 inch
 
-egg_and_dairy_ingredients:
-  - half_and_half_or_milk
-spice_and_seasoning_ingredients:
-  - flavoring
-auto_ingredients:
-  - egg
-  - unsalted_butter
-  - sugar
-  - ap_flour
-  - salt
-  - cherry
-  - powdered_sugar
+"12 inch":
+  ingredient_labels:
+    egg: 6 eggs
+    unsalted_butter: 3 tablespoons of unsalted butter
+    sugar: 150 grams of sugar and more for topping while baking
+    half_and_half_or_milk: 240 grams of half-and-half or whole milk
+    ap_flour: 90 grams of all-purpose flour
+    salt: 3 grams of salt
+    flavoring: 1.5 teaspoons of almond extract
+    cherry: About 3 cups of dark cherries
+    pitted_cherries: Pitted cherries
+    powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+  egg_and_dairy_ingredients:
+    - half_and_half_or_milk
+  spice_and_seasoning_ingredients:
+    - flavoring
+  auto_ingredients:
+    - egg
+    - unsalted_butter
+    - sugar
+    - ap_flour
+    - salt
+    - cherry
+    - powdered_sugar
+
+"10 inch":
+  ingredient_labels:
+    egg: 4 eggs
+    unsalted_butter: 2 tablespoons of unsalted butter
+    sugar: 100 grams of sugar and more for topping while baking
+    half_and_half_or_milk: 160 grams of half-and-half or whole milk
+    ap_flour: 60 grams of all-purpose flour
+    salt: 2 grams of salt
+    flavoring: 1 teaspoons of almond extract
+    cherry: About 2 cups of dark cherries
+    pitted_cherries: Pitted cherries
+    powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+  egg_and_dairy_ingredients:
+    - half_and_half_or_milk
+  spice_and_seasoning_ingredients:
+    - flavoring
+  auto_ingredients:
+    - egg
+    - unsalted_butter
+    - sugar
+    - ap_flour
+    - salt
+    - cherry
+    - powdered_sugar
+
+"5 inch":
+  ingredient_labels:
+    egg: 1 eggs
+    unsalted_butter: 1/2 tablespoons of unsalted butter
+    sugar: 25 grams of sugar and more for topping while baking
+    half_and_half_or_milk: 40 grams of half-and-half or whole milk
+    ap_flour: 15 grams of all-purpose flour
+    salt: 0.5 grams of salt
+    flavoring: 1/4 teaspoons of almond extract
+    cherry: About 1/2 cup of dark cherries
+    pitted_cherries: Pitted cherries
+    powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+  egg_and_dairy_ingredients:
+    - half_and_half_or_milk
+  spice_and_seasoning_ingredients:
+    - flavoring
+  auto_ingredients:
+    - egg
+    - unsalted_butter
+    - sugar
+    - ap_flour
+    - salt
+    - cherry
+    - powdered_sugar
 
 yield: 6 servings when cooked in a 12" skillet, 4 in a 10" skillet, and 1 in a 5" skillet
 
@@ -95,7 +152,7 @@ instructions:
 
 ---
 This should be cooked in a preheated cast iron skillet. It can be made in a 10" or 12" skillet. An individual portion can be 
-made in a mini 5" skillet.
+made in a mini 5" skillet. It doesn't keep well for leftovers so only make what will be eaten right away.
 
 References and inspiration from:
 * https://www.lodgecastiron.com/recipe/cherry-clafoutis

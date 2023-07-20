@@ -13,3 +13,11 @@ $white: #f9f9ff;
 .card-content p:last-child {
   margin-bottom: 0;
 }
+
+.card.text-bg-primary .card-header-tabs .nav-link {
+  color: var(--bs-card-cap-color);
+}
+
+.card.text-bg-primary .card-header-tabs .nav-link.active {
+  color: var(--bs-nav-tabs-link-active-color);
+}

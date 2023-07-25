@@ -55,13 +55,19 @@
 <div class="flex-fill"></div>
 <nav class="navbar bg-light">
     <div class="container-fluid">
-        <a href="https://github.com/mwtaylor/recipes">
-            {{ $image := resources.GetMatch "images/github-mark.png" }}
-            <img src="{{ $image.RelPermalink}}" alt="GitHub logo" width="30" height="30">
-        </a>
-        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#creditsModal">
-            Credits
-        </button>
+        <div class="d-flex flex-row w-100">
+            <a class="btn btn-light" href="https://github.com/mwtaylor/recipes">
+                {{ $github_image := resources.GetMatch "images/github-mark.png" }}
+                <img src="{{ $github_image.RelPermalink}}" alt="GitHub logo" width="30" height="30"> Source on GitHub
+            </a>
+            <a class="btn btn-light ms-4" rel="me" href="https://mwtaylor.social/@Michael">
+                {{ $mastodon_image := resources.GetMatch "images/mastodon.svg" }}
+                <img src="{{ $mastodon_image.RelPermalink}}" alt="Mastodon logo" width="30" height="30"> Follow me on Mastodon
+            </a>
+            <button type="button" class="btn btn-light ms-auto" data-bs-toggle="modal" data-bs-target="#creditsModal">
+                Credits
+            </button>
+        </div>
     </div>
 </nav>
 <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">

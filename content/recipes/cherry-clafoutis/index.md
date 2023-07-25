@@ -1,9 +1,9 @@
 ---
 layout: recipes
 title: "Cherry Clafoutis"
-summary: "A French Dessert with an Eggy Texture and Sweet Baked Cherries"
+summary: "A French Dessert with an Egg Custard Texture and Sweet Baked Cherries"
 date: 2023-07-18T21:47:53-07:00
-draft: true
+draft: false
 images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg
@@ -91,8 +91,8 @@ ingredient_sections:
 
 "5-inch":
   ingredient_labels:
-    egg: 1 eggs
-    unsalted_butter: 1/2 tablespoons of unsalted butter
+    egg: 1 egg
+    unsalted_butter: 1/2 tablespoon of unsalted butter
     sugar: 25 grams of sugar and more for topping while baking
     half_and_half_or_milk: 40 grams of half-and-half or whole milk
     ap_flour: 15 grams of all-purpose flour
@@ -126,7 +126,7 @@ instructions:
   - section_name: Preparation
     steps:
       - name: Preheat oven
-        text: Preheat the oven to {{< temp 375 >}} with the cast iron skillet in the oven.
+        text: Preheat the oven to {{< temp 375 >}} with the cast iron skillet in the oven on a middle rack and another rack placed below.
       - name: Remove cherry pits
         text: Wash the cherries and remove the pits. An [OXO cherry pitter](https://www.oxo.com/quick-release-multi-cherry-pitter.html)
               works well for this.
@@ -151,14 +151,18 @@ instructions:
           - pitted_cherries
           - unsalted_butter
       - name: Bake
-        text: Put the skillet bake in the oven and bake for 30 minutes. After 20 minutes of baking sprinkle about two tablespoons of 
-              sugar over the top of the clafoutis.
+        text: Place a baking sheet on the lower rack to catch drips. Put the skillet in the oven and bake for 30 minutes (20 minutes for
+              an individual serving). After 20 minutes of baking (15 minutes for an individual serving) sprinkle a thin layer of sugar 
+              over the top of the clafoutis.
       - name: Serve
         text: Allow to cool slightly before serving. Slice into wedges. Top with powdered sugar or with a crunchy finishing sugar.
 
 ---
 This should be cooked in a preheated cast iron skillet. It can be made in a 10-inch or a 12-inch skillet. An individual portion can be 
-made in a mini 5-inch skillet. It doesn't keep well for leftovers so only make what will be eaten right away.
+made in a mini 5-inch skillet (be careful to not overfill, the mini skillet is shallow). It doesn't keep well for leftovers so only make 
+what will be eaten right away.
+
+Pronounced klah-foo-TEE. Clafoutis is a specific type of flaugnarde made with cherries.
 
 References and inspiration from:
 * https://www.lodgecastiron.com/recipe/cherry-clafoutis

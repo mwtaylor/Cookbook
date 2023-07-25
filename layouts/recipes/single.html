@@ -150,6 +150,12 @@
     </div>
 {{ end }}
 {{ define "structuredData" }}
+    {{ with .Resources.GetMatch "1x1/recipe.jpg" }}
+        <meta property="og:title" content="{{ $.Page.Title }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ $.Page.Permalink }}" />
+        <meta property="og:image" content="{{ .Permalink }}" />
+    {{ end }}
     {{ if .Params.googleReady }}
         <script type="application/ld+json">
             {{ $images := slice }}

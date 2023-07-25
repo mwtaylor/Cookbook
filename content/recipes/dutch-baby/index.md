@@ -19,6 +19,9 @@ cuisines:
 tags:
   - Individual
   - Pancake
+equipment:
+  - Cast-Iron Skillet
+  - Blender
 ingredients:
   - Egg
   - Almond Milk

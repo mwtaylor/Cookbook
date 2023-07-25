@@ -18,6 +18,8 @@ cuisines:
   - American
 tags:
   - Pancake
+equipment:
+  - Stovetop
 ingredients:
   - All-Purpose Flour
   - Egg

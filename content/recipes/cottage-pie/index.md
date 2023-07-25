@@ -21,6 +21,10 @@ cuisines:
   - British
 tags:
   - Beef
+equipment:
+  - Cast-Iron Skillet
+  - Stovetop
+  - Oven
 ingredients:
   - Ground Beef
   - Bachan's Japanese Barbecue Sauce

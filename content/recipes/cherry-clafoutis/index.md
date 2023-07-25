@@ -18,6 +18,8 @@ cuisines:
   - French
 equipment:
   - Blender
+  - Cast-Iron Skillet
+  - Oven
 tags:
   - Individual
 ingredients:

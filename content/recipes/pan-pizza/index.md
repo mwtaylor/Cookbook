@@ -33,6 +33,7 @@ equipment:
   - Stovetop
   - Stand Mixer
   - Immersion Blender
+  - Cast-Iron Skillet
 
 yield: 2 servings
 prepTime: PT30M

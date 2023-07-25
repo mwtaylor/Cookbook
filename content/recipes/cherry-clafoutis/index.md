@@ -153,9 +153,9 @@ instructions:
           - pitted_cherries
           - unsalted_butter
       - name: Bake
-        text: Place a baking sheet on the lower rack to catch drips. Put the skillet in the oven and bake for 30 minutes (20 minutes for
+        text: Place a baking sheet on the lower rack to catch drips. Put the skillet in the oven and bake for 26 to 30 minutes (about 20 minutes for
               an individual serving). After 20 minutes of baking (15 minutes for an individual serving) sprinkle a thin layer of sugar 
-              over the top of the clafoutis.
+              over the top of the clafoutis. Remove when browned and be careful not to overcook and burn the edges.
       - name: Serve
         text: Allow to cool slightly before serving. Slice into wedges. Top with powdered sugar or with a crunchy finishing sugar.
 

@@ -40,8 +40,11 @@ cookTime: PT30M
 
 ingredient_sections:
   - Base Ingredients
-  - Banana Chocolate Chip
-  - Pumpkin Pecan
+  - section_title: Flavors
+    section_alternatives:
+      - Banana Chocolate Chip
+      - Pumpkin Pecan
+      - PB&J
   - Optional Mix-ins
 
 "Base Ingredients":
@@ -49,7 +52,6 @@ ingredient_sections:
     egg: 1 egg
     milk: 2 tablespoons whole milk or almond milk
     oat: 1/2 cup rolled oats
-    syrup: 1 tablespoon maple syrup
     oil_spray: Canola oil spray
     baking_powder: 1/4 teaspoon of baking powder
     salt: Pinch of salt
@@ -57,7 +59,6 @@ ingredient_sections:
     - egg
     - milk
     - oat
-    - syrup
     - oil_spray
     - baking_powder
     - salt
@@ -71,17 +72,31 @@ ingredient_sections:
 "Banana Chocolate Chip":
   ingredient_labels:
     banana: 1/3 of a banana
+    syrup: 1 tablespoon maple syrup
     chocolate_chip: Chocolate chips for topping
   auto_ingredients:
     - banana
+    - syrup
     - chocolate_chip
 "Pumpkin Pecan":
   ingredient_labels:
     pumpkin: 1/4 cup canned pumpkin purée
+    syrup: 1 tablespoon maple syrup
     pecan: Pecans for topping
   auto_ingredients:
     - pumpkin
+    - syrup
     - pecan
+"PB&J":
+  ingredient_labels:
+    nut_butter: 32 grams (2 tablespoons) of peanut butter or other nut butter
+    jelly: 40 grams (2 tablespoons) of any type of jelly or jam
+    topping: Peanut butter chips or nuts for topping
+  auto_ingredients:
+    - jelly
+  pantry_ingredients:
+    - nut_butter
+    - topping
 
 instructions:
   - section_name: Preparation

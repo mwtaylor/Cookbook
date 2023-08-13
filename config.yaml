@@ -56,6 +56,8 @@ params:
       - onion
       - green_onion
       - green_pepper
+      - bell_pepper
+      - zucchini
       - parsley
       - celery
       - carrot
@@ -86,6 +88,7 @@ params:
       - beef_broth
       - tomato_paste
       - canned_whole_tomatoes
+      - artichoke_hearts
       - beans
       - pumpkin
       - oat

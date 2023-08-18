@@ -57,7 +57,7 @@ ingredient_sections:
     - water
   ingredient_labels:
     bread_flour: 200 grams of bread flour
-    salt: 1 teaspoon salt
+    salt: 6 grams of salt (1 teaspoon)
     yeast: 4 grams of rapid rise yeast (1 teaspoon, about half a packet)
     water: 140 grams of water
     mozzarella: Block of low moisture mozzarella

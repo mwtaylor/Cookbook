@@ -105,20 +105,20 @@ instructions:
           - water
           - olive_oil_for_dough
       - name: Knead Dough
-        text: Knead the dough with a stand mixer using the dough hook for one to two minutes until it forms into a ball. Sprinkle 
+        text: Knead the dough with a stand mixer using the dough hook for one to two minutes until it forms into a rough ball. Sprinkle 
               in small amounts of flour as needed if the dough is too sticky while kneading. 
         ingredients:
           - oil_spray
       - name: Rest Dough
-        text: Spray oil into a bowl. Place the dough ball into the bowl. Cover with a lid or plastic wrap and let sit at room
+        text: Spray oil into a bowl. Place the rough dough ball into the bowl. Cover with a lid or plastic wrap and let sit at room
               temperature for 30 minutes. Put in refrigerator for 12 to 24 hours.
   - section_name: Prepare Dough in Pan
     ingredient_section: Ingredients
     steps:
       - name: Warm Dough
-        text: Two and a half hours before cooking remove dough from the refrigerator and let sit for 30 minutes.
+        text: About three hours before cooking remove dough from the refrigerator and let sit for 30 minutes.
       - name: Form Dough
-        text: Place the dough on a lightly floured surface. Form dough into a tight ball.
+        text: Place the dough on a lightly floured surface. Form dough into a tight ball. Put back in bowl covered for another 30 minutes.
       - name: Prepare Pan
         text: Coat cast iron pan with a lot of olive oil. Make sure the sides are coated and there is a thin pool of oil on 
               the bottom.

@@ -148,7 +148,7 @@ instructions:
         background: 
           - watch_potatoes
       - name: Preheat the Oven
-        text: Set a rack near the top of the oven. Preheat to {{< temp 350 >}}.
+        text: Set a rack near the top of the oven. Preheat to {{< temperature 350 >}}.
         background: 
           - watch_potatoes
       - name: Drain Potatoes

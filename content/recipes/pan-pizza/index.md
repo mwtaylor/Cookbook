@@ -99,7 +99,7 @@ instructions:
           - salt
           - yeast
       - name: Mix Dough
-        text: Warm water between {{< temp 105 >}} to {{< temp 110 >}} and mix into dough along with olive oil using a spatula until
+        text: Warm water between {{< temperature 105 >}} to {{< temperature 110 >}} and mix into dough along with olive oil using a spatula until
               just combined.
         ingredients:
           - water
@@ -160,7 +160,7 @@ instructions:
     ingredient_section: Ingredients
     steps:
       - name: Preheat Oven
-        text: Put rack low in the oven. Set oven to pizza setting if available. Preheat oven to {{< temp 500 >}} while
+        text: Put rack low in the oven. Set oven to pizza setting if available. Preheat oven to {{< temperature 500 >}} while
               resting the dough for another 20 minutes.
       - name: Shred Cheese
         text: Shred a 50/50 mix of mozzarella and Just Jack cheese.

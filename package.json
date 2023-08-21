@@ -17,13 +17,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "hugo-bin": "^0.102.0",
     "exif": "^0.6.0",
-    "glob": "^10.0.0"
+    "glob": "^10.0.0",
+    "hugo-bin": "^0.102.0"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
     "browserify": "^17.0.0",
+    "date-fns": "^2.30.0",
     "node-sass": "^8.0.0"
   }
 }

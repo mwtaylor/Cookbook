@@ -1,28 +1,9 @@
 baseURL: https://michaelsrecipes.page/
 languageCode: en-us
-title: "Michael's Recipe Collection"
+title: "Michael's Cookbook"
 defaultContentLanguage: en
-paginate: 20
-menu:
-  main:
-    - name: Home
-      weight: 1
-      url: /
-    - name: Categories
-      weight: 2
-      url: /categories/
-    - name: Cuisines
-      weight: 3
-      url: /cuisines/
-    - name: Tags
-      weight: 4
-      url: /tags/
-    - name: Ingredients
-      weight: 5
-      url: /ingredients/
-    - name: Equipment
-      weight: 6
-      url: /equipment/
+theme: Cookbook
+paginate: 9
 taxonomies:
   category: categories
   cuisine: cuisines
@@ -37,6 +18,7 @@ outputFormats:
     isPlainText: false
     mediaType: text/html
 params:
+  logo: "images/noun-chef-5295726.png"
   ingredient_categories:
     - meat_ingredients: Meat
     - produce_ingredients: Produce
@@ -135,3 +117,45 @@ params:
       - light_brown_sugar
       - dark_brown_sugar
       - yeast
+  credits: "
+    [Menu](https://thenounproject.com/browse/icons/term/menu/) and
+    [Book](https://thenounproject.com/browse/icons/term/book/)
+    icons by ABDUL LATIF from Noun Project.
+    
+    
+    Sous Vide by Walker B Milhoan from [Noun Project](https://thenounproject.com/browse/icons/term/sous-vide/)
+    
+    
+    Pressure Cooker by Mitchell Fong from [Noun Project](https://thenounproject.com/browse/icons/term/pressure-cooker/)
+    
+    
+    [Stand Mixer](https://thenounproject.com/browse/icons/term/stand-mixer/),
+    [Oven](https://thenounproject.com/browse/icons/term/oven/), and
+    [Appliance](https://thenounproject.com/browse/icons/term/appliance/)
+    icons by Made from Noun Project
+    
+    
+    Rice Cooker by Samsul Rizal from [Noun Project](https://thenounproject.com/browse/icons/term/rice-cooker/)
+    
+    
+    [Blender](https://thenounproject.com/browse/icons/term/blender/),
+    [Juicer](https://thenounproject.com/browse/icons/term/juicer/), and
+    [immersion blender](https://thenounproject.com/browse/icons/term/immersion-blender/)
+    icons by Yazmin Alanis from Noun Project
+    
+    
+    Cast iron skillet by W Fully from [Noun Project](https://thenounproject.com/browse/icons/term/cast-iron-skillet/)
+    
+    
+    Dutch Oven by Lars Meiertoberens from [Noun Project](https://thenounproject.com/browse/icons/term/dutch-oven/)
+    
+    
+    chef by Amethyst Studio from [Noun Project](https://thenounproject.com/browse/icons/term/chef/)</a>
+    "
+  social_accounts:
+    mastodon:
+      server: mwtaylor.social
+      username: Michael
+    github:
+      username: mwtaylor
+      repository: recipes

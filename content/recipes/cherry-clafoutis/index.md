@@ -128,7 +128,7 @@ instructions:
   - section_name: Preparation
     steps:
       - name: Preheat oven
-        text: Preheat the oven to {{< temp 375 >}} with the cast iron skillet in the oven on a middle rack and another rack placed below.
+        text: Preheat the oven to {{< temperature 375 >}} with the cast iron skillet in the oven on a middle rack and another rack placed below.
       - name: Remove cherry pits
         text: Wash the cherries and remove the pits. An [OXO cherry pitter](https://www.oxo.com/quick-release-multi-cherry-pitter.html)
               works well for this.

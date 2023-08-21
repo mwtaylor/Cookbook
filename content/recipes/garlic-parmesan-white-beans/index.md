@@ -83,7 +83,7 @@ instructions:
   - section_name: Roast Tomatoes
     steps:
       - name: Preparation
-        text: Preheat the oven to {{< temp 300 >}}. Slice the tomatoes in half and put them in 
+        text: Preheat the oven to {{< temperature 300 >}}. Slice the tomatoes in half and put them in 
               a bowl. Cover with olive oil, salt, and pepper. Arrange on a baking sheet with
               the sliced side facing up.
         ingredients:

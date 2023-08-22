@@ -2,7 +2,9 @@ baseURL: https://michaelsrecipes.page/
 languageCode: en-us
 title: "Michael's Cookbook"
 defaultContentLanguage: en
-theme: Cookbook
+theme:
+  - Cookbook
+  - CookbookIconsAndContent
 paginate: 9
 taxonomies:
   category: categories

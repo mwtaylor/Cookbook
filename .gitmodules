@@ -1,3 +1,6 @@
 [submodule "themes/Cookbook"]
 	path = themes/Cookbook
 	url = https://github.com/mwtaylor/CookbookHugoTheme.git
+[submodule "themes/CookbookIconsAndContent"]
+	path = themes/CookbookIconsAndContent
+	url = https://github.com/mwtaylor/CookbookHugoThemeIconsAndContent.git

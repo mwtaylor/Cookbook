@@ -61,6 +61,7 @@ params:
       - butter
       - unsalted_butter
       - milk
+      - half_and_half
       - buttermilk
       - almond_milk
       - sour_cream
@@ -82,6 +83,7 @@ params:
       - chia_seed
       - chocolate_chip
       - pecan
+      - pistachio
       - jelly
     alcohol_ingredients:
       - wine
@@ -94,6 +96,7 @@ params:
       - vanilla
       - cinnamon
       - pumpkin_pie_spice
+      - cardamom
       - thyme
       - rosemary
       - basil

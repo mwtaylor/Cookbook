@@ -21,6 +21,7 @@ outputFormats:
     mediaType: text/html
 params:
   logo: "images/noun-chef-5295726.png"
+  add_google_data: true
   ingredient_categories:
     - meat_ingredients: Meat
     - produce_ingredients: Produce

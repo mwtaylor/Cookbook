@@ -28,11 +28,16 @@ ingredients:
   - Almond Milk
   - Milk
   - Maple Syrup
-  - Canned Pumpkin
   - Chocolate Chips
   - Pecans
   - Chia Seeds
   - Sweetened Coconut Flakes
+  - Pumpkin Purée
+  - Peanut Butter
+  - Mixed Nut Butter
+  - Peanut Butter Chips
+  - Raspberry Jelly
+  - Strawberry Jelly
 
 yield: 1
 prepTime: PT5M
@@ -62,6 +67,10 @@ ingredient_sections:
     - oil_spray
     - baking_powder
     - salt
+  ingredient_links:
+    oat: Rolled Oats
+    egg: Egg
+    milk: Milk
 "Optional Mix-ins":
   ingredient_labels:
     chia_seed: 2 teaspoons of chia seeds
@@ -69,6 +78,9 @@ ingredient_sections:
   auto_ingredients:
     - chia_seed
     - coconut_flake
+  ingredient_links:
+    chia_seed: Chia Seeds
+    coconut_flake: Sweetened Coconut Flakes
 "Banana Chocolate Chip":
   ingredient_labels:
     banana: 1/3 of a banana
@@ -78,6 +90,10 @@ ingredient_sections:
     - banana
     - syrup
     - chocolate_chip
+  ingredient_links:
+    banana: Banana
+    syrup: Maple Syrup
+    chocolate_chip: Chocolate Chips
 "Pumpkin Pecan":
   ingredient_labels:
     pumpkin: 1/4 cup canned pumpkin purée
@@ -87,6 +103,10 @@ ingredient_sections:
     - pumpkin
     - syrup
     - pecan
+  ingredient_links:
+    syrup: Maple Syrup
+    pecan: Pecans
+    pumpkin: Pumpkin Purée
 "PB&J":
   ingredient_labels:
     nut_butter: 32 grams (2 tablespoons) of peanut butter or other nut butter
@@ -97,6 +117,9 @@ ingredient_sections:
   pantry_ingredients:
     - nut_butter
     - topping
+  ingredient_links:
+    nut_butter: Peanut Butter
+    topping: Peanut Butter Chips
 
 instructions:
   - section_name: Preparation

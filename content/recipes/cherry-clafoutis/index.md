@@ -25,14 +25,23 @@ tags:
 ingredients:
   - Egg
   - Unsalted Butter
-  - Sugar
   - Half-and-Half
-  - Whole Milk
-  - All-purpose Flour
-  - Salt
+  - Milk
+  - All-Purpose Flour
   - Almond Extract
   - Dark Cherries
+  - Sugar
   - Powdered Sugar
+
+ingredient_links: &ingredient_links
+  egg: Egg
+  unsalted_butter: Unsalted Butter
+  half_and_half_or_milk: Half-and-Half
+  ap_flour: All-Purpose Flour
+  flavoring: Almond Extract
+  cherry: Dark Cherries
+  sugar: Sugar
+  powdered_sugar: Powdered Sugar
 
 ingredient_sections:
   - section_title: Ingredients
@@ -65,6 +74,7 @@ ingredient_sections:
     - salt
     - cherry
     - powdered_sugar
+  ingredient_links: *ingredient_links
 
 "10-inch":
   ingredient_labels:
@@ -90,6 +100,7 @@ ingredient_sections:
     - salt
     - cherry
     - powdered_sugar
+  ingredient_links: *ingredient_links
 
 "5-inch":
   ingredient_labels:
@@ -115,6 +126,7 @@ ingredient_sections:
     - salt
     - cherry
     - powdered_sugar
+  ingredient_links: *ingredient_links
 
 yields: 
   - 6 servings when cooked in a 12-inch skillet

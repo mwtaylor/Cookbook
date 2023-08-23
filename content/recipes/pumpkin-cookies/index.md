@@ -62,13 +62,24 @@ ingredient_sections:
     baking_soda: 1/2 teaspoon baking soda
     baking_powder: 1/2 teaspoon baking powder
     salt: 1/2 teaspoon salt
+  ingredient_links:
+    pumpkin: Pumpkin Purée
+    pumpkin_pie_spice: Pumpkin Pie Spice
+    butter: Unsalted Butter
+    light_brown_sugar: Light Brown Sugar
+    egg: Egg
+    vanilla: Vanilla Extract
+    ap_flour: All-Purpose Flour
 "Spiced Sugar":
   auto_ingredients:
     - sugar
     - pumpkin_pie_spice
   ingredient_labels:
-    sugar: 50 grams of white sugar
+    sugar: 50 grams of sugar
     pumpkin_pie_spice: 1/2 teaspoon of pumpkin pie spice
+  ingredient_links:
+    pumpkin_pie_spice: Pumpkin Pie Spice
+    sugar: Sugar
 
 ---
 

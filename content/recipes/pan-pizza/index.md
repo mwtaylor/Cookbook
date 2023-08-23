@@ -28,6 +28,10 @@ ingredients:
   - Canned Whole Tomatoes
   - Tomato Paste
   - Garlic
+  - Fresh Basil
+  - Olive Oil
+  - Dried Oregano
+  - Sugar
 equipment:
   - Oven
   - Stovetop
@@ -40,19 +44,17 @@ prepTime: PT30M
 cookTime: PT60M
 
 ingredient_sections:
-  - Ingredients
+  - Dough
+  - Pizza Assembly
   - Pizza Sauce
 
-"Ingredients":
+"Dough":
   auto_ingredients:
     - olive_oil
     - bread_flour
     - salt
     - yeast
     - oil_spray
-    - cheese
-    - mozzarella
-    - parmesan
   staple_ingredients:
     - water
   ingredient_labels:
@@ -60,13 +62,29 @@ ingredient_sections:
     salt: 6 grams of salt (1 teaspoon)
     yeast: 4 grams of rapid rise yeast (1 teaspoon, about half a packet)
     water: 140 grams of water
+    olive_oil: 8 grams of olive oil
+    oil_spray: Vegetable oil spray
+  ingredient_links:
+    bread_flour: Bread Flour
+    yeast: Rapid Rise Yeast
+    olive_oil: Olive Oil
+    
+"Pizza Assembly":
+  auto_ingredients:
+    - olive_oil
+    - cheese
+    - mozzarella
+    - parmesan
+  ingredient_labels:
     mozzarella: Block of low moisture mozzarella
     cheese: Beecher's Just Jack Cheese
     parmesan: Block of parmesan
-    olive_oil_for_dough: 8 grams of olive oil
-    olive_oil_for_coating: Olive oil
-    olive_oil: Olive oil, 8 grams for the dough, and more for coating the pan
-    oil_spray: Vegetable oil spray
+    olive_oil: Olive oil
+  ingredient_links:
+    mozzarella: Low Moisture Mozzarella
+    cheese: Beecher's Just Jack
+    parmesan: Parmesan
+    olive_oil: Olive Oil
 
 "Pizza Sauce":
   auto_ingredients:
@@ -83,14 +101,22 @@ ingredient_sections:
     tomato_paste: 2 tablespoons of tomato paste
     olive_oil: 2 tablespoons of olive oil
     garlic: 3 to 4 cloves of garlic
-    basil: 2 teaspoons dried basil
+    basil: Fresh basil to taste
     oregano: 1 teaspoon dried oregano
     sugar: 1 tablespoon of sugar
     salt: 1 teaspoon of salt
+  ingredient_links:
+    garlic: Garlic
+    canned_whole_tomatoes: Canned Whole Tomatoes
+    tomato_paste: Tomato Paste
+    basil: Fresh Basil
+    olive_oil: Olive Oil
+    sugar: Sugar
+    oregano: Dried Oregano
 
 instructions:
   - section_name: Start Dough One Day Early
-    ingredient_section: Ingredients
+    ingredient_section: Dough
     steps:
       - name: Mix Dry Ingredients
         text: In stand mixer bowl stir together flour, salt, and yeast.
@@ -103,7 +129,7 @@ instructions:
               just combined.
         ingredients:
           - water
-          - olive_oil_for_dough
+          - olive_oil
       - name: Knead Dough
         text: Knead the dough with a stand mixer using the dough hook for one to two minutes until it forms into a rough ball. Sprinkle 
               in small amounts of flour as needed if the dough is too sticky while kneading. 
@@ -113,7 +139,7 @@ instructions:
         text: Spray oil into a bowl. Place the rough dough ball into the bowl. Cover with a lid or plastic wrap and let sit at room
               temperature for 30 minutes. Put in refrigerator for 12 to 24 hours.
   - section_name: Prepare Dough in Pan
-    ingredient_section: Ingredients
+    ingredient_section: Pizza Assembly
     steps:
       - name: Warm Dough
         text: About three hours before cooking remove dough from the refrigerator and let sit for 30 minutes.
@@ -123,7 +149,7 @@ instructions:
         text: Coat cast iron pan with a lot of olive oil. Make sure the sides are coated and there is a thin pool of oil on 
               the bottom.
         ingredients:
-          - olive_oil_for_coating
+          - olive_oil
       - name: Press Dough in Pan
         text: Place dough in the pan and spread towards edges with fingers as far as possible. Cover with plastic wrap and 
               let sit 10 minutes.
@@ -157,7 +183,7 @@ instructions:
           - salt
           - sugar
   - section_name: Prepare Pizza
-    ingredient_section: Ingredients
+    ingredient_section: Pizza Assembly
     steps:
       - name: Preheat Oven
         text: Put rack low in the oven. Set oven to pizza setting if available. Preheat oven to {{< temperature 500 >}} while
@@ -174,7 +200,7 @@ instructions:
         text: Add a thin layer of pizza sauce, being sure to go all the way to the edges. Add a thick layer of shredded cheese 
               and press to edges. Add toppings but don't overload the pizza.
   - section_name: Cook Pizza
-    ingredient_section: Ingredients
+    ingredient_section: Pizza Assembly
     steps:
       - name: Bake
         text: Bake the pizza in the oven. Rotate halfway through. Don't worry about crust browning at this point. Remove when 
@@ -184,7 +210,7 @@ instructions:
               with a spatula. Use a table knife if needed to gently separate the pizza from the pan. It will almost always 
               need more browning. Put on stovetop on high heat and cook until crust reaches desired browning.
   - section_name: Serve
-    ingredient_section: Ingredients
+    ingredient_section: Pizza Assembly
     steps:
       - name: Cool
         text: Remove the pizza from the pan and cool on a wire rack.

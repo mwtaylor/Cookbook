@@ -30,10 +30,14 @@ equipment:
   - Stovetop
   - Rice Cooker
 ingredients:
+  - Thin Sliced Beef
   - Bachan's Japanese Barbecue Sauce
   - Onion
   - Green Pepper
   - Green Onion
+  - White Rice
+  - Sesame Seed
+  - Cornstarch
 
 ingredient_labels:
   beef: 1 pound of thinly sliced beef
@@ -48,6 +52,16 @@ ingredient_labels:
   vegetable_oil: Vegetable oil
   water: 2 tablespoons of water
   sesame_seeds: Sesame seeds
+  
+ingredient_links:
+  beef: Thin Sliced Beef
+  onion: Onion
+  green_pepper: Green Pepper
+  green_onion: Green Onion
+  bachans: Bachan's Japanese Barbecue Sauce
+  rice: White Rice
+  sesame_seeds: Sesame Seed
+  cornstarch: Cornstarch
 
 auto_ingredients:
   - beef

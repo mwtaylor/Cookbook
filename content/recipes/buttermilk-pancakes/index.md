@@ -50,6 +50,13 @@ auto_ingredients:
   - baking_soda
   - salt
   - ap_flour
+  
+ingredient_links:
+  ap_flour: All-Purpose Flour
+  egg: Egg
+  buttermilk: Buttermilk
+  butter: Unsalted Butter
+  sugar: Sugar
 
 ---
 

@@ -42,6 +42,7 @@ ingredients:
   - Frozen Corn
   - Frozen Peas
   - Red Wine
+  - All-Purpose Flour
   - Dried Thyme
   - Dried Rosemary
 
@@ -102,6 +103,27 @@ auto_ingredients:
   - beef
 staple_ingredients:
   - water
+  
+ingredient_links:
+  beef: Ground Beef
+  bachan: Bachan's Japanese Barbecue Sauce
+  onion: Onion
+  celery: Celery
+  carrot: Carrot
+  garlic: Garlic
+  green_onion: Green Onion
+  potato: Russet Potatoes
+  sour_cream: Sour Cream
+  butter: Unsalted Butter
+  beef_broth: Beef Broth
+  tomato_paste: Tomato Paste
+  fried_onion: Fried Onions
+  corn: Frozen Corn
+  pea: Frozen Peas
+  wine: Red Wine
+  thyme: Dried Thyme
+  rosemary: Dried Rosemary
+  ap_flour: All-Purpose Flour
 
 background_tasks:
   watch_potatoes: Keep an eye on the potatoes to avoid overcooking. Remove from heat and drain if done early.

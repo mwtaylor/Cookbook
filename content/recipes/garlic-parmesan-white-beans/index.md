@@ -25,15 +25,18 @@ equipment:
   - Juicer
 ingredients:
   - Garlic
-  - Olive Oil
   - White Bean
   - Cherry Tomato
   - Cumin
-  - Parsley
+  - Fresh Parsley
   - Parmesan
   - Zucchini
   - Canned Artichoke Hearts
   - Red Bell Pepper
+  - Lemon
+  - Cumin
+  - Red Pepper Flake
+  - Olive Oil
 
 ingredient_labels:
   garlic: 6 cloves of garlic or a large spoonful of jarred garlic
@@ -66,6 +69,20 @@ auto_ingredients:
   - bell_pepper
   - artichoke_hearts
   - zucchini
+  
+ingredient_links:
+  garlic: Garlic
+  beans: White Bean
+  tomato: Cherry Tomato
+  parsley: Fresh Parsley
+  parmesan: Parmesan
+  zucchini: Zucchini
+  artichoke_hearts: Canned Artichoke Hearts
+  bell_pepper: Red Bell Pepper
+  lemon: Lemon
+  cumin: Cumin
+  red_pepper_flakes: Red Pepper Flakes
+  olive_oil: Olive Oil
   
 instructions:
   - section_name: Cook the Beans

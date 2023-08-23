@@ -24,7 +24,7 @@ equipment:
   - Blender
 ingredients:
   - Egg
-  - Almond Milk
+  - Milk
   - Unsalted Butter
   - Maple Syrup
   - Vanilla Extract
@@ -32,6 +32,8 @@ ingredients:
   - Blueberry
   - Blackberry
   - Strawberry
+  - All-Purpose Flour
+  - Powdered Sugar
   
 yield: 1 individual pancake or quadruple the recipe for a larger pancake that serves 4
 prepTime: PT5M
@@ -40,7 +42,7 @@ cookTime: PT20M
 ingredient_labels:
   berries: Berries for topping
   egg: 1 egg
-  almond_milk: 1/4 cup almond milk
+  milk: 1/4 cup whole milk or almond milk
   butter: 2 teaspoons unsalted butter
   syrup: Maple syrup for topping
   vanilla: 1 teaspoon vanilla extract
@@ -58,8 +60,17 @@ auto_ingredients:
   - salt
   - vanilla
   - egg
-  - almond_milk
+  - milk
   - butter
+  
+ingredient_links:
+  egg: Egg
+  milk: Milk
+  butter: Unsalted Butter
+  syrup: Maple Syrup
+  vanilla: Vanilla Extract
+  ap_flour: All-Purpose Flour
+  powdered_sugar: Powdered Sugar
 
 instructions:
   - section_name: Prepare

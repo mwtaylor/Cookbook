@@ -23,10 +23,10 @@ equipment:
   - Oven
 ingredients:
   - Milk
-  - Yeast
+  - Instant Yeast
   - Bread Flour
-  - Sugar
   - Unsalted Butter
+  - Sugar
 
 ingredient_labels:
   water: 1 cup water
@@ -48,6 +48,13 @@ auto_ingredients:
   - oil_spray
 staple_ingredients:
   - water
+  
+ingredient_links:
+  milk: Milk
+  yeast: Instant Yeast
+  bread_flour: Bread Flour
+  butter: Unsalted Butter
+  sugar: Sugar
 
 yield: 12 slices
 prepTime: PT30M

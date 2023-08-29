@@ -57,23 +57,27 @@ instructions:
       - name: Mince the Garlic
         text: Finely mince or press the garlic.
       - name: Cut Beef
-        text: Trim any large chunks of hard fat. Cut the beef into 2-inch chunks.
+        text: Trim any large chunks of hard fat. Cut the beef into large flat steak-like pieces.
+              Season the beef well with salt.
   - section_name: Brown Beef and Cook Aromatics
     steps:
       - name: Brown Beef
         text: Heat oil in a dutch oven on high heat. Brown the beef in 2 or 3 batches. 
               Don't crowd the pan to allow for browning to happen. Remove and set aside
-              when all sides are deeply browned.
+              when both sides are deeply browned.
       - name: Cook Onion and Garlic
-        text: Cook the onion until softened and aromatic. Add garlic and cook for an
-              additional 2 minutes.
+        text: Start cooking the onion until softened and aromatic. 
+      - name: Cube Beef
+        text: While the onions are cooking cut the beef steaks into 2-inch cubes. Coat the beef
+              in flour.
+      - name: Cook Garlic
+        text: Add garlic and cook for an additional 2 minutes.
   - section_name: Make Stew and Start Simmer
     steps:
       - name: Cook Tomato Paste
         text: Add tomato paste and cook until darkened.
       - name: Add Beef and Cook in the Flour
-        text: Add the beef back to the dutch oven and stir in the flour. Cook for 
-              2 minutes.
+        text: Add the beef back to the dutch oven and stir in. Cook for 2 minutes.
       - name: Deglaze and Add Liquids
         text: Deglaze with the red wine. Add Bachan's sauce and can of Guinness. Add
               about 2 cups of water to cover everything.
@@ -86,19 +90,24 @@ instructions:
         text: Peel the carrots and potatoes and cut them into 1-inch chunks.
       - name: Add Vegetables and Continue Simmer
         text: Add in the chopped vegetables. Add bay leaves and thyme. Continue to 
-              simmer covered for another 90 minutes.
+              simmer covered for about another 90 minutes.
   - section_name: Finish and Serve
     steps:
       - name: Thicken
-        text: Uncover and simmer for approximately 30 minutes to reduce and thicken the 
-              liquid and finish cooking the vegetables to desired softness.
+        text: Uncover and increase heat slightly. Simmer for approximately 30 minutes 
+              to reduce and thicken the liquid and finish cooking the vegetables to 
+              desired softness. The fat and liquid should be well emulsified.
       - name: Finish
         text: Remove the bay leaves and thyme. Add salt to taste.
 
-yield: 2 servings
+yield: 6 servings
 prepTime: PT10M
 cookTime: PT3H30M
 
 ---
 
 Inspiration is from https://bachans.com/blogs/recipes/bachans-guinness-stew
+
+Also uses some techniques from J. Kenji López-Alt on [YouTube](https://www.youtube.com/watch?v=VIdlVi-VzPY)
+
+This recipe could also be cooked in an oven instead of the covered simmering steps at {{< temperature 300 >}}.

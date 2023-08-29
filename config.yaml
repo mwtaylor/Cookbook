@@ -72,6 +72,7 @@ params:
     pantry_ingredients:
       - rice
       - beef_broth
+      - bachan
       - tomato_paste
       - canned_whole_tomatoes
       - artichoke_hearts
@@ -88,6 +89,7 @@ params:
     alcohol_ingredients:
       - wine
       - beer
+      - guinness
       - rum
       - whiskey
       - vodka
@@ -101,6 +103,7 @@ params:
       - rosemary
       - basil
       - oregano
+      - bay_leaf
       - garlic_powder
       - onion_powder
       - chili_powder

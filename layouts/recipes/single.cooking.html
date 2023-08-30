@@ -1,5 +1,11 @@
 {{ define "content" }}
-    <div id="directionsCarousel" class="carousel text-bg-primary slide min-vh-100 w-100" data-bs-ride="false" data-bs-config='{"interval":31536000000}'>
+    <div class="d-block d-xxl-none">
+        <p>Cooking view is designed for large screens only.</p>
+        {{ with  $.Page.OutputFormats.Get "html" }}
+            <a class="btn btn-primary" href="{{ .RelPermalink }}" role="button" aria-label="Close">Go back to recipe</a>
+        {{ end }}
+    </div>
+    <div id="directionsCarousel" class="carousel text-bg-primary slide min-vh-100 w-100 d-none d-xxl-block" data-bs-ride="false" data-bs-config='{"interval":31536000000}'>
         <div class="carousel-indicators">
             {{ $slideNumber := 0 }}
             {{ range .Params.instructions }}
@@ -17,42 +23,51 @@
             {{ end }}
         </div>
         <div class="carousel-inner carousel-non-image-content">
-            {{ with  $.Page.OutputFormats.Get "html" }}
-                <a class="btn btn-success text-light btn-sm exit-button" href="{{ .RelPermalink }}" role="button">Exit Back to Recipe</a>
-            {{ end }}
             {{ range $sectionIndex, $section := .Params.instructions }}
                 {{ range $stepIndex, $step := $section.steps }}
-                    <div class="carousel-item {{ cond (and (eq $sectionIndex 0) (eq $stepIndex 0)) "active" "" }}">
-                        <div class="d-flex flex-row">
-                            <div class="flex-fill">
-                                {{ $ingredients := $.Page.Params }}
-                                {{ with $section.ingredient_section }}
-                                    {{ $ingredients = (index $.Page.Params .) }}
-                                {{ end }}
-                                {{ with $section.section_name }}<h2>{{ . }}</h2>{{ end }}
-                                {{ with $step.name }}<h1>{{ . }}</h1>{{ end }}
-                                {{ with $step.ingredients }}
-                                    <ul class="list-group list-group-horizontal">
-                                        {{ range . }}
-                                            {{ if not (isset $ingredients.ingredient_labels .) }}
-                                                {{ errorf "No label found for ingredient %s in recipe %s" . $.Page.Title }}
-                                            {{ end }}
-                                            <li class="list-group-item list-group-item-primary">{{ index $ingredients.ingredient_labels . }}</li>
-                                        {{ end }}
-                                    </ul>
+                    <div class="carousel-item h-100 {{ cond (and (eq $sectionIndex 0) (eq $stepIndex 0)) "active" "" }}">
+                        <div class="h-100 d-flex flex-column">
+                            <div class="h-25 d-flex flex-row justify-content-between border-bottom pb-2">
+                                <div>
+                                    {{ with $section.section_name }}<p class="text-truncate lead fs-2 pb-1 mb-0">{{ . }}</p>{{ end }}
+                                    {{ with $step.name }}<p class="text-truncate lead fs-2 pb-1 mb-0">{{ . }}</p>{{ end }}
+                                </div>
+                                {{ with $step.image }}
+                                    <div style="aspect-ratio: 1.7778;">
+                                        {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
+                                            <img src="{{ $image.RelPermalink }}" alt="Completed step" class="img-fluid rounded">
+                                    </div>
                                 {{ end }}
                             </div>
-                            <div class="step-image">
-                                {{ with $step.image }}
-                                    {{ $image := $.Page.Resources.GetMatch (. | printf "16x9/%s") }}
-                                    <div><img src="{{ $image.RelPermalink }}" alt="Completed recipe step" class="img-fluid rounded"></div>
-                                {{ end }}
+                            <div class="row flex-grow-1 gx-1">
+                                <div class="col-7 d-flex flex-column justify-content-between">
+                                    <p class="fs-3 mb-0">{{ $step.text | markdownify }}</p>
+                                    <div>
+                                        {{ range $step.background }}
+                                            <div class="alert alert-secondary fs-5 lh-sm mb-0 mt-2 py-2">{{ index $.Page.Params.background_tasks . }}</div>
+                                        {{ end }}
+                                        <div class="bottom-spacer"></div>
+                                    </div>
+                                </div>
+                                <div class="col-5 d-flex flex-column justify-content-start">
+                                    {{ $ingredients := $.Page.Params }}
+                                    {{ with $section.ingredient_section }}
+                                        {{ $ingredients = (index $.Page.Params .) }}
+                                    {{ end }}
+                                    {{ with $step.ingredients }}
+                                        <ul class="list-group pt-2">
+                                            {{ range . }}
+                                                {{ if not (isset $ingredients.ingredient_labels .) }}
+                                                    {{ errorf "No label found for ingredient %s in recipe %s" . $.Page.Title }}
+                                                {{ end }}
+                                                <li class="list-group-item list-group-item-primary text-truncate fs-5">{{ index $ingredients.ingredient_labels . }}</li>
+                                            {{ end }}
+                                        </ul>
+                                    {{ end }}
+                                    <div class="bottom-spacer"></div>
+                                </div>
                             </div>
                         </div>
-                        {{ range $step.background }}
-                            <p class="fs-6 text-secondary">{{ index $.Page.Params.background_tasks . }}</p>
-                        {{ end }}
-                        <p class="fs-4">{{ $step.text | markdownify }}</p>
                     </div>
                 {{ end }}
             {{ end }}
@@ -65,5 +80,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+        {{ with  $.Page.OutputFormats.Get "html" }}
+            <div class="exit-button">
+                <a class="btn btn-close position-absolute top-50 start-50 translate-middle text-bg-secondary" href="{{ .RelPermalink }}" role="button" aria-label="Close"></a>
+            </div>
+        {{ end }}
     </div>
 {{ end }}

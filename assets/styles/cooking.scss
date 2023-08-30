@@ -6,7 +6,7 @@ $white: #f9f9ff;
 
 $carousel-control-width: 5%;
 
-$font-size-root: 3rem;
+$font-size-root: 2.2rem;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -16,16 +16,23 @@ $font-size-root: 3rem;
 
 .carousel-non-image-content {
   width: (100% - 2 * $carousel-control-width);
+  height: 100vh;
   left: $carousel-control-width;
 }
 
-.step-image {
-  width: 32vw;
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.bottom-spacer {
+  height: $carousel-indicator-height + 2 * $carousel-indicator-hit-area-height;
 }
 
 .exit-button {
   position: fixed;
-  left: 10px;
-  bottom: 10px;
+  top: 0;
+  right: 0;
+  width: $carousel-control-width;
+  aspect-ratio: 1;
   z-index: $zindex-fixed;
 }

@@ -44,7 +44,7 @@ ingredient_labels:
   beans: Dried white beans such as cannellini or alubia blanca
   tomato: 2 cups of cherry tomatoes
   salt: Salt to taste
-  pepper: Pepper to taste
+  black_pepper: Pepper to taste
   cumin: 1 teaspoon of cumin
   red_pepper_flakes: Red pepper flakes to taste
   parsley: About 1/3 bunch of parsley
@@ -60,7 +60,7 @@ auto_ingredients:
   - beans
   - tomato
   - salt
-  - pepper
+  - black_pepper
   - cumin
   - red_pepper_flakes
   - parsley

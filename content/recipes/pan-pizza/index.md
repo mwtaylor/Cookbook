@@ -88,7 +88,7 @@ ingredient_sections:
 
 "Pizza Sauce":
   auto_ingredients:
-    - canned_whole_tomatoes
+    - canned_whole_tomato
     - tomato_paste
     - olive_oil
     - garlic
@@ -97,7 +97,7 @@ ingredient_sections:
     - sugar
     - salt
   ingredient_labels:
-    canned_whole_tomatoes: 28 ounce can of whole peeled tomatoes
+    canned_whole_tomato: 28 ounce can of whole peeled tomatoes
     tomato_paste: 2 tablespoons of tomato paste
     olive_oil: 2 tablespoons of olive oil
     garlic: 3 to 4 cloves of garlic
@@ -107,7 +107,7 @@ ingredient_sections:
     salt: 1 teaspoon of salt
   ingredient_links:
     garlic: Garlic
-    canned_whole_tomatoes: Canned Whole Tomatoes
+    canned_whole_tomato: Canned Whole Tomatoes
     tomato_paste: Tomato Paste
     basil: Fresh Basil
     olive_oil: Olive Oil
@@ -165,7 +165,7 @@ instructions:
       - name: Blend Tomatoes
         text: Use an immersion blender to blend canned tomatoes until smooth.
         ingredients:
-          - canned_whole_tomatoes
+          - canned_whole_tomato
       - name: Cook Garlic
         text: Heat olive oil in a saucepan. Cook garlic for about a minute.
         ingredients:

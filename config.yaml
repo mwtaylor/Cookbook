@@ -36,6 +36,9 @@ params:
       - beef
       - chicken
       - pork
+      - pancetta
+      - bacon
+      - sausage
     produce_ingredients:
       - garlic
       - onion
@@ -44,6 +47,8 @@ params:
       - bell_pepper
       - zucchini
       - parsley
+      - fresh_oregano
+      - fresh_thyme
       - celery
       - carrot
       - potato
@@ -72,9 +77,13 @@ params:
     pantry_ingredients:
       - rice
       - beef_broth
+      - beef_bouillon
       - bachan
       - tomato_paste
-      - canned_whole_tomatoes
+      - sundried_tomato
+      - canned_whole_tomato
+      - canned_crushed_tomato
+      - balsamic_vinegar
       - artichoke_hearts
       - beans
       - pumpkin
@@ -116,7 +125,7 @@ params:
       - olive_oil
       - oil_spray
       - salt
-      - pepper
+      - black_pepper
       - bread_flour
       - ap_flour
       - baking_powder

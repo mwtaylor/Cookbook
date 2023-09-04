@@ -72,7 +72,7 @@ ingredient_labels:
   ap_flour: All-purpose flour
   salt: Salt
   salt_for_beef: 1 teaspoon salt
-  pepper: Pepper
+  black_pepper: Pepper
   baking_soda: 1/2 teaspoon baking soda
   water: 2 tablespoons water
 
@@ -86,7 +86,7 @@ auto_ingredients:
   - ap_flour
   - baking_soda
   - salt
-  - pepper
+  - black_pepper
   - thyme
   - rosemary
   - wine
@@ -225,7 +225,7 @@ instructions:
           - sour_cream
           - butter
           - salt
-          - pepper
+          - black_pepper
       - name: Top With Potatoes
         text: Remove skillet from heat. Put mashed potatoes into a piping bag with a wide star tip and pipe over the pie to the edges.
         image: toppedwithpotato.jpg

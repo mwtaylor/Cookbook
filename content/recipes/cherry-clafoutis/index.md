@@ -43,6 +43,11 @@ ingredient_links: &ingredient_links
   sugar: Sugar
   powdered_sugar: Powdered Sugar
 
+ingredient_labels: &common_ingredient_labels
+  batter: Batter
+  pitted_cherries: Pitted cherries
+  powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+
 ingredient_sections:
   - section_title: Ingredients
     section_alternatives:
@@ -60,8 +65,7 @@ ingredient_sections:
     salt: 3 grams of salt
     flavoring: 1.5 teaspoons of almond extract
     cherry: About 3 cups of dark cherries
-    pitted_cherries: Pitted cherries
-    powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+    << : *common_ingredient_labels
   egg_and_dairy_ingredients:
     - half_and_half_or_milk
   spice_and_seasoning_ingredients:
@@ -86,8 +90,7 @@ ingredient_sections:
     salt: 2 grams of salt
     flavoring: 1 teaspoons of almond extract
     cherry: About 2 cups of dark cherries
-    pitted_cherries: Pitted cherries
-    powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+    << : *common_ingredient_labels
   egg_and_dairy_ingredients:
     - half_and_half_or_milk
   spice_and_seasoning_ingredients:
@@ -112,8 +115,7 @@ ingredient_sections:
     salt: 0.5 grams of salt
     flavoring: 1/4 teaspoons of almond extract
     cherry: About 1/2 cup of dark cherries
-    pitted_cherries: Pitted cherries
-    powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+    << : *common_ingredient_labels
   egg_and_dairy_ingredients:
     - half_and_half_or_milk
   spice_and_seasoning_ingredients:
@@ -138,6 +140,7 @@ cookTime: PT30M
 
 instructions:
   - section_name: Preparation
+    ingredient_section: Ingredients
     steps:
       - name: Preheat oven
         text: Preheat the oven to {{< temperature 375 >}} with the cast iron skillet in the oven on a middle rack and another rack placed below.
@@ -156,6 +159,7 @@ instructions:
           - salt
           - flavoring
   - section_name: Bake
+    ingredient_section: Ingredients
     steps:
       - name: Add everything into pan
         text: Remove the skillet from the oven and melt the butter in the pan. Swirl around to coat the bottom and up the sides.

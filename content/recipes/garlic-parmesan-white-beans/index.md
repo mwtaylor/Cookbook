@@ -35,7 +35,7 @@ ingredients:
   - Red Bell Pepper
   - Lemon
   - Cumin
-  - Red Pepper Flake
+  - Red Pepper Flakes
   - Olive Oil
 
 ingredient_labels:
@@ -129,7 +129,7 @@ instructions:
               cumin. Add diced vegetables. Simmer until the sauce is reduced and thick, 
               and the beans are creamy, about 30 minutes.
         ingredients:
-          - pepper
+          - black_pepper
           - salt
           - cumin
   - section_name: Finish and Serve

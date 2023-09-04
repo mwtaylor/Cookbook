@@ -27181,6 +27181,20 @@ $("div[data-format-distance-to-now='true']").each(function () {
     $(this).text(datefns.formatDistanceToNow(date) + " ago");
 });
 
+$("button[data-bs-toggle='tab']").bind("show.bs.tab", function () {
+    const tabTarget = $(this).attr('data-bs-target');
+    $(`div[data-follow-tab-target='${tabTarget}']`).each(function () {
+        $(this).show();
+    });
+});
+
+$("button[data-bs-toggle='tab']").bind("hide.bs.tab", function () {
+    const tabTarget = $(this).attr('data-bs-target');
+    $(`div[data-follow-tab-target='${tabTarget}']`).each(function () {
+        $(this).hide();
+    });
+});
+
 module.exports = "cookbook theme";
 
 },{"bootstrap":20,"date-fns":150}]},{},[1]);

@@ -27183,14 +27183,14 @@ $("div[data-format-distance-to-now='true']").each(function () {
 
 $("button[data-bs-toggle='tab']").bind("show.bs.tab", function () {
     const tabTarget = $(this).attr('data-bs-target');
-    $(`div[data-follow-tab-target='${tabTarget}']`).each(function () {
+    $(`[data-follow-tab-target='${tabTarget}']`).each(function () {
         $(this).show();
     });
 });
 
 $("button[data-bs-toggle='tab']").bind("hide.bs.tab", function () {
     const tabTarget = $(this).attr('data-bs-target');
-    $(`div[data-follow-tab-target='${tabTarget}']`).each(function () {
+    $(`[data-follow-tab-target='${tabTarget}']`).each(function () {
         $(this).hide();
     });
 });

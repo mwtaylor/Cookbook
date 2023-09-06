@@ -32,6 +32,7 @@ ingredients:
   - Dark Cherries
   - Sugar
   - Powdered Sugar
+  - Salt
 
 ingredient_links: &ingredient_links
   egg: Egg
@@ -42,11 +43,13 @@ ingredient_links: &ingredient_links
   cherry: Dark Cherries
   sugar: Sugar
   powdered_sugar: Powdered Sugar
+  salt: Salt
 
 ingredient_labels: &common_ingredient_labels
   batter: Batter
   pitted_cherries: Pitted cherries
   powdered_sugar: Powdered sugar or your favorite crunchy sugar for topping
+  while_baking_sugar: Sugar
 
 ingredient_sections:
   - section_title: Ingredients
@@ -60,6 +63,7 @@ ingredient_sections:
     egg: 6 eggs
     unsalted_butter: 3 tablespoons of unsalted butter
     sugar: 150 grams of sugar and more for topping while baking
+    batter_sugar: 150 grams of sugar
     half_and_half_or_milk: 240 grams of half-and-half or whole milk
     ap_flour: 90 grams of all-purpose flour
     salt: 3 grams of salt
@@ -85,6 +89,7 @@ ingredient_sections:
     egg: 4 eggs
     unsalted_butter: 2 tablespoons of unsalted butter
     sugar: 100 grams of sugar and more for topping while baking
+    batter_sugar: 100 grams of sugar
     half_and_half_or_milk: 160 grams of half-and-half or whole milk
     ap_flour: 60 grams of all-purpose flour
     salt: 2 grams of salt
@@ -110,6 +115,7 @@ ingredient_sections:
     egg: 1 egg
     unsalted_butter: 1/2 tablespoon of unsalted butter
     sugar: 25 grams of sugar and more for topping while baking
+    batter_sugar: 25 grams of sugar
     half_and_half_or_milk: 40 grams of half-and-half or whole milk
     ap_flour: 15 grams of all-purpose flour
     salt: 0.5 grams of salt
@@ -153,7 +159,7 @@ instructions:
         text: Add eggs, sugar, half-and-half, flour, salt, and almond extract in a blender and blend until smooth.
         ingredients:
           - egg
-          - sugar
+          - batter_sugar
           - half_and_half_or_milk
           - ap_flour
           - salt
@@ -172,8 +178,12 @@ instructions:
         text: Place a baking sheet on the lower rack to catch drips. Put the skillet in the oven and bake for 26 to 30 minutes (about 20 minutes for
               an individual serving). After 20 minutes of baking (15 minutes for an individual serving) sprinkle a thin layer of sugar 
               over the top of the clafoutis. Remove when browned and be careful not to overcook and burn the edges.
+        ingredients:
+          - while_baking_sugar
       - name: Serve
-        text: Allow to cool slightly before serving. Slice into wedges. Top with powdered sugar or with a crunchy finishing sugar.
+        text: Allow to cool slightly before serving. Slice into wedges. Top with powdered sugar or a crunchy finishing sugar.
+        ingredients:
+          - powdered_sugar
 
 ---
 This should be cooked in a preheated cast iron skillet. It can be made in a 10-inch or a 12-inch skillet. An individual portion can be 

@@ -38,6 +38,9 @@ ingredients:
   - Peanut Butter Chips
   - Raspberry Jelly
   - Strawberry Jelly
+  - Baking Powder
+  - Salt
+  - Vegetable Oil Spray
 
 yield: 1
 prepTime: PT5M
@@ -57,20 +60,24 @@ ingredient_sections:
     egg: 1 egg
     milk: 2 tablespoons whole milk or almond milk
     oat: 1/2 cup rolled oats
-    oil_spray: Canola oil spray
     baking_powder: 1/4 teaspoon of baking powder
     salt: Pinch of salt
+    batter: Blended batter
+    oil_spray: Vegetable oil spray
   auto_ingredients:
     - egg
     - milk
     - oat
-    - oil_spray
     - baking_powder
     - salt
+    - oil_spray
   ingredient_links:
     oat: Rolled Oats
     egg: Egg
     milk: Milk
+    baking_powder: Baking Powder
+    salt: Salt
+    oil_spray: Vegetable Oil Spray
 "Optional Mix-ins":
   ingredient_labels:
     chia_seed: 2 teaspoons of chia seeds
@@ -110,7 +117,7 @@ ingredient_sections:
 "PB&J":
   ingredient_labels:
     nut_butter: 32 grams (2 tablespoons) of peanut butter or other nut butter
-    jelly: 40 grams (2 tablespoons) of any type of jelly or jam
+    jelly: 40 grams (2 tablespoons) of raspberry jam or other jelly or jam
     topping: Peanut butter chips or nuts for topping
   auto_ingredients:
     - jelly
@@ -119,17 +126,47 @@ ingredient_sections:
     - topping
   ingredient_links:
     nut_butter: Peanut Butter
+    jelly: Raspberry Jelly
     topping: Peanut Butter Chips
 
 instructions:
   - section_name: Preparation
+    ingredient_section: "Base Ingredients"
     steps:
       - text: Preheat oven to {{< temperature 350 >}}.
-      - text: Spray an 8 ounce ceramic ramekin with cooking spray.
-      - text: Add ingredients into a small blender. Blend until smooth.
+      - text: Add base ingredients into a small blender.
+        ingredients:
+          - egg
+          - milk
+          - oat
+          - baking_powder
+          - salt
+      - text: Add flavor ingredients into blender.
+        ingredient_section: Flavors
+        ingredients:
+          - jelly
+          - nut_butter
+          - topping
+          - banana
+          - syrup
+          - chocolate_chip
+          - pumpkin
+          - pecan
+      - text: Add optional ingredients into blender.
+        ingredient_section: "Optional Mix-ins"
+        ingredients:
+          - chia_seed
+          - coconut_flake
+      - text: Blend until smooth.
+      - text: Spray an 8 ounce ceramic ramekin with oil spray.
+        ingredients:
+          - oil_spray
   - section_name: Bake
+    ingredient_section: "Base Ingredients"
     steps:
       - text: Fill ramekin with batter but don't overfill, leave a little room to expand. Add topping.
+        ingredients:
+          - batter
       - text: Bake for 28 to 32 minutes. Internal temperature should reach {{< temperature 200 >}}. Cool for 2 to 3 minutes.
 ---
 

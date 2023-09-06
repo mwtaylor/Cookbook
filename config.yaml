@@ -5,7 +5,7 @@ defaultContentLanguage: en
 theme:
   - Cookbook
   - CookbookIconsAndContent
-paginate: 9
+paginate: 12
 taxonomies:
   category: categories
   cuisine: cuisines

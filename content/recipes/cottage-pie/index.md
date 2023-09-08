@@ -67,8 +67,8 @@ ingredient_labels:
   corn: Frozen corn
   pea: Frozen peas
   wine: 1/4 cup of red wine
-  thyme: Dried thyme
-  rosemary: Dried rosemary
+  dried_thyme: Dried thyme
+  dried_rosemary: Dried rosemary
   ap_flour: All-purpose flour
   salt: Salt
   salt_for_beef: 1 teaspoon salt
@@ -87,8 +87,8 @@ auto_ingredients:
   - baking_soda
   - salt
   - black_pepper
-  - thyme
-  - rosemary
+  - dried_thyme
+  - dried_rosemary
   - wine
   - beef_broth
   - tomato_paste
@@ -208,8 +208,8 @@ instructions:
       - name: Season
         text: Stir in rosemary and thyme to taste. Add extra salt if needed keeping in mind the Bachan's sauce is very salty.
         ingredients:
-          - thyme
-          - rosemary
+          - dried_thyme
+          - dried_rosemary
           - salt
   - section_name: Make the Pie
     steps:

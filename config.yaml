@@ -49,6 +49,8 @@ params:
       - parsley
       - fresh_oregano
       - fresh_thyme
+      - fresh_rosemary
+      - fresh_basil
       - celery
       - carrot
       - potato
@@ -72,8 +74,10 @@ params:
       - sour_cream
       - cheese
       - parmesan
+      - fresh_mozzarella
       - mozzarella
       - cheddar
+      - provolone
     pantry_ingredients:
       - rice
       - beef_broth
@@ -108,10 +112,11 @@ params:
       - cinnamon
       - pumpkin_pie_spice
       - cardamom
-      - thyme
-      - rosemary
-      - basil
-      - oregano
+      - dried_thyme
+      - dried_rosemary
+      - dried_basil
+      - dried_oregano
+      - italian_seasoning
       - bay_leaf
       - garlic_powder
       - onion_powder
@@ -135,6 +140,7 @@ params:
       - light_brown_sugar
       - dark_brown_sugar
       - yeast
+      - water
   credits: "
     [Menu](https://thenounproject.com/browse/icons/term/menu/) and
     [Book](https://thenounproject.com/browse/icons/term/book/)

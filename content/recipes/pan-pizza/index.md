@@ -22,7 +22,7 @@ cuisines:
 ingredients:
   - Bread Flour
   - Rapid Rise Yeast
-  - Low Moisture Mozzarella
+  - Low-Moisture Block Mozzarella
   - Beecher's Just Jack
   - Parmesan
   - Canned Whole Tomatoes
@@ -81,7 +81,7 @@ ingredient_sections:
     parmesan: Block of parmesan
     olive_oil: Olive oil
   ingredient_links:
-    mozzarella: Low Moisture Mozzarella
+    mozzarella: Low-Moisture Block Mozzarella
     cheese: Beecher's Just Jack
     parmesan: Parmesan
     olive_oil: Olive Oil
@@ -92,8 +92,8 @@ ingredient_sections:
     - tomato_paste
     - olive_oil
     - garlic
-    - basil
-    - oregano
+    - fresh_basil
+    - dried_oregano
     - sugar
     - salt
   ingredient_labels:
@@ -101,18 +101,18 @@ ingredient_sections:
     tomato_paste: 2 tablespoons of tomato paste
     olive_oil: 2 tablespoons of olive oil
     garlic: 3 to 4 cloves of garlic
-    basil: Fresh basil to taste
-    oregano: 1 teaspoon dried oregano
+    fresh_basil: Fresh basil to taste
+    dried_oregano: 1 teaspoon dried oregano
     sugar: 1 tablespoon of sugar
     salt: 1 teaspoon of salt
   ingredient_links:
     garlic: Garlic
     canned_whole_tomato: Canned Whole Tomatoes
     tomato_paste: Tomato Paste
-    basil: Fresh Basil
+    fresh_basil: Fresh Basil
     olive_oil: Olive Oil
     sugar: Sugar
-    oregano: Dried Oregano
+    dried_oregano: Dried Oregano
 
 instructions:
   - section_name: Start Dough One Day Early
@@ -173,8 +173,8 @@ instructions:
       - name: Cook Spices
         text: Add in basil and oregano, cook for a few seconds then add tomato paste. Cook until paste has darkened.
         ingredients:
-          - basil
-          - oregano
+          - fresh_basil
+          - dried_oregano
           - tomato_paste
       - name: Simmer Sauce
         text: Add in blended tomatoes. Stir in salt and sugar. Simmer for about 30 minutes until thickened. Use the immersion

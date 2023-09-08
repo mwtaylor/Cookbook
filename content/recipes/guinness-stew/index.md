@@ -29,7 +29,7 @@ ingredient_labels:
   tomato_paste: 4 tablespoons of tomato paste
   guinness: 15 ounce can of Guinness
   bay_leaf: 2 bay leaves
-  thyme: 2 to 4 sprigs of fresh thyme
+  fresh_thyme: 2 to 4 sprigs of fresh thyme
   wine: 1/4 cup of red wine
   salt: Salt to taste
 
@@ -45,7 +45,7 @@ auto_ingredients:
   - tomato_paste
   - guinness
   - bay_leaf
-  - thyme
+  - fresh_thyme
   - wine
   - salt
 

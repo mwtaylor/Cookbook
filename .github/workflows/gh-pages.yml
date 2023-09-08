@@ -31,9 +31,6 @@ jobs:
       - name: Build Javascript
         run: npm run js:build
 
-      - name: Build CSS
-        run: npm run css:compile
-
       - name: Build
         run: hugo --minify
 

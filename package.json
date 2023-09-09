@@ -10,7 +10,6 @@
     "hugo:build": "hugo -d build",
     "hugo:serve": "hugo server",
     "hugo:clean": "rm -rf build resources public",
-    "js:build": "browserify assets/scripts/main.js -o static/js/main.js",
     "no-gps-in-images": "node no-gps-in-images.mjs"
   },
   "author": "",
@@ -22,7 +21,6 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "browserify": "^17.0.0",
     "date-fns": "^2.30.0"
   }
 }

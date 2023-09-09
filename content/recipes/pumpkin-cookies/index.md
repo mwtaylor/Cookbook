@@ -13,11 +13,9 @@ weight: 4
 googleReady: false
 
 categories:
-  - Dessert
+  - Cookies
 cuisines:
   - American
-tags:
-  - Cookies
 equipment:
   - Oven
   - Stand Mixer

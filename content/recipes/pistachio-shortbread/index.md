@@ -3,7 +3,7 @@ layout: recipes
 title: "Pistachio Shortbread"
 summary: "Buttery and Crumbly Shortbread Topped with Pistachios and Spiced with Cardamom"
 date: 2023-08-22T03:25:38Z
-draft: true
+draft: false
 images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg
@@ -30,9 +30,10 @@ ingredients:
   - All-Purpose Flour
   - Cardamom
   - Pistachio
+  - Salt
 
 ingredient_labels:
-  butter: 1 stick of unsalted butter at room temperature
+  unsalted_butter: 1 stick of unsalted butter at room temperature
   sugar: 1/2 cup sugar
   vanilla: 1 teaspoon of vanilla extract
   half_and_half: 3 tablespoons of half-and-half (or whole milk)
@@ -42,9 +43,10 @@ ingredient_labels:
   pistachio: 70 grams of pistachios (shelled, roasted, and salted)
   pistachio_large_pieces: 30 grams of large pieces of pistachio
   pistachio_fine_chop: 40 grams of finely chopped pistachio
+  dry_ingredients: Dry Ingredients
 
 auto_ingredients:
-  - butter
+  - unsalted_butter
   - sugar
   - vanilla
   - half_and_half
@@ -52,9 +54,19 @@ auto_ingredients:
   - salt
   - cardamom
   - pistachio
+  
+ingredient_links:
+  unsalted_butter: Unsalted Butter
+  half_and_half: Half-and-Half
+  pistachio: Pistachio
+  vanilla: Vanilla Extract
+  cardamom: Cardamom
+  sugar: Sugar
+  ap_flour: All-Purpose Flour
+  salt: Salt
 
 yield: 12 cookies
-prepTime: PT10M
+prepTime: PT1H15M
 cookTime: PT45M
 
 instructions:
@@ -66,10 +78,17 @@ instructions:
               grams of the largest pieces and 40 grams of finely chopped nuts.
         ingredients:
           - pistachio
+      - name: Mix Dry Ingredients
+        text: In a bowl combine dry ingredients.
+        ingredients:
+          - ap_flour
+          - salt
+          - cardamom
+          - pistachio_fine_chop
       - name: Cream Butter
         text: Cream together the butter and sugar in the stand-mixer on medium-high speed.
         ingredients:
-          - butter
+          - unsalted_butter
           - sugar
       - name: Mix Wet Ingredients
         text: Mix in half-and-half and vanilla extract on slow speed just until combined.
@@ -77,17 +96,14 @@ instructions:
           - half_and_half
           - vanilla
       - name: Add in Dry Ingredients
-        text: In a separate bowl combine dry ingredients. Slowly pour in to the wet 
-              ingredients with mixer on slow speed. Don't overmix.
+        text: Slowly add in the dry ingredients while mixing on slow speed. Mix until the 
+              dough just comes together. Don't over-mix.
         ingredients:
-          - ap_flour
-          - salt
-          - cardamom
-          - pistachio_fine_chop
+          - dry_ingredients
       - name: Refrigerate Dough
         text: Roll dough into a log with an approximate diameter of 2 & 1/2 inches
-              (about the diameter of a standard 12 ounce soda can). Wrap in plastic wrap
-              and refrigerate for 1 hour.
+              (about the diameter of a standard 12 ounce soda can). Flatten the ends. 
+              Wrap in plastic wrap and refrigerate for 1 hour.
   - section_name: Bake Cookies
     steps:
       - name: Preheat Oven
@@ -99,11 +115,12 @@ instructions:
         ingredients:
           - pistachio_large_pieces
       - name: Bake
-        text: Bake each sheet of cookies separately. Bake for about 20 minutes until
-              the cookies just start to brown and develop a browned nut scent.
+        text: Bake each sheet of cookies separately. Bake for about 18 minutes until
+              the cookies just start to brown and develop a browned nut scent. Rotate
+              the pan if uneven browning starts to occur.
       - name: Cool & Serve
-        text: Cool the cookies for a few minutes on the baking sheet. Transfer to a
-              cooling rack and allow to fully cool before serving.
+        text: Cool the cookies for a few minutes on the baking sheet before transferring
+              to a cooling rack.
 
 ---
 

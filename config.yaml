@@ -26,6 +26,7 @@ params:
     - meat_ingredients: Meat
     - produce_ingredients: Produce
     - egg_and_dairy_ingredients: Eggs & Dairy
+    - bakery_ingredients: Bakery
     - pantry_ingredients: Pantry
     - freezer_ingredients: Freezer
     - alcohol_ingredients: Alcohol
@@ -42,6 +43,7 @@ params:
     produce_ingredients:
       - garlic
       - onion
+      - red_onion
       - green_onion
       - green_pepper
       - bell_pepper
@@ -51,6 +53,7 @@ params:
       - fresh_thyme
       - fresh_rosemary
       - fresh_basil
+      - romaine
       - celery
       - carrot
       - potato
@@ -78,6 +81,10 @@ params:
       - mozzarella
       - cheddar
       - provolone
+      - jack_cheese
+      - mayonnaise
+    bakery_ingredients:
+      - bread
     pantry_ingredients:
       - rice
       - beef_broth
@@ -89,6 +96,7 @@ params:
       - canned_crushed_tomato
       - balsamic_vinegar
       - artichoke_hearts
+      - banana_peppers
       - beans
       - pumpkin
       - oat

@@ -23,7 +23,7 @@ ingredients:
   - Bread Flour
   - Rapid Rise Yeast
   - Low-Moisture Block Mozzarella
-  - Beecher's Just Jack
+  - Beecher's Just Jack Cheese
   - Parmesan
   - Canned Whole Tomatoes
   - Tomato Paste
@@ -82,7 +82,7 @@ ingredient_sections:
     olive_oil: Olive oil
   ingredient_links:
     mozzarella: Low-Moisture Block Mozzarella
-    cheese: Beecher's Just Jack
+    cheese: Beecher's Just Jack Cheese
     parmesan: Parmesan
     olive_oil: Olive Oil
 

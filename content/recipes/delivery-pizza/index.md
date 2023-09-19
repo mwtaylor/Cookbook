@@ -1,9 +1,9 @@
 ---
 layout: recipes
 title: "Delivery-Style Pizza"
-summary: "Pizza Similar to Delivery From a Pizza Chain"
+summary: "Nostalgic Pizza Similar to Delivery From a Pizza Chain"
 date: 2023-09-07T20:41:17-07:00
-draft: true
+draft: false
 images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg
@@ -63,7 +63,7 @@ Dough:
 "Pizza Sauce":
   ingredient_labels:
     tomato_paste: 6-ounce can of tomato paste
-    water: 150 grams of water
+    water: 150 grams of water (Fill the empty tomato paste can)
     salt: 1 gram of salt
     sugar: 10 grams of sugar
     olive_oil: 10 grams of olive oil
@@ -103,10 +103,10 @@ Cheese:
     provolone: Block Provolone
 
 yields: 
-  - 8 servings
+  - 6 servings
   - 2 12-inch pizzas
 prepTime: PT6H
-cookTime: PT15M
+cookTime: PT20M
 
 ---
 
@@ -118,4 +118,4 @@ pizza chains that doesn't really fit into another style.
 pizza and has the recipe written in the description.
 
 The ingredients below don't specify toppings. Make a classic pepperoni pizza as shown in the video or add your
-favorite delivery toppings.
+favorite toppings to order on delivery pizza.

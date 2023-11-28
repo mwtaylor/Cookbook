@@ -26,6 +26,7 @@ cuisines:
 tags:
   - Teriyaki
   - Stir Fry
+  - Beef
 equipment:
   - Stovetop
   - Rice Cooker

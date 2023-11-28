@@ -87,14 +87,17 @@ params:
       - bread
     pantry_ingredients:
       - rice
+      - spaghetti
       - beef_broth
       - beef_bouillon
       - bachan
+      - worcestershire
       - tomato_paste
       - sundried_tomato
       - canned_whole_tomato
       - canned_crushed_tomato
       - balsamic_vinegar
+      - red_wine_vinegar
       - artichoke_hearts
       - banana_peppers
       - beans
@@ -120,6 +123,9 @@ params:
       - cinnamon
       - pumpkin_pie_spice
       - cardamom
+      - allspice
+      - ground_clove
+      - ground_ginger
       - dried_thyme
       - dried_rosemary
       - dried_basil
@@ -131,6 +137,7 @@ params:
       - chili_powder
       - paprika
       - cumin
+      - cayenne
       - red_pepper_flakes
     staple_ingredients:
       - cornstarch

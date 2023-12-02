@@ -73,13 +73,15 @@ ingredient_sections:
     - ap_flour
     - cardamom
     - salt
+    - baking_soda
+    - baking_powder
     
 "12-inch Cake":
   <<: *CAKE_COMMON
   ingredient_labels:
     sugar: 145 grams of sugar
     light_brown_sugar: 145 grams of light brown sugar
-    unsalted_butter: 125 grams of butter at room temperature (6 tablespoons)
+    unsalted_butter: 125 grams of butter at room temperature (9 tablespoons)
     egg: 3 eggs
     banana: 325 grams of mashed banana (about 3 medium bananas)
     sour_cream: 245 grams of sour cream
@@ -106,13 +108,12 @@ ingredient_sections:
     baking_powder: 3/4 teaspoons of baking powder
     salt: 1/2 teaspoons of salt
   
-
 "8-inch Cake":
   <<: *CAKE_COMMON
   ingredient_labels:
     sugar: 65 grams of sugar
     light_brown_sugar: 65 grams of light brown sugar
-    unsalted_butter: 55 grams of butter at room temperature (6 tablespoons)
+    unsalted_butter: 55 grams of butter at room temperature (4 tablespoons)
     egg: 2 eggs
     banana: 145 grams of mashed banana (about 1 large banana)
     sour_cream: 100 grams of sour cream
@@ -138,15 +139,15 @@ ingredient_sections:
 "12-inch Topping":
   <<: *TOPPING_COMMON
   ingredient_labels:
-    unsalted_butter: 85 grams of unsalted butter
+    unsalted_butter: 85 grams of unsalted butter (6 tablespoons)
     dark_brown_sugar: 230 grams of dark brown sugar
     salt: 3/4 teaspoons of salt
-    banana: About 1 & 1/2 peeled bananas
+    banana: About 3 peeled bananas
     
 "10-inch Topping":
   <<: *TOPPING_COMMON
   ingredient_labels:
-    unsalted_butter: 60 grams of unsalted butter
+    unsalted_butter: 60 grams of unsalted butter  (4 tablespoons)
     dark_brown_sugar: 160 grams of dark brown sugar
     salt: 1/2 teaspoons of salt
     banana: About 2 peeled bananas
@@ -154,10 +155,10 @@ ingredient_sections:
 "8-inch Topping":
   <<: *TOPPING_COMMON
   ingredient_labels:
-    unsalted_butter: 40 grams of unsalted butter
+    unsalted_butter: 40 grams of unsalted butter (3 tablespoons)
     dark_brown_sugar: 100 grams of dark brown sugar
     salt: 1/3 teaspoons of salt
-    banana: About 3 peeled bananas
+    banana: About 1 & 1/2 peeled bananas
 
 yields:
   - 16 servings when cooked in a 12-inch skillet

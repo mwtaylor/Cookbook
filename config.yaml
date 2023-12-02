@@ -87,6 +87,7 @@ params:
       - bread
     pantry_ingredients:
       - rice
+      - pasta
       - spaghetti
       - beef_broth
       - beef_bouillon

@@ -8,7 +8,7 @@ images:
   - 4x3/recipe.jpg
   - 16x9/recipe.jpg
   - 1x1/recipe.jpg
-weight: 2 # 1-3 for featured, 4 otherwise
+weight: 4 # 1-3 for featured, 4 otherwise
 
 googleReady: false
 

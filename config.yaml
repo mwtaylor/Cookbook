@@ -49,6 +49,7 @@ params:
       - bell_pepper
       - zucchini
       - parsley
+      - cilantro
       - fresh_oregano
       - fresh_thyme
       - fresh_rosemary
@@ -58,6 +59,7 @@ params:
       - carrot
       - potato
       - tomato
+      - tomatillo
       - banana
       - apple
       - raspberry
@@ -88,15 +90,24 @@ params:
     pantry_ingredients:
       - rice
       - pasta
+      - corn_tortilla
+      - flour_tortilla
       - spaghetti
+      - chicken_broth
+      - chicken_bouillon
       - beef_broth
       - beef_bouillon
       - bachan
       - worcestershire
+      - gochujang
+      - achiote
       - tomato_paste
       - sundried_tomato
       - canned_whole_tomato
       - canned_crushed_tomato
+      - guajillo_chili
+      - california_chili
+      - arbol_chili
       - balsamic_vinegar
       - red_wine_vinegar
       - artichoke_hearts
@@ -126,6 +137,7 @@ params:
       - cardamom
       - allspice
       - ground_clove
+      - clove
       - ground_ginger
       - dried_thyme
       - dried_rosemary
@@ -138,6 +150,7 @@ params:
       - chili_powder
       - paprika
       - cumin
+      - cumin_seed
       - cayenne
       - red_pepper_flakes
     staple_ingredients:

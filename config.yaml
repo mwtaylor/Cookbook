@@ -42,6 +42,7 @@ params:
       - sausage
     produce_ingredients:
       - garlic
+      - ginger
       - onion
       - red_onion
       - green_onion
@@ -100,6 +101,8 @@ params:
       - bachan
       - worcestershire
       - gochujang
+      - soy_sauce
+      - mirin
       - achiote
       - tomato_paste
       - sundried_tomato

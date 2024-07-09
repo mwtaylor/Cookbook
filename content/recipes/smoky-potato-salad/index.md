@@ -62,6 +62,10 @@ auto_ingredients:
   - potato
   - onion
   - green_onion
+  
+external_recipe:
+  url: https://www.americastestkitchen.com/recipes/7993-smoky-potato-salad
+  source: America's Test Kitchen
 
 yield: 8 servings
 prepTime: PT5M
@@ -71,5 +75,3 @@ cookTime: PT30M
 
 [This recipe from America's Test Kitchen](https://www.americastestkitchen.com/recipes/7993-smoky-potato-salad) makes a 
 potato salad with grilled smoky flavor. A great alternative to mayonnaise heavy potato salads.
-
-Requires a subscription to America's Test Kitchen to read the recipe.

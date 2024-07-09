@@ -19,43 +19,26 @@ cuisines:
 tags:
   - tag
 equipment:
-  - equipment
+  - Stove
 ingredients:
-  - ingredient
+  - Salt
+  
+ingredient_links:
+  salt: Salt
 
 ingredient_labels:
-  key: label
+  salt: Every recipe needs at least a little salt, right?
 
-meat_ingredients:
-  - meat
-produce_ingredients:
-  - produce
-egg_and_dairy_ingredients:
-  - eggs
-pantry_ingredients:
-  - pantry
-freezer_ingredients:
-  - frozen
-alcohol_ingredients:
-  - alcohol
-spice_and_seasoning_ingredients:
-  - spice
-staple_ingredients:
-  - staple
 auto_ingredients:
   - salt
-
-background_tasks:
-  name: instructions
 
 instructions:
   - section_name: Make Something
     steps:
       - name: Step Name
         text: Do the thing.
-        image: image.jpg
         ingredients:
-          - ingredientLabel
+          - salt
 
 yield: 2 servings
 prepTime: PT0M

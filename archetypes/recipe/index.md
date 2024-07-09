@@ -4,11 +4,11 @@ title: "{{ replace .Name "-" " " | title }}"
 summary: ""
 date: {{ .Date }}
 draft: true
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
 weight: 4 # 1-3 for featured, 4 otherwise
+
+#lead_image_16x9: 16x9/recipe.jpg
+#card_image_4x3: 4x3/recipe.jpg
+#opengraph_image_1x1: 1x1/recipe.jpg
 
 googleReady: false
 

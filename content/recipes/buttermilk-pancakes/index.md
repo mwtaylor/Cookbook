@@ -3,11 +3,9 @@ layout: recipes
 title: "Buttermilk Pancakes"
 summary: "Fluffy Simple Pancakes"
 date: 2023-04-07T21:28:09-07:00
-draft: false
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+draft: true # republish after testing multiple sources and getting a better picture
+
 weight: 4
 
 googleReady: false

@@ -4,10 +4,10 @@ title: "Cottage Pie"
 summary: "Ground beef and veggies in gravy baked with mashed potatoes on top"
 date: 2023-02-21T21:05:43-08:00
 draft: false
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+lead_image_16x9: 16x9/recipe.jpg
+card_image_4x3: 4x3/recipe.jpg
+
 weight: 4
 outputs:
   - html

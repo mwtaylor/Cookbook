@@ -4,10 +4,7 @@ title: "Guinness Beef Stew"
 summary: "Beef Stew with Sweet Malty flavor from Guinness & Bachan's Sauce"
 date: 2023-08-28T16:22:21-07:00
 draft: true
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
 weight: 4 # 1-3 for featured, 4 otherwise
 
 googleReady: false

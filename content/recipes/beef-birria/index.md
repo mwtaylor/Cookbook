@@ -4,10 +4,10 @@ title: "Beef Birria"
 summary: "Beef braised in a red chili sauce"
 date: 2023-12-02T22:59:08-08:00
 draft: false
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+lead_image_16x9: 16x9/recipe.jpg
+card_image_4x3: 4x3/recipe.jpg
+
 weight: 2 # 1-3 for featured, 4 otherwise
 
 googleReady: false

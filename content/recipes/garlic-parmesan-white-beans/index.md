@@ -4,10 +4,10 @@ title: "Garlic Parmesan White Beans"
 summary: "A Savory Mediterranean Inspired Bean Dish with Fresh Bright Flavors"
 date: 2023-07-26T21:26:21-07:00
 draft: false
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+lead_image_16x9: 16x9/recipe.jpg
+card_image_4x3: 4x3/recipe.jpg
+
 weight: 4 # 1-3 for featured, 4 otherwise
 
 googleReady: false

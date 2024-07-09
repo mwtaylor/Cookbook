@@ -4,10 +4,10 @@ title: "Cincinnati Chili"
 summary: "Bolognese-Style chili with Greek spices"
 date: 2023-11-27T15:41:05-08:00
 draft: false
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+lead_image_16x9: 16x9/recipe.jpg
+card_image_4x3: 4x3/recipe.jpg
+
 weight: 4 # 1-3 for featured, 4 otherwise
 
 googleReady: false

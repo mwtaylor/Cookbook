@@ -4,10 +4,10 @@ title: "Pistachio Shortbread"
 summary: "Buttery and Crumbly Shortbread Topped with Pistachios and Spiced with Cardamom"
 date: 2023-08-22T03:25:38Z
 draft: false
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+lead_image_16x9: 16x9/recipe.jpg
+card_image_4x3: 4x3/recipe.jpg
+
 weight: 3 # 1-3 for featured, 4 otherwise
 
 googleReady: false

@@ -4,10 +4,7 @@ title: "Caramelized Onion and Apple in Pasta with Sausage"
 summary: "Pasta with delicious combination of sweet and savory flavors from caramelized onions and apples"
 date: 2023-12-01T20:05:16-08:00
 draft: true
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
 weight: 4 # 1-3 for featured, 4 otherwise
 
 googleReady: false

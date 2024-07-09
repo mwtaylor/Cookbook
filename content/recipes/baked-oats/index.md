@@ -5,10 +5,9 @@ draft: false
 title: "Baked Oats"
 summary: "Breakfast made from oats with the consistency of a cake"
 weight: 4
-images: 
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+lead_image_16x9: 16x9/recipe.jpg
+card_image_4x3: 4x3/recipe.jpg
   
 googleReady: false
 

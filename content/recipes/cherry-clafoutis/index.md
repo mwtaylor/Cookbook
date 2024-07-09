@@ -4,10 +4,10 @@ title: "Cherry Clafoutis"
 summary: "A French Dessert with an Egg Custard Texture and Sweet Baked Cherries"
 date: 2023-07-18T21:47:53-07:00
 draft: false
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
+lead_image_16x9: 16x9/recipe.jpg
+card_image_4x3: 4x3/recipe.jpg
+
 weight: 4 # 1-3 for featured, 4 otherwise
 
 googleReady: false

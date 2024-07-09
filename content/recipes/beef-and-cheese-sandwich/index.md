@@ -4,10 +4,7 @@ title: "Beef & Cheese Sandwich"
 summary: "Easy to Make Sandwich with a Creamy Cheese Sauce and Crisp Fresh Toppings"
 date: 2023-09-14T14:13:39-07:00
 draft: true
-images:
-  - 4x3/recipe.jpg
-  - 16x9/recipe.jpg
-  - 1x1/recipe.jpg
+
 weight: 4 # 1-3 for featured, 4 otherwise
 
 googleReady: false

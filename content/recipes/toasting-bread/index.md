@@ -45,18 +45,17 @@ ingredient_links:
 
 ingredient_labels:
   oil_spray: Vegetable oil spray
-  water: 60 grams (1/4 cup) of water
+  water: 50 grams (1/4 cup) of water
   ap_flour: 150 grams of all-purpose flour
   golden_whole_flour: 120 grams of King Arthur golden whole wheat flour
   grain_flour: 90 grams of King Arthur Super 10 blend flour
   sugar: 14 grams (1 tablespoon) of sugar
   salt: 9 grams (1 & 1/2 teaspoons) of salt
   baking_soda: 1/4 teaspoon baking soda
-  yeast: 1 tablespoon of instant yeast
-  milk: 230 grams (1 cup) of whole milk
+  yeast: 9 grams (1 tablespoon) of instant yeast
+  milk: 240 grams (1 cup) of whole milk
   olive_oil: 25 grams (2 tablespoons) of olive oil
-  grain_seed_blend: 1/2 cup of King Arthur harvest grains blend
-  grain_seed_blend_topping: Reserved large seeds and grains
+  grain_seed_blend: 1/4 cup of King Arthur harvest grains blend
 
 auto_ingredients:
   - ap_flour
@@ -100,8 +99,7 @@ instructions:
               for the flour to hydrate. Set the mixer to medium speed and knead the
               dough for 1 minute.
       - name: Mix in Seeds
-        text: Shake the grains and seeds. Remove 1/4 cup of the biggest seeds and set
-              aside. Mix the remaining 1/4 cup of the smallest seeds into the dough.
+        text: Mix the grain and seed blend into the dough.
         ingredients:
           - grain_seed_blend
   - section_name: Rise
@@ -116,10 +114,6 @@ instructions:
         text: Cover the pan and let rise for about an hour. It is done rising when 
               the dough has just risen above the top of the pan. Heat the oven to
               {{< temperature 400 >}} while the dough is rising.
-      - name: Top the Dough
-        text: Sprinkle the large seeds and grains over the top of the dough.
-        ingredients:
-          - grain_seed_blend_topping
   - section_name: Bake
     steps:
       - name: Bake

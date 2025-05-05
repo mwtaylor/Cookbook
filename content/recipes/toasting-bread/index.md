@@ -55,7 +55,7 @@ ingredient_labels:
   yeast: 9 grams (1 tablespoon) of instant yeast
   milk: 240 grams (1 cup) of whole milk
   olive_oil: 25 grams (2 tablespoons) of olive oil
-  grain_seed_blend: 1/4 cup of King Arthur harvest grains blend
+  grain_seed_blend: 1/3 cup of King Arthur harvest grains blend
 
 auto_ingredients:
   - ap_flour

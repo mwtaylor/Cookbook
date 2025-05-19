@@ -46,8 +46,8 @@ ingredient_links:
 ingredient_labels:
   oil_spray: Vegetable oil spray
   water: 50 grams (1/4 cup) of water
-  ap_flour: 150 grams of all-purpose flour
-  golden_whole_flour: 120 grams of King Arthur golden whole wheat flour
+  ap_flour: 120 grams of all-purpose flour
+  golden_whole_flour: 150 grams of King Arthur golden whole wheat flour
   grain_flour: 90 grams of King Arthur Super 10 blend flour
   sugar: 14 grams (1 tablespoon) of sugar
   salt: 9 grams (1 & 1/2 teaspoons) of salt
@@ -55,7 +55,7 @@ ingredient_labels:
   yeast: 9 grams (1 tablespoon) of instant yeast
   milk: 240 grams (1 cup) of whole milk
   olive_oil: 25 grams (2 tablespoons) of olive oil
-  grain_seed_blend: 1/3 cup of King Arthur harvest grains blend
+  grain_seed_blend: 1/2 cup of King Arthur harvest grains blend
 
 auto_ingredients:
   - ap_flour
@@ -95,9 +95,9 @@ instructions:
       - name: Mix and Knead the Dough
         text: Pour the heated liquid over the dry ingredients in the stand mixer 
               bowl. Attach the paddle attachment to the stand mixer and set to low 
-              speed. Mix until combined. Turn off mixer and let sit for a minute 
+              speed. Mix until combined. Turn off mixer and let sit for three minutes 
               for the flour to hydrate. Set the mixer to medium speed and knead the
-              dough for 1 minute.
+              dough for 2 minutes.
       - name: Mix in Seeds
         text: Mix the grain and seed blend into the dough.
         ingredients:
@@ -117,7 +117,7 @@ instructions:
   - section_name: Bake
     steps:
       - name: Bake
-        text: Bake for about 25 minutes. Bread is done when the top is browned and
+        text: Bake for about 30 minutes. Bread is done when the top is browned and
               the internal temperature is at least {{< temperature 190 >}}.
       - name: Cool
         text: Remove from the oven and let cool for about 5 minutes. Remove from the

@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "exif": "^0.6.0",
-    "glob": "^10.0.0",
+    "glob": "^11.1.0",
     "hugo-extended": "~0.117.0"
   },
   "dependencies": {
